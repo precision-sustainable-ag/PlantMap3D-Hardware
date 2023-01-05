@@ -1,0 +1,1 @@
+The system management board handles all power distribution in the multi-camera system and a few other auxiliary functions. The PCB is designed using KiCad.
