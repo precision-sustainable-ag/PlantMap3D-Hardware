@@ -1,0 +1,1 @@
+This directory will contain the 3D CAD for the multicamera system.
