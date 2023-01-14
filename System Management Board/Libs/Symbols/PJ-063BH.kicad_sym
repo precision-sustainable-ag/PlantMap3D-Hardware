@@ -1,0 +1,94 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "PJ-063BH" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "J" (id 0) (at -7.63426 5.08951 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "PJ-063BH" (id 1) (at -7.63262 -10.1768 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Footprint" "CUI_PJ-063BH" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "STANDARD" "Manufacturer recommendations" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "PARTREV" "1.02" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MANUFACTURER" "CUI INC" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "PJ-063BH_0_0"
+      (arc (start -5.715 3.81) (mid -6.985 2.54) (end -5.715 1.27)
+        (stroke (width 0.1524) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts (xy -5.715 3.81) (xy -1.27 3.81)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -1.27 3.81) (xy -1.27 1.27)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -1.27 1.27) (xy -5.715 1.27)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -1.27 1.27) (xy -1.27 0.635)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -1.27 0.635) (xy 0.0 0.635)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 0.0 0.635) (xy 0.0 4.445)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 0.0 4.445) (xy -1.27 4.445)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -1.27 4.445) (xy -1.27 3.81)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 0.0 -2.54) (xy -3.175 -2.54)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -3.175 -2.54) (xy -3.81 -1.27)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -3.81 -1.27) (xy -4.445 -2.54)) (stroke (width 0.1524))
+      )
+      (pin passive line (at 5.08 2.54 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 5.08 -2.54 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 5.08 -5.08 180.0) (length 5.08)
+        (name "SHIELD"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "S1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 5.08 -5.08 180.0) (length 5.08)
+        (name "SHIELD"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "S2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)
