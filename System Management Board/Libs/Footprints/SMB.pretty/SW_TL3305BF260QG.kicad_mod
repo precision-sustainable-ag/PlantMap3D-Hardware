@@ -25,9 +25,9 @@
   (fp_line (start -2.25 -2.25) (end 2.25 -2.25) (layer "F.Fab") (width 0.127) (tstamp c5f312dd-7b9a-4487-877f-0c2825347c0d))
   (fp_circle (center -5 1.5) (end -4.9 1.5) (layer "F.Fab") (width 0.2) (fill none) (tstamp b1da64d4-fe1b-47d6-9ae6-aec0d50e92ec))
   (pad "1" smd rect (at -3.6 1.5) (size 1.6 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 7e054951-20cb-4564-a60c-c2c506f45350))
-  (pad "2" smd rect (at 3.6 1.5) (size 1.6 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 821e1aa8-7ab7-4a83-9183-51060ab1aa76))
-  (pad "3" smd rect (at -3.6 -1.5) (size 1.6 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 5c40b19e-1d45-474a-8fbc-5f7fd9599c19))
-  (pad "4" smd rect (at 3.6 -1.5) (size 1.6 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp a64e257b-62c6-47f8-aa72-a142c34fded0))
+  (pad "1" smd rect (at 3.6 1.5) (size 1.6 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 821e1aa8-7ab7-4a83-9183-51060ab1aa76))
+  (pad "2" smd rect (at -3.6 -1.5) (size 1.6 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 5c40b19e-1d45-474a-8fbc-5f7fd9599c19))
+  (pad "2" smd rect (at 3.6 -1.5) (size 1.6 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp a64e257b-62c6-47f8-aa72-a142c34fded0))
   (model "${KIPRJMOD}/Libs/3D/TL3305BF260QG.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
