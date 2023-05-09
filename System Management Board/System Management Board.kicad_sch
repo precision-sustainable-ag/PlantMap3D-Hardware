@@ -10390,7 +10390,7 @@
     (property "Reference" "R12" (at 134.62 47.625 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "100k" (at 134.62 50.165 0)
+    (property "Value" "10k" (at 134.62 50.165 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Resistor_SMD:R_1206_3216Metric" (at 133.858 48.26 90)
