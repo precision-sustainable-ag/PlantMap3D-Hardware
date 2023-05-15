@@ -1,4 +1,4 @@
-21592939595887855
+21594627716135615
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -82935,6 +82935,13 @@ SMB
 0
 4
 4
+SMB
+Big Pads - Relay_SPDT_Schrack-RT1-16A-FormC_RM5mm
+Relay SPST Schrack-RT1 RM5mm 16A 250V AC Form C http://image.schrack.com/datenblaetter/h_rt114012--_de.pdf
+Relay SPST Schrack-RT1 RM5mm 16A 250V AC Relay
+0
+8
+5
 SMB
 CONV_I7C4W008A120V-0C3-R
 

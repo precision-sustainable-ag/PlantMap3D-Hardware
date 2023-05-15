@@ -57,7 +57,13 @@
         }
       ],
       "drc_exclusions": [
-        "lib_footprint_mismatch|216541800|109351800|48db9582-80d2-4dcc-9fa1-1adb99f3675c|00000000-0000-0000-0000-000000000000"
+        "lib_footprint_mismatch|216541800|109351800|48db9582-80d2-4dcc-9fa1-1adb99f3675c|00000000-0000-0000-0000-000000000000",
+        "unconnected_items|163005000|48285000|97fc70e5-f148-4007-ac06-79aee919f221|15f82d6e-98ed-4c58-89d3-e35867015f3f",
+        "unconnected_items|163305000|51315000|15f82d6e-98ed-4c58-89d3-e35867015f3f|4330bca0-6e9a-40a8-9c58-e6fb92fe07a4",
+        "unconnected_items|168155000|51315000|4330bca0-6e9a-40a8-9c58-e6fb92fe07a4|5e471c28-b57d-45c9-bea9-f092ad306a5d",
+        "unconnected_items|180779000|69489000|5e17e101-6579-4864-9f85-89c06b28f42a|37ef26d6-c157-4a32-8697-783e6d8071ec",
+        "unconnected_items|93575000|75550000|9508ab2d-43da-4197-85ed-a95861b03e8e|c3702d7d-14e5-40e3-997f-9c1c6071d314",
+        "unconnected_items|93695000|60605000|a8ff2e2d-fd26-4f6d-a600-5b233abdfdfe|2198e182-e42f-49b4-a218-ca08af30b679"
       ],
       "meta": {
         "version": 2
