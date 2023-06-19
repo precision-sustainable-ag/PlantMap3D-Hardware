@@ -1138,9 +1138,9 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
- .text          0x0000000000000000        0x0 /tmp/cc5e8xDk.o
- .data          0x0000000000000000        0x0 /tmp/cc5e8xDk.o
- .bss           0x0000000000000000        0x0 /tmp/cc5e8xDk.o
+ .text          0x0000000000000000        0x0 /tmp/cckANKQ3.o
+ .data          0x0000000000000000        0x0 /tmp/cckANKQ3.o
+ .bss           0x0000000000000000        0x0 /tmp/cckANKQ3.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1404,7 +1404,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/cc5e8xDk.o
+ .boot2         0x0000000010000000      0x100 /tmp/cckANKQ3.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -2647,7 +2647,7 @@ LOAD CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/tusb.
 LOAD CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 LOAD CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 LOAD CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-LOAD /tmp/cc5e8xDk.o
+LOAD /tmp/cckANKQ3.o
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2765,7 +2765,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000000000007d4       0x2c CMakeFiles/main.dir/home/daniel/PSA/Hardware/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .ARM.attributes
-                0x0000000000000800       0x22 /tmp/cc5e8xDk.o
+                0x0000000000000800       0x22 /tmp/cckANKQ3.o
  .ARM.attributes
                 0x0000000000000822       0x1e /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
