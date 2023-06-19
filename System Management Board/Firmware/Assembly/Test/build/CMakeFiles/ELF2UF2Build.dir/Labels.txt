@@ -1,0 +1,13 @@
+# Target labels
+ ELF2UF2Build
+# Source files and their labels
+/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/Assembly/Test/build/CMakeFiles/ELF2UF2Build
+/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/Assembly/Test/build/CMakeFiles/ELF2UF2Build.rule
+/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/Assembly/Test/build/CMakeFiles/ELF2UF2Build-complete.rule
+/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/Assembly/Test/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install.rule
+/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/Assembly/Test/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir.rule
+/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/Assembly/Test/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download.rule
+/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/Assembly/Test/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update.rule
+/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/Assembly/Test/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch.rule
+/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/Assembly/Test/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure.rule
+/home/daniel/PSA/Firmware_Project/PantMap3D-Hardware/System Management Board/Firmware/Assembly/Test/build/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build.rule
