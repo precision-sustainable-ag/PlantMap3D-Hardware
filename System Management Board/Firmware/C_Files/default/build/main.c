@@ -25,10 +25,13 @@
 #define MUX_S2 20
 #define MUX_S1 19
 #define MUX_S0 18
+#define AUX_SW 13
 #define ADC_MUX 26
 #define ADC_MUX_CHANNEL 0
 #define JET_ON 15
 #define BUILT_IN_LED 25
+#define COMP_I_MONITOR 5
+#define SWITCH_I_MONITOR 6
 #define mask 0xffffffe0
 #define V_REF 3.25
 #define PRIORITY_CONST 50000
@@ -37,9 +40,27 @@
 #define MainRelay 0x00000004
 #define CompAndSwitch 0x00000003
 uint32_t current_state = 0;
-uint32_t all_pins = 0x1f7c9c9f;
-uint32_t output_pins = 0x1e7c901f;
-uint32_t input_pins = 0x04000c80;
+uint32_t all_pins = (
+  (1<<IN0) | (1<<IN1) | (1<<IN2) | (1<<OUT0) | (1<<OUT1) | 
+  (1<<OUT2) | (1<<LEDA) | (1<<LEDB) | (1<<SWITCH_PWR_EN) | 
+  (1<<COMP_PWR_EN) | (1<<MAIN_RELAY) | (1<<LIGHT_A) | 
+  (1<<LIGHT_B) | (1<<MUX_S2) | (1<<MUX_S1) | (1<<MUX_S0) | 
+  (1<<ADC_MUX) | (1<<JET_ON) | (1<<BUILT_IN_LED) | 
+  (1<<COMP_I_MONITOR) | (1<<SWITCH_I_MONITOR) | (AUX_SW)
+);
+uint32_t output_pins = (
+  (1<<OUT0) | (1<<OUT1) | (1<<OUT2) | (1<<LEDA) | 
+  (1<<LEDB) | (1<<SWITCH_PWR_EN) | (1<<COMP_PWR_EN) | 
+  (1<<MAIN_RELAY) | (1<<LIGHT_A) | (1<<LIGHT_B) | 
+  (1<<MUX_S2) | (1<<MUX_S1) | (1<<MUX_S0) | (1<<JET_ON) |
+  (1<<BUILT_IN_LED)
+);
+uint32_t input_pins = (
+  (1<<IN0) | (1<<IN1) | (1<<IN2) | (1<<ADC_MUX) | 
+  (1<<COMP_I_MONITOR) | (1<<SWITCH_I_MONITOR) | (1<<AUX_SW)
+);
+
+bool last_aux_sw_state = false;
 
 int volt_threshold = (1 << 9);
 
@@ -55,11 +76,13 @@ typedef struct process_monitor{
     uint64_t start_time;
 } monitor;
 monitor sd_now = {false, 0};
+bool end_sd = false;
 //Time in seconds between cutting power and shutdown sequence start. 
 int shutdown_delay = 10; 
 monitor debug = {false, 0};
-monitor re_engage = {false, 0};
+monitor engage = {true, 0};
 uint64_t debug_time = 0;
+bool debug_force_sd = false;
 
 typedef struct blinker{
   int pulses; 
@@ -71,13 +94,33 @@ typedef struct blinker{
 blink_type standard_blink = {1,{0.0,0.5},{1,0},1.0};
 blink_type debug_blink = {2,{0.0,0.15,0.25,0.4},{1,0,1,0},1.0};
 blink_type sd_blink = {1,{0.0,0.5},{1,0},0.2};
+blink_type end_sd_blink = {3,{0.0,0.05,0.1,0.15,0.2,0.25},{1,0,1,0,1,0},1.0};
 
 void set_mux(bits pins){
-  sleep_ms(10);
+  sleep_us(10);
   gpio_put(MUX_S2,pins.S2);
   gpio_put(MUX_S1,pins.S1);
   gpio_put(MUX_S0,pins.S0);
-  sleep_ms(10);
+  sleep_us(10);
+}
+
+uint get_channel_from_pin(uint pin){
+  if (pin == 26){
+    return 0;
+  } else if (pin == 27){
+    return 1;
+  } else if (pin == 28){
+    return 2;
+  } else {
+    return 0;
+  }
+}
+
+double current_monitor_read(int pin){
+  adc_select_input(get_channel_from_pin(pin));
+  uint data = adc_read();
+  double voltage = data*(V_REF/4096.0);
+  return ((voltage-0.23)/0.055);
 }
 
 double convt_time(uint64_t time){
@@ -86,14 +129,13 @@ double convt_time(uint64_t time){
 }
 
 uint read_ADC_MUX(bits pins){
-  adc_select_input(ADC_MUX_CHANNEL);
+  adc_select_input(get_channel_from_pin(ADC_MUX));
   set_mux(pins);
   uint data = adc_read();
   return data;
 }
 
 int check_pow(){
-  adc_select_input(ADC_MUX_CHANNEL);
   uint voltage = read_ADC_MUX(AUX_Voltage);
   if (voltage > volt_threshold){
     return 1;
@@ -104,40 +146,58 @@ int check_pow(){
 }
 
 void evaluate_state(uint64_t time){
+  time -= engage.start_time;
   bool holder = (bool)check_pow();
   if (!holder){
     sd_now.start_time = time_us_64()-debug_time;
     sd_now.in_process = true;
   }
-  else if ((time > 10000000) && holder) {
-    current_state = MainRelay;
-  }
   else if ((time > 20000000) && holder){
     current_state = MainRelay | CompAndSwitch;
+  }
+  else if ((time > 10000000) && holder) {
+    current_state = MainRelay;
   }
 }
 
 void shutdown_process(uint64_t input_time){
   uint64_t relative_time = input_time - (sd_now.start_time);
   uint64_t delay_time = (uint64_t)(1000000*shutdown_delay);
-  re_engage.in_process = (bool)check_pow();
-  if ((re_engage.start_time == 0)&&(re_engage.in_process)){
-    re_engage.start_time = input_time;
+  engage.in_process = (bool)check_pow();
+  if (debug_force_sd){
+    engage.in_process = false;
   }
-  if ((relative_time > (delay_time + 10000000))&&(!re_engage.in_process)){
+  if (engage.in_process){
+    if ((input_time - engage.start_time) > 20000000){
+      engage.start_time = input_time-20000000;
+    }
+    else if ((input_time - engage.start_time) > 10000000){
+      engage.start_time = input_time - 10000000;
+    }
+    else {
+      engage.start_time = input_time;
+    }
+  }
+  /*
+  else if ((engage.start_time == 0)&&(engage.in_process)){
+    engage.start_time = input_time;
+  }
+  */
+  if ((relative_time > (delay_time + 10000000))&&(!engage.in_process)){
     current_state = InitialPower;
     watchdog_enable(50,1);
     //Once this passes to the gpio_puts_masked, this will be end of program.
     //If it does not shutdown, then a watchdog is enabled
     //to force a reboot because an error has likely occured. 
   }
-  else if ((relative_time > (delay_time + 1000000))&&(!re_engage.in_process)){
+  else if ((relative_time > (delay_time + 1000000))&&(!engage.in_process)){
     current_state = current_state & ~(1<<JET_ON);
   }
-  else if ((relative_time > delay_time)&&(!re_engage.in_process)){
+  else if ((relative_time > delay_time)&&(!engage.in_process)){
     current_state = current_state | (1<<JET_ON);
+    end_sd = true;
   }
-  else if ((relative_time <= delay_time) && (re_engage.in_process)){
+  else if ((relative_time <= delay_time) && (engage.in_process)){
     sd_now.in_process = false;
     sd_now.start_time = 0; 
   }
@@ -260,6 +320,8 @@ void parser(int input_char){
     case 75:
       debug.in_process = false;
       sd_now.in_process = true;
+      debug_force_sd = true;
+      end_sd = true;
       break;
     //"V" reads voltage of input from ADC mux
     case 86:
@@ -289,6 +351,17 @@ void parser(int input_char){
   printf("Input \"%c\": done\n", input_char);
 }
 
+void check_aux_switch(){
+  gpio_set_pulls(AUX_SW,true,false);
+  bool holder = gpio_get(AUX_SW);
+  if ((holder != last_aux_sw_state) && (holder == true)){
+    printf("Auxiliary switch pressed. That's neat!\n");
+    last_aux_sw_state = true;
+  } else {
+    last_aux_sw_state = holder;
+  }
+}
+
 void blink_pattern(){
   int state_changes;
   double time = (double)(time_us_64())/1000000.0;
@@ -300,6 +373,12 @@ void blink_pattern(){
     time_in_pulse = (double)(time_in_pulse - (double)floor(time_in_pulse))*debug_blink.length;
     holder = debug_blink;
   } 
+  else if (end_sd){
+    state_changes = end_sd_blink.pulses *2;
+    time_in_pulse = time / end_sd_blink.length;
+    time_in_pulse = (double)(time_in_pulse - (double)floor(time_in_pulse))*end_sd_blink.length;
+    holder = end_sd_blink;
+  }
   else if (sd_now.in_process){
     state_changes = sd_blink.pulses *2;
     time_in_pulse = time / sd_blink.length;
@@ -366,6 +445,7 @@ int main(){
       else {
         shutdown_process(time_ref);
       }
+      check_aux_switch();
       checked_priority = true;
     } else if ((time_ref % PRIORITY_CONST)<(PRIORITY_CONST/4)){
       checked_priority = false;
