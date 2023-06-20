@@ -116,13 +116,6 @@ uint get_channel_from_pin(uint pin){
   }
 }
 
-double current_monitor_read(int pin){
-  adc_select_input(get_channel_from_pin(pin));
-  uint data = adc_read();
-  double voltage = data*(V_REF/4096.0);
-  return ((voltage-0.23)/0.055);
-}
-
 double convt_time(uint64_t time){
   double millis = (double)time/1000.0;
   return millis;
@@ -157,6 +150,9 @@ void evaluate_state(uint64_t time){
   }
   else if ((time > 10000000) && holder) {
     current_state = MainRelay;
+  }
+  else if ((time > 0) && holder) {
+    current_state = InitialPower;
   }
 }
 
@@ -250,44 +246,61 @@ float check_temp(int sensor){
   return temp;
 }
 
+double current_monitor_read(int pin){
+  adc_select_input(get_channel_from_pin(pin));
+  uint data = adc_read();
+  double voltage = data*(V_REF/4096.0);
+  return ((voltage-0.23)/0.055);
+}
+
 void parser(int input_char){
+  bool valid_command = false;
   switch (input_char) {
     //"M" toggles the main relay
     case 77:
       toggle_pin(MAIN_RELAY);
+      valid_command = true;
     break;
     case 83:
       //"S" toggles the switch relay
       toggle_pin(SWITCH_PWR_EN);
+      valid_command = true;
     break;
     //"C" toggles the computer relay
     case 67:
       toggle_pin(COMP_PWR_EN);
+      valid_command = true;
     break;
     //"J" toggles the Jetson on pin
     case 74:
       toggle_pin(JET_ON);
+      valid_command = true;
     break;
     //"T" prints temperatures over serial
-    case 84:
-      printf("%f ",check_temp(1));
-      printf("%f\n",check_temp(2));
-    break;
+    case 84:{
+      printf("%.4f°C  ",check_temp(1));
+      printf("%.4f°C\n",check_temp(2));
+      valid_command = true;
+    break;}
     //"a" toggles LEDA
     case 97:
       toggle_pin(LEDA);
+      valid_command = true;
     break;
     //"b" toggles LEDB
     case 98:
       toggle_pin(LEDB);
+      valid_command = true;
     break;
     //"A" toggles LIGHT_A
     case 65:
       toggle_pin(LIGHT_A);
+      valid_command = true;
     break;
     //"B" toggles LIGHT_B
     case 66:
       toggle_pin(LIGHT_B);
+      valid_command = true;
     break;
     //"O" enables output pin control parsing expects 4 chars like "O001" MSB (2) to LSB (0)
     case 79:{
@@ -300,6 +313,7 @@ void parser(int input_char){
       current_state = (current_state & (~outputs))+state_update;
       gpio_put_masked(output_pins,current_state);
       printf("\n");
+      valid_command = true;
     }
     break;
     //"I" enables input pin value reading
@@ -309,6 +323,7 @@ void parser(int input_char){
       holder[1] = gpio_get(IN1);
       holder[2] = gpio_get(IN2);
       printf("I%1d%1d%1d\n",holder[2],holder[1],holder[0]);
+      valid_command = true;
     }
     break;
     //"K" runs shutdown procedure
@@ -317,6 +332,7 @@ void parser(int input_char){
       sd_now.in_process = true;
       debug_force_sd = true;
       end_sd = true;
+      valid_command = true;
       break;
     //"V" reads voltage of input from ADC mux with optional choice of which
     //pin to read. Defaults to reading Pin 1 on the mux. 
@@ -338,13 +354,18 @@ void parser(int input_char){
           printf("MUX Pin %d: %d\n",holder,voltage);
         }
       }
+      valid_command = true;
     }
+    
     break;
     case 100:
       debug.in_process = false;
+      valid_command = true;
       break;
     }
-  printf("Input \"%c\": done\n", input_char);
+  if (valid_command){
+    printf("Input \"%c\": done\n", input_char);
+  }
 }
 
 void check_aux_switch(){
@@ -407,6 +428,7 @@ uint64_t debug_mode(){
         }
         blink_pattern();
         gpio_put_masked(output_pins,current_state);
+        check_aux_switch();
     }
     printf("Exiting debug mode\n");
     return time_us_64() - debug_time;
