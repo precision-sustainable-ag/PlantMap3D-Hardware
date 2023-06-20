@@ -178,11 +178,6 @@ void shutdown_process(uint64_t input_time){
       engage.start_time = input_time;
     }
   }
-  /*
-  else if ((engage.start_time == 0)&&(engage.in_process)){
-    engage.start_time = input_time;
-  }
-  */
   if ((relative_time > (delay_time + 10000000))&&(!engage.in_process)){
     current_state = InitialPower;
     watchdog_enable(50,1);
@@ -323,7 +318,8 @@ void parser(int input_char){
       debug_force_sd = true;
       end_sd = true;
       break;
-    //"V" reads voltage of input from ADC mux
+    //"V" reads voltage of input from ADC mux with optional choice of which
+    //pin to read. Defaults to reading Pin 1 on the mux. 
     case 86:
     {
       int holder = getchar_timeout_us(5000000);
@@ -354,9 +350,9 @@ void parser(int input_char){
 void check_aux_switch(){
   gpio_set_pulls(AUX_SW,true,false);
   bool holder = gpio_get(AUX_SW);
-  if ((holder != last_aux_sw_state) && (holder == true)){
+  if ((holder != last_aux_sw_state) && (holder == false)){
     printf("Auxiliary switch pressed. That's neat!\n");
-    last_aux_sw_state = true;
+    last_aux_sw_state = false;
   } else {
     last_aux_sw_state = holder;
   }
