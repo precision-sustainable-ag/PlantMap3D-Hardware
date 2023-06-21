@@ -175,7 +175,7 @@ void evaluate_state(uint64_t time){
   }
   else if ((time > 0) && holder) {
     current_state = InitialPower;
-    early_start = true;
+    early_start = false;
   }
 }
 
