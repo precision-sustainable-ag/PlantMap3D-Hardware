@@ -77,6 +77,7 @@ typedef struct process_monitor{
 } monitor;
 monitor sd_now = {false, 0};
 bool end_sd = false;
+bool early_start = true;
 //Time in seconds between cutting power and shutdown sequence start. 
 int shutdown_delay = 10; 
 monitor debug = {false, 0};
@@ -95,6 +96,7 @@ blink_type standard_blink = {1,{0.0,0.5},{1,0},1.0};
 blink_type debug_blink = {2,{0.0,0.15,0.25,0.4},{1,0,1,0},1.0};
 blink_type sd_blink = {1,{0.0,0.5},{1,0},0.2};
 blink_type end_sd_blink = {3,{0.0,0.05,0.1,0.15,0.2,0.25},{1,0,1,0,1,0},1.0};
+blink_type early_startup = {2,{0.0,0.43,0.5,0.93,1.0},{1,0,1,0},1.5};
 
 void set_mux(bits pins){
   sleep_us(10);
@@ -142,17 +144,38 @@ void evaluate_state(uint64_t time){
   time -= engage.start_time;
   bool holder = (bool)check_pow();
   if (!holder){
-    sd_now.start_time = time_us_64()-debug_time;
-    sd_now.in_process = true;
+    sd_now.start_time = (time_us_64()-debug_time);
+    if (time < (20000000-1000)) {
+      sd_now.start_time -= 19000000;
+      if (time > (10000000-1000)) {
+        sd_now.in_process = true;
+        end_sd = true;
+        early_start = false;
+      }
+      else {
+        engage.start_time = time_us_64() - debug_time;
+        sd_now.in_process = false;
+        end_sd = false;
+        early_start = true;
+      }
+    }
+    else {
+      sd_now.in_process = true;
+      end_sd = false;
+      early_start = false;
+    }
   }
   else if ((time > 20000000) && holder){
     current_state = MainRelay | CompAndSwitch;
+    early_start = false;
   }
   else if ((time > 10000000) && holder) {
     current_state = MainRelay;
+    early_start = false;
   }
   else if ((time > 0) && holder) {
     current_state = InitialPower;
+    early_start = true;
   }
 }
 
@@ -176,7 +199,7 @@ void shutdown_process(uint64_t input_time){
   }
   if ((relative_time > (delay_time + 10000000))&&(!engage.in_process)){
     current_state = InitialPower;
-    watchdog_enable(50,1);
+    watchdog_enable(5000,1);
     //Once this passes to the gpio_puts_masked, this will be end of program.
     //If it does not shutdown, then a watchdog is enabled
     //to force a reboot because an error has likely occured. 
@@ -401,6 +424,12 @@ void blink_pattern(){
     time_in_pulse = time / sd_blink.length;
     time_in_pulse = (double)(time_in_pulse - (double)floor(time_in_pulse))*sd_blink.length;
     holder = sd_blink;
+  }
+  else if (early_start){
+    state_changes = early_startup.pulses *2;
+    time_in_pulse = time / early_startup.length;
+    time_in_pulse = (double)(time_in_pulse - (double)floor(time_in_pulse))*early_startup.length;
+    holder = early_startup;
   }
   else {
     state_changes = standard_blink.pulses * 2;
