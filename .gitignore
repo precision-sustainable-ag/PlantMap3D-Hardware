@@ -3,3 +3,13 @@
 .vscode
 System Management Board/~_autosave-System Management Board.kicad_pcb.lck
 System Management Board/_autosave-System Management Board.kicad_pcb
+*.elf*
+CMakeCache.txt
+Makefile
+pioasm
+pico-sdk
+generated
+CMakeFiles
+*.cmake
+*.dis
+*.hex

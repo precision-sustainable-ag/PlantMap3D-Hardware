@@ -13,8 +13,8 @@
 #define IN1 10
 #define IN2 11
 #define OUT0 12
-#define OUT1 27
-#define OUT2 28
+#define OUT1 5
+#define OUT2 6
 #define LEDA 22
 #define LEDB 21
 #define SWITCH_PWR_EN 0
@@ -30,8 +30,8 @@
 #define ADC_MUX_CHANNEL 0
 #define JET_ON 15
 #define BUILT_IN_LED 25
-#define COMP_I_MONITOR 5
-#define SWITCH_I_MONITOR 6
+#define COMP_I_MONITOR 28
+#define SWITCH_I_MONITOR 27
 #define mask 0xffffffe0
 #define V_REF 3.25
 #define PRIORITY_CONST 50000
@@ -62,12 +62,12 @@ uint32_t input_pins = (
 
 bool last_aux_sw_state = false;
 
-int volt_threshold = (1 << 9);
+int volt_threshold = (1 << 10);
 
 typedef struct bit_holder{
     int S2, S1, S0;
 } bits;
-const bits AUX_Voltage = {0,0,1};
+const bits AUX_Voltage = {0,0,0};
 const bits Temp_Sensor1 = {1,1,0};
 const bits Temp_Sensor2 = {1,1,1};
 
@@ -166,11 +166,11 @@ void evaluate_state(uint64_t time){
     }
   }
   else if ((time > 20000000) && holder){
-    current_state = MainRelay | CompAndSwitch;
+    current_state |= MainRelay | CompAndSwitch;
     early_start = false;
   }
   else if ((time > 10000000) && holder) {
-    current_state = MainRelay;
+    current_state |= MainRelay;
     early_start = false;
   }
   else if ((time > 0) && holder) {
@@ -198,15 +198,22 @@ void shutdown_process(uint64_t input_time){
       engage.start_time = input_time;
     }
   }
-  if ((relative_time > (delay_time + 10000000))&&(!engage.in_process)){
+  if (relative_time > (delay_time + 10000000)){
     current_state = InitialPower;
-    watchdog_enable(5000,1);
+    watchdog_enable(500,1);
     //Once this passes to the gpio_puts_masked, this will be end of program.
     //If it does not shutdown, then a watchdog is enabled
-    //to force a reboot because an error has likely occured. 
+    //to force a reboot because an error has likely occured.
+    gpio_put_masked(output_pins,current_state);
+    //Watchdog is having an issue, so as a substitute
+    sd_now.in_process = false;
+    sd_now.start_time = 0;
+    engage.in_process = true;
+    engage.start_time = input_time;
+    //Acts as universal offset in this code, effectively resetting the hardware clock
+    debug_time = input_time;
   }
-  else if ((relative_time > (delay_time + 1000000))&&(!engage.in_process)){
-    printf("Hit 10s");
+  else if (relative_time > (delay_time + 1000000)){
     current_state = current_state & ~(1<<JET_ON);
   }
   else if ((relative_time > delay_time)&&(!engage.in_process)){    
