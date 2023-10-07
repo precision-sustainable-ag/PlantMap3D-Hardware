@@ -9,10 +9,10 @@
 
 #define BLINKER_COMPLEXITY 10
 
-#define IN0 7
+#define IN0 12
 #define IN1 10
 #define IN2 11
-#define OUT0 12
+#define OUT0 7
 #define OUT1 5
 #define OUT2 6
 #define LEDA 22
