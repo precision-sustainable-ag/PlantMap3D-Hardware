@@ -62,7 +62,7 @@ uint32_t input_pins = (
 
 bool last_aux_sw_state = false;
 
-int volt_threshold = (1 << 10);
+int volt_threshold = 400;
 
 typedef struct bit_holder{
     int S2, S1, S0;
@@ -210,6 +210,7 @@ void shutdown_process(uint64_t input_time){
     sd_now.start_time = 0;
     engage.in_process = true;
     engage.start_time = input_time;
+    debug_force_sd = false;
     //Acts as universal offset in this code, effectively resetting the hardware clock
     debug_time = input_time;
   }
@@ -225,27 +226,6 @@ void shutdown_process(uint64_t input_time){
     sd_now.start_time = 0; 
   }
 }
-
-
-/* This function was rendered unnecessary
-by the gpio_put_masked built-in function, 
-but I left it here temporarily. 
-
-void state_enforce(uint32_t encoded_state, uint32_t gpio_pins){
-    uint32_t geo_counter = 1;
-    bool cond_holder;
-    for (int i = 0; i <= 29; i++){
-        if ((geo_counter & gpio_pins)>0){
-            //Bool type casting should make any non-zero result true here.
-            cond_holder = (bool)(encoded_state & geo_counter);
-            gpio_put(i, cond_holder);
-            printf("%d:%d ",i,cond_holder);
-        }
-        geo_counter *= 2;
-    }
-    printf("\n");
-}
-*/
 
 void toggle_pin(int pin){
   uint32_t pin_mask = (1 << pin);
@@ -281,7 +261,7 @@ float check_temp(int sensor){
 double current_monitor_read(int pin){
   adc_select_input(get_channel_from_pin(pin));
   uint data = adc_read();
-  double voltage = data*(V_REF/4096.0);
+  double voltage = (double)data*((double)V_REF/4096.0);
   return ((voltage-0.23)/0.055);
 }
 
@@ -302,6 +282,15 @@ void parser(int input_char){
     case 67:
       toggle_pin(COMP_PWR_EN);
       valid_command = true;
+    break;
+    //"U" reads current monitor pins
+    case 85:{
+      double holder[2];
+      valid_command = true;
+      holder[0] = current_monitor_read(COMP_I_MONITOR);
+      holder[1] = current_monitor_read(SWITCH_I_MONITOR);
+      printf("Comp I-Monitor: %.2fA\nSwitch I-Monitor: %.2fA\n",holder[0],holder[1]);
+    }
     break;
     //"J" toggles the Jetson on pin
     case 74:
@@ -337,15 +326,16 @@ void parser(int input_char){
     //"O" enables output pin control parsing expects 4 chars like "O001" MSB (2) to LSB (0)
     case 79:{
       uint32_t input_string[3];
-      input_string[2] = getchar()-48;
-      input_string[1] = getchar()-48;
-      input_string[0] = getchar()-48;
+      valid_command = true;
+      input_string[2] = getchar_timeout_us(5000000)-48;
+      input_string[1] = getchar_timeout_us(5000000)-48;
+      input_string[0] = getchar_timeout_us(5000000)-48;
+      if ((input_string[2]==(uint32_t)-49)||(input_string[1]==(uint32_t)-49)||(input_string[0]==(uint32_t)-49)) break;
       uint32_t state_update = (input_string[0] << OUT0) + (input_string[1] << OUT1) + (input_string[2] << OUT2);
       uint32_t outputs = (1 << OUT0) + (1 << OUT1) + (1 << OUT2);
       current_state = (current_state & (~outputs))+state_update;
       gpio_put_masked(output_pins,current_state);
       printf("\n");
-      valid_command = true;
     }
     break;
     //"I" enables input pin value reading
