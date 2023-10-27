@@ -9,12 +9,12 @@
 
 #define BLINKER_COMPLEXITY 10
 
-#define IN0 7
+#define IN0 12
 #define IN1 10
 #define IN2 11
-#define OUT0 12
-#define OUT1 27
-#define OUT2 28
+#define OUT0 7
+#define OUT1 5
+#define OUT2 6
 #define LEDA 22
 #define LEDB 21
 #define SWITCH_PWR_EN 0
@@ -30,8 +30,8 @@
 #define ADC_MUX_CHANNEL 0
 #define JET_ON 15
 #define BUILT_IN_LED 25
-#define COMP_I_MONITOR 5
-#define SWITCH_I_MONITOR 6
+#define COMP_I_MONITOR 28
+#define SWITCH_I_MONITOR 27
 #define mask 0xffffffe0
 #define V_REF 3.25
 #define PRIORITY_CONST 50000
@@ -62,12 +62,12 @@ uint32_t input_pins = (
 
 bool last_aux_sw_state = false;
 
-int volt_threshold = (1 << 9);
+int volt_threshold = 400;
 
 typedef struct bit_holder{
     int S2, S1, S0;
 } bits;
-const bits AUX_Voltage = {0,0,1};
+const bits AUX_Voltage = {0,0,0};
 const bits Temp_Sensor1 = {1,1,0};
 const bits Temp_Sensor2 = {1,1,1};
 
@@ -166,11 +166,11 @@ void evaluate_state(uint64_t time){
     }
   }
   else if ((time > 20000000) && holder){
-    current_state = MainRelay | CompAndSwitch;
+    current_state |= MainRelay | CompAndSwitch;
     early_start = false;
   }
   else if ((time > 10000000) && holder) {
-    current_state = MainRelay;
+    current_state |= MainRelay;
     early_start = false;
   }
   else if ((time > 0) && holder) {
@@ -185,6 +185,7 @@ void shutdown_process(uint64_t input_time){
   engage.in_process = (bool)check_pow();
   if (debug_force_sd){
     engage.in_process = false;
+    printf("Relative Time: %lu\n",((uint32_t)relative_time));
   }
   if (engage.in_process){
     if ((input_time - engage.start_time) > 20000000){
@@ -197,17 +198,26 @@ void shutdown_process(uint64_t input_time){
       engage.start_time = input_time;
     }
   }
-  if ((relative_time > (delay_time + 10000000))&&(!engage.in_process)){
+  if (relative_time > (delay_time + 10000000)){
     current_state = InitialPower;
-    watchdog_enable(5000,1);
+    watchdog_enable(500,1);
     //Once this passes to the gpio_puts_masked, this will be end of program.
     //If it does not shutdown, then a watchdog is enabled
-    //to force a reboot because an error has likely occured. 
+    //to force a reboot because an error has likely occured.
+    gpio_put_masked(output_pins,current_state);
+    //Watchdog is having an issue, so as a substitute
+    sd_now.in_process = false;
+    sd_now.start_time = 0;
+    engage.in_process = true;
+    engage.start_time = input_time;
+    debug_force_sd = false;
+    //Acts as universal offset in this code, effectively resetting the hardware clock
+    debug_time = input_time;
   }
-  else if ((relative_time > (delay_time + 1000000))&&(!engage.in_process)){
+  else if (relative_time > (delay_time + 1000000)){
     current_state = current_state & ~(1<<JET_ON);
   }
-  else if ((relative_time > delay_time)&&(!engage.in_process)){
+  else if ((relative_time > delay_time)&&(!engage.in_process)){    
     current_state = current_state | (1<<JET_ON);
     end_sd = true;
   }
@@ -216,27 +226,6 @@ void shutdown_process(uint64_t input_time){
     sd_now.start_time = 0; 
   }
 }
-
-
-/* This function was rendered unnecessary
-by the gpio_put_masked built-in function, 
-but I left it here temporarily. 
-
-void state_enforce(uint32_t encoded_state, uint32_t gpio_pins){
-    uint32_t geo_counter = 1;
-    bool cond_holder;
-    for (int i = 0; i <= 29; i++){
-        if ((geo_counter & gpio_pins)>0){
-            //Bool type casting should make any non-zero result true here.
-            cond_holder = (bool)(encoded_state & geo_counter);
-            gpio_put(i, cond_holder);
-            printf("%d:%d ",i,cond_holder);
-        }
-        geo_counter *= 2;
-    }
-    printf("\n");
-}
-*/
 
 void toggle_pin(int pin){
   uint32_t pin_mask = (1 << pin);
@@ -272,7 +261,7 @@ float check_temp(int sensor){
 double current_monitor_read(int pin){
   adc_select_input(get_channel_from_pin(pin));
   uint data = adc_read();
-  double voltage = data*(V_REF/4096.0);
+  double voltage = (double)data*((double)V_REF/4096.0);
   return ((voltage-0.23)/0.055);
 }
 
@@ -293,6 +282,15 @@ void parser(int input_char){
     case 67:
       toggle_pin(COMP_PWR_EN);
       valid_command = true;
+    break;
+    //"U" reads current monitor pins
+    case 85:{
+      double holder[2];
+      valid_command = true;
+      holder[0] = current_monitor_read(COMP_I_MONITOR);
+      holder[1] = current_monitor_read(SWITCH_I_MONITOR);
+      printf("Comp I-Monitor: %.2fA\nSwitch I-Monitor: %.2fA\n",holder[0],holder[1]);
+    }
     break;
     //"J" toggles the Jetson on pin
     case 74:
@@ -328,15 +326,16 @@ void parser(int input_char){
     //"O" enables output pin control parsing expects 4 chars like "O001" MSB (2) to LSB (0)
     case 79:{
       uint32_t input_string[3];
-      input_string[2] = getchar()-48;
-      input_string[1] = getchar()-48;
-      input_string[0] = getchar()-48;
+      valid_command = true;
+      input_string[2] = getchar_timeout_us(5000000)-48;
+      input_string[1] = getchar_timeout_us(5000000)-48;
+      input_string[0] = getchar_timeout_us(5000000)-48;
+      if ((input_string[2]==(uint32_t)-49)||(input_string[1]==(uint32_t)-49)||(input_string[0]==(uint32_t)-49)) break;
       uint32_t state_update = (input_string[0] << OUT0) + (input_string[1] << OUT1) + (input_string[2] << OUT2);
       uint32_t outputs = (1 << OUT0) + (1 << OUT1) + (1 << OUT2);
       current_state = (current_state & (~outputs))+state_update;
       gpio_put_masked(output_pins,current_state);
       printf("\n");
-      valid_command = true;
     }
     break;
     //"I" enables input pin value reading
