@@ -102,11 +102,11 @@ blink_type end_sd_blink = {3,{0.0,0.05,0.1,0.15,0.2,0.25},{1,0,1,0,1,0},1.0};
 blink_type early_startup = {2,{0.0,0.43,0.5,0.93,1.0},{1,0,1,0},1.5};
 
 void set_mux(bits pins){
-  sleep_us(1000);
+  sleep_us(10);
   gpio_put(MUX_S2,pins.S2);
   gpio_put(MUX_S1,pins.S1);
   gpio_put(MUX_S0,pins.S0);
-  sleep_us(1000);
+  sleep_us(10);
 }
 
 uint get_channel_from_pin(uint pin){
