@@ -71,6 +71,9 @@ const bits KEY_Voltage = {0,0,0};
 const bits Temp_Sensor1 = {1,1,0};
 const bits Temp_Sensor2 = {1,1,1};
 
+const uint32_t Lights_Pin = IN0;
+const uint32_t SD_Finish_Pin = IN2;
+
 typedef struct process_monitor{
     bool in_process;
     uint64_t start_time;
@@ -401,6 +404,18 @@ void check_aux_switch(){
   }
 }
 
+void check_input_pattern(){
+  if (gpio_get(Lights_Pin)){
+    current_state |= ((1 << LIGHT_A) | (1 << LIGHT_B));
+  }
+  else{
+    current_state &= (~(1<<LIGHT_A))&(~(1<<LIGHT_B));
+  }
+  if (gpio_get(SD_Finish_Pin)){
+    printf("Placeholder for shutdown integration. ");
+  }
+}
+
 void blink_pattern(){
   int state_changes;
   double time = (double)(time_us_64())/1000000.0;
@@ -492,6 +507,7 @@ int main(){
         shutdown_process(time_ref);
       }
       check_aux_switch();
+      check_input_pattern();
       checked_priority = true;
     } else if ((time_ref % PRIORITY_CONST)<(PRIORITY_CONST/4)){
       checked_priority = false;
