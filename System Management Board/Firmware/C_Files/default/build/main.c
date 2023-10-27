@@ -62,12 +62,12 @@ uint32_t input_pins = (
 
 bool last_aux_sw_state = false;
 
-int volt_threshold = 400;
+int volt_threshold = 1000;
 
 typedef struct bit_holder{
     int S2, S1, S0;
 } bits;
-const bits AUX_Voltage = {0,0,0};
+const bits KEY_Voltage = {0,0,0};
 const bits Temp_Sensor1 = {1,1,0};
 const bits Temp_Sensor2 = {1,1,1};
 
@@ -99,11 +99,11 @@ blink_type end_sd_blink = {3,{0.0,0.05,0.1,0.15,0.2,0.25},{1,0,1,0,1,0},1.0};
 blink_type early_startup = {2,{0.0,0.43,0.5,0.93,1.0},{1,0,1,0},1.5};
 
 void set_mux(bits pins){
-  sleep_us(10);
+  sleep_us(1000);
   gpio_put(MUX_S2,pins.S2);
   gpio_put(MUX_S1,pins.S1);
   gpio_put(MUX_S0,pins.S0);
-  sleep_us(10);
+  sleep_us(1000);
 }
 
 uint get_channel_from_pin(uint pin){
@@ -131,7 +131,7 @@ uint read_ADC_MUX(bits pins){
 }
 
 int check_pow(){
-  uint voltage = read_ADC_MUX(AUX_Voltage);
+  uint voltage = read_ADC_MUX(KEY_Voltage);
   if (voltage > volt_threshold){
     return 1;
   }
@@ -362,7 +362,7 @@ void parser(int input_char){
     {
       int holder = getchar_timeout_us(5000000);
       if (holder == PICO_ERROR_TIMEOUT){
-        uint voltage = read_ADC_MUX(AUX_Voltage);
+        uint voltage = read_ADC_MUX(KEY_Voltage);
         printf("%d\n",voltage);
       }
       else{
