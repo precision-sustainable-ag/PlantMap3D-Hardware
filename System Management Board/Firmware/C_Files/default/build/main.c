@@ -5,6 +5,7 @@
 #include "hardware/gpio.h"
 #include "hardware/adc.h"
 #include "hardware/watchdog.h"
+#include "hardware/uart.h"
 #include "math.h"
 
 #define BLINKER_COMPLEXITY 10
@@ -32,6 +33,12 @@
 #define BUILT_IN_LED 25
 #define COMP_I_MONITOR 28
 #define SWITCH_I_MONITOR 27
+
+#define UART_TX_PIN 17
+#define UART_RX_PIN 16
+#define UARTID uart0
+#define BAUDRATE 115200
+
 #define mask 0xffffffe0
 #define V_REF 3.25
 #define PRIORITY_CONST 50000
@@ -101,6 +108,7 @@ blink_type sd_blink = {1,{0.0,0.5},{1,0},0.2};
 blink_type end_sd_blink = {3,{0.0,0.05,0.1,0.15,0.2,0.25},{1,0,1,0,1,0},1.0};
 blink_type early_startup = {2,{0.0,0.43,0.5,0.93,1.0},{1,0,1,0},1.5};
 
+//A simple function to set the selector pins of the ADC mux. 
 void set_mux(bits pins){
   sleep_us(10);
   gpio_put(MUX_S2,pins.S2);
@@ -109,6 +117,8 @@ void set_mux(bits pins){
   sleep_us(10);
 }
 
+//A function to return the ADC channel on the Pico from
+//the input pin number. 
 uint get_channel_from_pin(uint pin){
   if (pin == 26){
     return 0;
@@ -121,11 +131,15 @@ uint get_channel_from_pin(uint pin){
   }
 }
 
+//A function to take the raw uint64_t time in microseconds
+//from system clock methods and return a double in milliseconds. 
 double convt_time(uint64_t time){
   double millis = (double)time/1000.0;
   return millis;
 }
 
+//Calls the function to set the select bits of the ADC mux
+//and then reads and returns the raw ADC value. 
 uint read_ADC_MUX(bits pins){
   adc_select_input(get_channel_from_pin(ADC_MUX));
   set_mux(pins);
@@ -133,6 +147,8 @@ uint read_ADC_MUX(bits pins){
   return data;
 }
 
+//This function compares the system input voltage from the key
+//to the threshold and returns 1 if greater. 
 int check_pow(){
   uint voltage = read_ADC_MUX(KEY_Voltage);
   if (voltage > volt_threshold){
@@ -143,6 +159,10 @@ int check_pow(){
   }
 }
 
+//The normal operating function. This function controls the startup
+//and basic monitoring of the system power input. After the Pico 
+//engages, it waits for 10 seconds, and then turns on the main relay.
+//After 10 more seconds, it turns on the Jetson and the POE Switch. 
 void evaluate_state(uint64_t time){
   time -= engage.start_time;
   bool holder = (bool)check_pow();
@@ -182,6 +202,12 @@ void evaluate_state(uint64_t time){
   }
 }
 
+//This is the controlled shutdown function. It initially waits
+//for 10 seconds to make sure the system is actually supposed
+//to turn off and there was no momentary lapse in power.
+//  PLACEHOLDER BEHAVIOR
+//Then, it "presses" the Jetson ON pin for 1 second and then waits
+//another 9 seconds before cutting power to the system. 
 void shutdown_process(uint64_t input_time){
   uint64_t relative_time = input_time - (sd_now.start_time);
   uint64_t delay_time = (uint64_t)(1000000*shutdown_delay);
@@ -230,12 +256,15 @@ void shutdown_process(uint64_t input_time){
   }
 }
 
+//Inverts the state of the pin by clearing or setting the
+//corresponding bit in the current_state global variable. 
 void toggle_pin(int pin){
   uint32_t pin_mask = (1 << pin);
   current_state = current_state ^ pin_mask;
   gpio_put_masked(output_pins,current_state);
 }
 
+//Converts ADC value to temperature using datasheet-given equation. 
 float convt_temp(float temp){
   //The MCP9700T is supposed to have temp coeff Vc = 10mV/˚C and V(0˚) = 400mv. 
   //The datasheet gives the output equation Vout = Va*Vc+V(0˚), where Va = 
@@ -249,6 +278,7 @@ float convt_temp(float temp){
   return temp;
 }
 
+//Wrapper linking the ADC MUX and temperature calculation
 float check_temp(int sensor){
   float temp = 0.0;
   if (sensor == 1){
@@ -261,6 +291,10 @@ float check_temp(int sensor){
   return temp;
 }
 
+//Function to read the current monitor pin on the voltage
+//regulators for the Jetson and POE Switch and convert the
+//raw ADC value to the current using the formula from the 
+//regulator datasheet. 
 double current_monitor_read(int pin){
   adc_select_input(get_channel_from_pin(pin));
   uint data = adc_read();
@@ -268,6 +302,9 @@ double current_monitor_read(int pin){
   return ((voltage-0.23)/0.055);
 }
 
+//The core of debug mode that parses the char input and 
+//determines the proper test that has been requested. Char
+//command usages are listed next to each check below. 
 void parser(int input_char){
   bool valid_command = false;
   switch (input_char) {
@@ -393,6 +430,8 @@ void parser(int input_char){
   }
 }
 
+//This is a function to handle inputs for the AUX switch on the 
+//power board. Currently with PLACEHOLDER behavior
 void check_aux_switch(){
   gpio_set_pulls(AUX_SW,true,false);
   bool holder = gpio_get(AUX_SW);
@@ -404,6 +443,9 @@ void check_aux_switch(){
   }
 }
 
+//This reads the input pins to determine if the Jetson wants the
+//Pico to enable the lights, or it also can detect if the Jetson
+//is ready to be shutdown, with PLACEHOLDER behavior. 
 void check_input_pattern(){
   if (gpio_get(Lights_Pin)){
     current_state |= ((1 << LIGHT_A) | (1 << LIGHT_B));
@@ -412,10 +454,14 @@ void check_input_pattern(){
     current_state &= (~(1<<LIGHT_A))&(~(1<<LIGHT_B));
   }
   if (gpio_get(SD_Finish_Pin)){
+    //This needs to be integrated with the shutdown protocol. 
     printf("Placeholder for shutdown integration. ");
   }
 }
 
+//This function takes the current time and determines the time within 
+//the pulses of the pre-defined blink patterns and whether LED should 
+//be set high or low given the time within the period of the signal. 
 void blink_pattern(){
   int state_changes;
   double time = (double)(time_us_64())/1000000.0;
@@ -461,6 +507,8 @@ void blink_pattern(){
     }
 }
 
+//Separate loop from the main loop to listen for input
+//over serial. 
 uint64_t debug_mode(){
     printf("Ready!\n");
     while (debug.in_process) {
@@ -477,6 +525,15 @@ uint64_t debug_mode(){
     return time_us_64() - debug_time;
 }
 
+//Function to setup the UART communication with the Jetson. 
+uint8_t init_uart_jetson(){
+    uart_init(UARTID, BAUDRATE);
+    gpio_set_function(UART_TX_PIN, GPIO_FUNC_UART);
+    gpio_set_function(UART_RX_PIN, GPIO_FUNC_UART);
+}
+
+//Main function to initialize all functions and then enter main
+//operation loop. 
 int main(){
   stdio_init_all();
   //Found these neat predefined functions in the SDK
