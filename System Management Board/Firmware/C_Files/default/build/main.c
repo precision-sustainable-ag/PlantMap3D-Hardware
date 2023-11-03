@@ -302,6 +302,37 @@ double current_monitor_read(int pin){
   return ((voltage-0.23)/0.055);
 }
 
+//This reads the input pins to determine if the Jetson wants the
+//Pico to enable the lights, or it also can detect if the Jetson
+//is ready to be shutdown, with PLACEHOLDER behavior. 
+void check_input_pattern(){
+  int lights_holder = gpio_get(Lights_Pin);
+  int cur_lights_holder = current_state & (1<<LIGHT_A);
+  if (lights_holder){
+    current_state |= ((1 << LIGHT_A) | (1 << LIGHT_B));
+  }
+  else{
+    current_state &= (~(1<<LIGHT_A))&(~(1<<LIGHT_B));
+  }
+  int SD_Finish = gpio_get(SD_Finish_Pin);
+  if (SD_Finish){
+    //This needs to be integrated with the shutdown protocol. 
+    printf("Placeholder for shutdown integration. ");
+  }
+  if (debug.in_process && SD_Finish){
+    printf("Shutdown Done");
+  }
+  else if (debug.in_process && (!lights_holder & cur_lights_holder)){
+    printf("Lights Off");
+  }
+  else if (debug.in_process && (lights_holder && !cur_lights_holder)){
+    printf("Lights On");
+  }
+  else if (debug.in_process){
+    printf("No Commands");
+  }
+}
+
 //The core of debug mode that parses the char input and 
 //determines the proper test that has been requested. Char
 //command usages are listed next to each check below. 
@@ -444,37 +475,6 @@ void check_aux_switch(){
     last_aux_sw_state = false;
   } else {
     last_aux_sw_state = holder;
-  }
-}
-
-//This reads the input pins to determine if the Jetson wants the
-//Pico to enable the lights, or it also can detect if the Jetson
-//is ready to be shutdown, with PLACEHOLDER behavior. 
-void check_input_pattern(){
-  int lights_holder = gpio_get(Lights_Pin);
-  int cur_lights_holder = current_state & (1<<LIGHT_A);
-  if (lights_holder){
-    current_state |= ((1 << LIGHT_A) | (1 << LIGHT_B));
-  }
-  else{
-    current_state &= (~(1<<LIGHT_A))&(~(1<<LIGHT_B));
-  }
-  int SD_Finish = gpio_get(SD_Finish_Pin);
-  if (SD_Finish){
-    //This needs to be integrated with the shutdown protocol. 
-    printf("Placeholder for shutdown integration. ");
-  }
-  if (debug.in_process && SD_Finish){
-    printf("Shutdown Done");
-  }
-  else if (debug.in_process && (!lights_holder & cur_lights_holder)){
-    printf("Lights Off");
-  }
-  else if (debug.in_process && (lights_holder && !cur_lights_holder)){
-    printf("Lights On");
-  }
-  else if (debug.in_process){
-    printf("No Commands");
   }
 }
 
