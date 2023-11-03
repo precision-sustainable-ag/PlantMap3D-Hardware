@@ -337,6 +337,10 @@ void parser(int input_char){
       toggle_pin(JET_ON);
       valid_command = true;
     break;
+    //"j" provides an interface for the testing mode of the Jetson
+    case 106:{
+        check_input_pattern();
+    }
     //"T" prints temperatures over serial
     case 84:{
       printf("%.4f°C  ",check_temp(1));
@@ -447,15 +451,30 @@ void check_aux_switch(){
 //Pico to enable the lights, or it also can detect if the Jetson
 //is ready to be shutdown, with PLACEHOLDER behavior. 
 void check_input_pattern(){
-  if (gpio_get(Lights_Pin)){
+  int lights_holder = gpio_get(Lights_Pin);
+  int cur_lights_holder = current_state & (1<<LIGHT_A);
+  if (lights_holder){
     current_state |= ((1 << LIGHT_A) | (1 << LIGHT_B));
   }
   else{
     current_state &= (~(1<<LIGHT_A))&(~(1<<LIGHT_B));
   }
-  if (gpio_get(SD_Finish_Pin)){
+  int SD_Finish = gpio_get(SD_Finish_Pin);
+  if (SD_Finish){
     //This needs to be integrated with the shutdown protocol. 
     printf("Placeholder for shutdown integration. ");
+  }
+  if (debug.in_process && SD_Finish){
+    printf("Shutdown Done");
+  }
+  else if (debug.in_process && (!lights_holder & cur_lights_holder)){
+    printf("Lights Off");
+  }
+  else if (debug.in_process && (lights_holder && !cur_lights_holder)){
+    printf("Lights On");
+  }
+  else if (debug.in_process){
+    printf("No Commands");
   }
 }
 
