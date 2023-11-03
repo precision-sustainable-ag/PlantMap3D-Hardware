@@ -370,6 +370,11 @@ void parser(int input_char){
     break;
     //"j" provides an interface for the testing mode of the Jetson
     case 106:{
+        int holder[3];
+        holder[0] = gpio_get(IN0);
+        holder[1] = gpio_get(IN1);
+        holder[2] = gpio_get(IN2);
+        printf("I%1d%1d%1d|",holder[2],holder[1],holder[0]);
         check_input_pattern();
         valid_command = true;
     break;}
