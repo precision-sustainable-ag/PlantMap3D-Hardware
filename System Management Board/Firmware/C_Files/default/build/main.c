@@ -371,7 +371,7 @@ void parser(int input_char){
     //"j" provides an interface for the testing mode of the Jetson
     case 106:{
         check_input_pattern();
-    }
+    break;}
     //"T" prints temperatures over serial
     case 84:{
       printf("%.4f°C  ",check_temp(1));
