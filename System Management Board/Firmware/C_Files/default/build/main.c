@@ -45,7 +45,7 @@
 
 #define InitialPower 0x00000000
 #define MainRelay 0x00000004
-#define CompAndSwitch 0x00000003
+#define CompAndSwitch (1 << COMP_PWR_EN) | (1<< SWITCH_PWR_EN) | (1 << JET_ON)
 uint32_t current_state = 0;
 uint32_t all_pins = (
   (1<<IN0) | (1<<IN1) | (1<<IN2) | (1<<OUT0) | (1<<OUT1) | 
@@ -227,7 +227,8 @@ void shutdown_process(uint64_t input_time){
       engage.start_time = input_time;
     }
   }
-  if (relative_time > (delay_time + 10000000)){
+  //Wait 45s after "pressing" power button
+  if (relative_time > (delay_time + 45000000)){
     current_state = InitialPower;
     watchdog_enable(500,1);
     //Once this passes to the gpio_puts_masked, this will be end of program.
@@ -243,13 +244,16 @@ void shutdown_process(uint64_t input_time){
     //Acts as universal offset in this code, effectively resetting the hardware clock
     debug_time = input_time;
   }
-  else if (relative_time > (delay_time + 1000000)){
-    current_state = current_state & ~(1<<JET_ON);
-  }
-  else if ((relative_time > delay_time)&&(!engage.in_process)){    
+  //After 500ms more, stop "pressing" the power button
+  else if (relative_time > (delay_time + 500000)){
     current_state = current_state | (1<<JET_ON);
+  }
+  //After 10s, start "pressing" power button
+  else if ((relative_time > delay_time)&&(!engage.in_process)){    
+    current_state = current_state & ~(1<<JET_ON);
     end_sd = true;
   }
+  //Wait 10 seconds to see if power was only lost momentarily
   else if ((relative_time <= delay_time) && (engage.in_process)){
     sd_now.in_process = false;
     sd_now.start_time = 0; 
