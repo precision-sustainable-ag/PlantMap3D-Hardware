@@ -36,7 +36,7 @@
 
 #define UART_TX_PIN 17
 #define UART_RX_PIN 16
-#define UARTID uart0
+#define UARTID uart1
 #define BAUDRATE 115200
 
 #define mask 0xffffffe0
@@ -78,8 +78,7 @@ const bits KEY_Voltage = {0,0,0};
 const bits Temp_Sensor1 = {1,1,0};
 const bits Temp_Sensor2 = {1,1,1};
 
-const uint32_t Lights_Pin = IN0;
-const uint32_t SD_Finish_Pin = IN2;
+#define Lights_Pin IN0
 
 typedef struct process_monitor{
     bool in_process;
@@ -89,7 +88,16 @@ monitor sd_now = {false, 0};
 bool end_sd = false;
 bool early_start = true;
 //Time in seconds between cutting power and shutdown sequence start. 
-int shutdown_delay = 10; 
+uint64_t shutdown_delay = 10 * 1000000; 
+//Time the Jetson holds the pin high
+uint64_t jetson_signal_time = 5 * 1000000;
+//Minimum time the Jetson is expected to take to shutdown
+uint64_t jetson_sd_delay = 5 * 1000000;
+double jetson_current = 0.0;
+double delta_current_thresh = 0.5;
+#define SHUTDOWN_READ_PIN IN2
+#define SHUTDOWN_WRITE_PIN OUT1
+bool coordinated_sd = false;
 monitor debug = {false, 0};
 monitor engage = {true, 0};
 uint64_t debug_time = 0;
@@ -163,9 +171,9 @@ int check_pow(){
 //and basic monitoring of the system power input. After the Pico 
 //engages, it waits for 10 seconds, and then turns on the main relay.
 //After 10 more seconds, it turns on the Jetson and the POE Switch. 
-void evaluate_state(uint64_t time){
+void evaluate_state(uint64_t time, bool shutdown_request){
   time -= engage.start_time;
-  bool holder = (bool)check_pow();
+  bool holder = (bool)check_pow() &&(!shutdown_request);
   if (!holder){
     sd_now.start_time = (time_us_64()-debug_time);
     if (time < (20000000-1000)) {
@@ -202,16 +210,58 @@ void evaluate_state(uint64_t time){
   }
 }
 
+//Function to read the current monitor pin on the voltage
+//regulators for the Jetson and POE Switch and convert the
+//raw ADC value to the current using the formula from the 
+//regulator datasheet. 
+double current_monitor_read(int pin){
+  adc_select_input(get_channel_from_pin(pin));
+  uint data = adc_read();
+  double voltage = (double)data*((double)V_REF/4096.0);
+  return ((voltage-0.23)/0.055);
+}
+
+//This reads the input pins to determine if the Jetson wants the
+//Pico to enable the lights, or it also can detect if the Jetson
+//is ready to be shutdown, returning true if so. 
+bool check_input_pattern(){
+  int lights_holder = gpio_get(Lights_Pin);
+  int cur_lights_holder = current_state & (1<<LIGHT_A);
+  if (lights_holder){
+    current_state |= ((1 << LIGHT_A) | (1 << LIGHT_B));
+  }
+  else{
+    current_state &= (~(1<<LIGHT_A))&(~(1<<LIGHT_B));
+  }
+  int SD_Finish = gpio_get(SHUTDOWN_READ_PIN);
+  if (debug.in_process && SD_Finish){
+    printf("Shutdown Done");
+  }
+  else if (SD_Finish){
+    return true;
+  }
+  else if (debug.in_process && (!lights_holder)){
+    printf("Lights Off");
+  }
+  else if (debug.in_process && (lights_holder)){
+    printf("Lights On");
+  }
+  else if (debug.in_process){
+    printf("No Commands");
+  }
+  return false;
+}
+
 //This is the controlled shutdown function. It initially waits
 //for 10 seconds to make sure the system is actually supposed
 //to turn off and there was no momentary lapse in power.
-//  PLACEHOLDER BEHAVIOR
-//Then, it "presses" the Jetson ON pin for 1 second and then waits
-//another 9 seconds before cutting power to the system. 
-void shutdown_process(uint64_t input_time){
+//There are two different shutdown procedures running in parallel.
+//The system will shutdown in 45 seconds regardless if the Jetson
+//does not coordinate the shutdown after power is cut. 
+void shutdown_process(uint64_t input_time, bool shutdown_request){
   uint64_t relative_time = input_time - (sd_now.start_time);
-  uint64_t delay_time = (uint64_t)(1000000*shutdown_delay);
-  engage.in_process = (bool)check_pow();
+  
+  engage.in_process = (bool)check_pow() && (!shutdown_request) && (!coordinated_sd);
   if (debug_force_sd){
     engage.in_process = false;
     printf("Relative Time: %lu\n",((uint32_t)relative_time));
@@ -227,36 +277,68 @@ void shutdown_process(uint64_t input_time){
       engage.start_time = input_time;
     }
   }
+  //Detect a shutdown signal from Jetson
+  if (shutdown_request){
+    coordinated_sd = true;
+    jetson_current = current_monitor_read(COMP_I_MONITOR);
+  }
+  else if ((!shutdown_request) && coordinated_sd){
+    sd_now.start_time = input_time - (shutdown_delay);
+  }
+  else if ((relative_time > (shutdown_delay + jetson_signal_time)) && coordinated_sd){
+    if ((jetson_current - current_monitor_read(COMP_I_MONITOR))>delta_current_thresh){
+      current_state = InitialPower;
+      watchdog_enable(500,1);
+      //Once this passes to the gpio_puts_masked, this will be end of program.
+      //If it does not shutdown, then a watchdog is enabled
+      //to force a reboot because an error has likely occured.
+      //Watchdog is having an issue, so as a substitute
+      sd_now.in_process = false;
+      sd_now.start_time = 0;
+      engage.in_process = true;
+      engage.start_time = input_time;
+      debug_force_sd = false;
+      coordinated_sd = false;
+      //Acts as universal offset in this code, effectively resetting the hardware clock
+      debug_time = input_time;
+      gpio_put_masked(output_pins,current_state);
+    }
+  }
   //Wait 45s after "pressing" power button
-  if (relative_time > (delay_time + 45000000)){
+  if (relative_time > (shutdown_delay + 45000000)){
     current_state = InitialPower;
     watchdog_enable(500,1);
     //Once this passes to the gpio_puts_masked, this will be end of program.
     //If it does not shutdown, then a watchdog is enabled
     //to force a reboot because an error has likely occured.
-    gpio_put_masked(output_pins,current_state);
     //Watchdog is having an issue, so as a substitute
     sd_now.in_process = false;
     sd_now.start_time = 0;
     engage.in_process = true;
     engage.start_time = input_time;
     debug_force_sd = false;
+    coordinated_sd = false;
     //Acts as universal offset in this code, effectively resetting the hardware clock
     debug_time = input_time;
+    gpio_put_masked(output_pins,current_state);
   }
   //After 500ms more, stop "pressing" the power button
-  else if (relative_time > (delay_time + 500000)){
+  else if (relative_time > (shutdown_delay + 10500000)){
     current_state = current_state | (1<<JET_ON);
   }
-  //After 10s, start "pressing" power button
-  else if ((relative_time > delay_time)&&(!engage.in_process)){    
+  //After 20s, start "pressing" power button
+  else if ((relative_time > (shutdown_delay+10000000))&&(!engage.in_process)){    
     current_state = current_state & ~(1<<JET_ON);
     end_sd = true;
   }
+  //After 10 s, turn on the shutdown signal to Jetson
+  else if ((relative_time>shutdown_delay)){
+    current_state |= (1 << SHUTDOWN_WRITE_PIN);
+  }
   //Wait 10 seconds to see if power was only lost momentarily
-  else if ((relative_time <= delay_time) && (engage.in_process)){
+  else if ((relative_time <= shutdown_delay) && (engage.in_process)){
     sd_now.in_process = false;
-    sd_now.start_time = 0; 
+    sd_now.start_time = 0;
   }
 }
 
@@ -293,48 +375,6 @@ float check_temp(int sensor){
   }
   temp = convt_temp(temp);
   return temp;
-}
-
-//Function to read the current monitor pin on the voltage
-//regulators for the Jetson and POE Switch and convert the
-//raw ADC value to the current using the formula from the 
-//regulator datasheet. 
-double current_monitor_read(int pin){
-  adc_select_input(get_channel_from_pin(pin));
-  uint data = adc_read();
-  double voltage = (double)data*((double)V_REF/4096.0);
-  return ((voltage-0.23)/0.055);
-}
-
-//This reads the input pins to determine if the Jetson wants the
-//Pico to enable the lights, or it also can detect if the Jetson
-//is ready to be shutdown, with PLACEHOLDER behavior. 
-void check_input_pattern(){
-  int lights_holder = gpio_get(Lights_Pin);
-  int cur_lights_holder = current_state & (1<<LIGHT_A);
-  if (lights_holder){
-    current_state |= ((1 << LIGHT_A) | (1 << LIGHT_B));
-  }
-  else{
-    current_state &= (~(1<<LIGHT_A))&(~(1<<LIGHT_B));
-  }
-  int SD_Finish = gpio_get(SD_Finish_Pin);
-  if (SD_Finish){
-    //This needs to be integrated with the shutdown protocol. 
-    printf("Placeholder for shutdown integration. ");
-  }
-  if (debug.in_process && SD_Finish){
-    printf("Shutdown Done");
-  }
-  else if (debug.in_process && (!lights_holder & cur_lights_holder)){
-    printf("Lights Off");
-  }
-  else if (debug.in_process && (lights_holder && !cur_lights_holder)){
-    printf("Lights On");
-  }
-  else if (debug.in_process){
-    printf("No Commands");
-  }
 }
 
 //The core of debug mode that parses the char input and 
@@ -586,14 +626,14 @@ int main(){
       }
     }
     if (((time_ref % PRIORITY_CONST)>(PRIORITY_CONST/2)) && (!checked_priority)){
+      bool input_holder = check_input_pattern();
       if (!sd_now.in_process){
-        evaluate_state(time_ref);
+        evaluate_state(time_ref, input_holder);
       }
       else {
-        shutdown_process(time_ref);
+        shutdown_process(time_ref, input_holder);
       }
       check_aux_switch();
-      check_input_pattern();
       checked_priority = true;
     } else if ((time_ref % PRIORITY_CONST)<(PRIORITY_CONST/4)){
       checked_priority = false;
