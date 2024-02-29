@@ -87,14 +87,14 @@ typedef struct process_monitor{
 monitor sd_now = {false, 0};
 bool end_sd = false;
 bool early_start = true;
-//Time in seconds between cutting power and shutdown sequence start. 
-uint64_t shutdown_delay = 10 * 1000000; 
+//Time in microseconds between cutting power and shutdown sequence start. 
+const uint64_t shutdown_delay = 10 * 1000000; 
 //Time the Jetson holds the pin high
-uint64_t jetson_signal_time = 5 * 1000000;
+const uint64_t jetson_signal_time = 5 * 1000000;
 //Minimum time the Jetson is expected to take to shutdown
-uint64_t jetson_sd_delay = 5 * 1000000;
+const uint64_t jetson_sd_delay = 5 * 1000000;
 double jetson_current = 0.0;
-double delta_current_thresh = 0.5;
+const double delta_current_thresh = 0.5;
 #define SHUTDOWN_READ_PIN IN2
 #define SHUTDOWN_WRITE_PIN OUT1
 bool coordinated_sd = false;
@@ -260,11 +260,9 @@ bool check_input_pattern(){
 //does not coordinate the shutdown after power is cut. 
 void shutdown_process(uint64_t input_time, bool shutdown_request){
   uint64_t relative_time = input_time - (sd_now.start_time);
-  
   engage.in_process = (bool)check_pow() && (!shutdown_request) && (!coordinated_sd);
   if (debug_force_sd){
     engage.in_process = false;
-    printf("Relative Time: %lu\n",((uint32_t)relative_time));
   }
   if (engage.in_process){
     if ((input_time - engage.start_time) > 20000000){
@@ -282,8 +280,9 @@ void shutdown_process(uint64_t input_time, bool shutdown_request){
     coordinated_sd = true;
     jetson_current = current_monitor_read(COMP_I_MONITOR);
   }
-  else if ((!shutdown_request) && coordinated_sd){
+  else if ((!shutdown_request) && coordinated_sd && (!sd_now.in_process)){
     sd_now.start_time = input_time - (shutdown_delay);
+    sd_now.in_process = true;
   }
   else if ((relative_time > (shutdown_delay + jetson_signal_time)) && coordinated_sd){
     if ((jetson_current - current_monitor_read(COMP_I_MONITOR))>delta_current_thresh){
@@ -610,6 +609,7 @@ int main(){
   gpio_init_mask(all_pins);
   gpio_set_dir_out_masked(output_pins);
   gpio_set_dir_in_masked(input_pins);
+  init_uart_jetson();
   //Configuring ADC input is separate
   adc_init();
   adc_gpio_init(ADC_MUX);
