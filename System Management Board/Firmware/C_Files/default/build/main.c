@@ -34,8 +34,8 @@
 #define COMP_I_MONITOR 28
 #define SWITCH_I_MONITOR 27
 
-#define UART_TX_PIN 17
-#define UART_RX_PIN 16
+#define UART_TX_PIN 8
+#define UART_RX_PIN 9
 #define UARTID uart1
 #define BAUDRATE 115200
 
