@@ -1,0 +1,11 @@
+services:
+  compiler:
+    build: 
+      context: .
+      network: host
+    volumes:
+      - type: bind
+        source: ./C_Files/default
+        target: /default
+    tty: true
+    stdin_open: true
