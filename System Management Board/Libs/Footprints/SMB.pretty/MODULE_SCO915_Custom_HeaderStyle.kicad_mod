@@ -720,7 +720,7 @@
 			(xyz 0 0 0)
 		)
 	)
-	(model "C:/Users/cwn16104/Documents/KiCad/8.0/PantMap3D-Hardware/System Management Board/Libs/3D/SC0915.step"
+	(model "${KIPRJMOD}/Libs/3D/SC0915.step"
 		(offset
 			(xyz 9.75 -25 10)
 		)
