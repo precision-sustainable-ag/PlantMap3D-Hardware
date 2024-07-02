@@ -919,7 +919,7 @@
 			)
 		)
 		(property "Footprint" "I3A4W008A033V-001-R"
-			(at 0.508 1.778 0)
+			(at 1.27 9.398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -946,8 +946,8 @@
 				(hide yes)
 			)
 		)
-		(property "PARTREV" ""
-			(at 14.478 8.89 0)
+		(property "PARTREV" "V2"
+			(at 0 0.254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -957,7 +957,7 @@
 			)
 		)
 		(property "MANUFACTURER" "TDK-Lambda"
-			(at -0.508 -3.048 0)
+			(at 0.254 3.556 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -967,7 +967,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "9.6mm"
-			(at -0.508 -5.842 0)
+			(at -0.254 -2.286 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -977,7 +977,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 1.27 17.526 0)
+			(at 0.508 13.716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
