@@ -10582,6 +10582,12 @@
 		(uuid "2d44e90a-d32c-4bec-bb3b-e5388d955b61")
 	)
 	(junction
+		(at 323.85 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2d6fe3ba-c1c1-4469-bd54-07f060506c08")
+	)
+	(junction
 		(at 132.08 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10628,6 +10634,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "36aad5f2-de37-4215-a906-1dd4f3fb932d")
+	)
+	(junction
+		(at 330.2 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "387ec524-18e6-4238-b776-292510638de1")
 	)
 	(junction
 		(at 388.62 323.85)
@@ -12124,6 +12136,16 @@
 			(type default)
 		)
 		(uuid "16d9eb90-c076-41ea-b3f9-abe9c912f3a2")
+	)
+	(wire
+		(pts
+			(xy 335.28 35.56) (xy 335.28 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16ea7968-e111-4fb8-9fef-bc153bbc351e")
 	)
 	(wire
 		(pts
@@ -15597,6 +15619,16 @@
 	)
 	(wire
 		(pts
+			(xy 335.28 33.02) (xy 330.2 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92b158a3-45c8-47f0-a90f-3a9ee1d27c17")
+	)
+	(wire
+		(pts
 			(xy 44.45 31.75) (xy 41.91 31.75)
 		)
 		(stroke
@@ -16604,6 +16636,16 @@
 			(type default)
 		)
 		(uuid "b46ca54c-b26e-431e-9ce7-7cf69125d9c6")
+	)
+	(wire
+		(pts
+			(xy 323.85 48.26) (xy 335.28 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4a31072-d1d7-484d-af42-813d43a854cb")
 	)
 	(wire
 		(pts
@@ -18804,6 +18846,16 @@
 			(type default)
 		)
 		(uuid "faa0e440-af1b-4590-8acb-b91a8871fac9")
+	)
+	(wire
+		(pts
+			(xy 335.28 48.26) (xy 335.28 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fac2a9e6-a951-4e8c-9f6b-cc0ce4921413")
 	)
 	(wire
 		(pts
@@ -22186,6 +22238,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 323.85 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0dca7d6d-75a9-4748-a07b-30e99ad50ceb")
+		(property "Reference" "C24"
+			(at 327.66 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 327.66 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 324.8152 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 323.85 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 323.85 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "63V"
+			(at 327.66 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "437cd490-b6ae-41f4-8a94-43661765f125")
+		)
+		(pin "2"
+			(uuid "fc6e875b-f56f-43e1-8bcf-2cad475b3c69")
+		)
+		(instances
+			(project "System Management Board"
+				(path "/49025907-9104-48d6-bcc4-645bc95bc4a8"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 547.37 274.32 0)
 		(unit 1)
@@ -23517,83 +23646,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 323.85 39.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "28a8a6e3-99be-4845-bd1f-b2368fe9d4c5")
-		(property "Reference" "C24"
-			(at 327.66 36.8299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22uF"
-			(at 327.66 39.3699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 324.8152 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 323.85 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 323.85 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" "5V+"
-			(at 327.66 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e09a9b2e-bc4a-4a65-887c-10e41fbfc983")
-		)
-		(pin "2"
-			(uuid "33d9014e-7588-4724-b421-556f7c7ee11a")
-		)
-		(instances
-			(project "System Management Board"
-				(path "/49025907-9104-48d6-bcc4-645bc95bc4a8"
-					(reference "C24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "SMB:3557-10")
 		(at 381 45.72 0)
 		(unit 1)
@@ -24363,7 +24415,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "63V"
 			(at 429.26 337.82 0)
 			(effects
 				(font
@@ -26140,7 +26192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "63V"
 			(at 417.83 337.82 0)
 			(effects
 				(font
@@ -27911,7 +27963,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "63V"
 			(at 417.83 280.67 0)
 			(effects
 				(font
@@ -33607,7 +33659,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "50V"
+		(property "Voltage" "63V"
 			(at 429.26 280.67 0)
 			(effects
 				(font
@@ -33828,6 +33880,83 @@
 			(project "System Management Board"
 				(path "/49025907-9104-48d6-bcc4-645bc95bc4a8"
 					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 335.28 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f1e1ad6d-2f82-43d6-8287-7dc7d5d12aeb")
+		(property "Reference" "C27"
+			(at 339.09 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 339.09 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 336.2452 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 335.28 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 335.28 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "63V"
+			(at 339.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c2cddc8e-8a5d-4e51-aff1-41d3e9d236d2")
+		)
+		(pin "2"
+			(uuid "3701ebdb-02c2-42e7-b7bc-85850141904c")
+		)
+		(instances
+			(project "System Management Board"
+				(path "/49025907-9104-48d6-bcc4-645bc95bc4a8"
+					(reference "C27")
 					(unit 1)
 				)
 			)
