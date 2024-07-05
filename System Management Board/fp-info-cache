@@ -1,4 +1,4 @@
-23155943316375505
+23157664980619896
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -87247,6 +87247,13 @@ FUSC9830X318N
 0
 2
 2
+SMB
+HSOP-6J
+
+
+0
+6
+6
 SMB
 MODULE_SC0915
 

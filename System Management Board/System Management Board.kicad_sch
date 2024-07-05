@@ -8236,7 +8236,7 @@
 				)
 			)
 		)
-		(symbol "SMB:R1560J501B-T1-YE"
+		(symbol "SMB:R1560S501B-E2-FE"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -8283,7 +8283,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "R1560J501B-T1-YE_1_1"
+			(symbol "R1560S501B-E2-FE_1_1"
 				(rectangle
 					(start -10.16 6.35)
 					(end 8.89 -6.35)
@@ -8295,10 +8295,18 @@
 						(type background)
 					)
 				)
-				(pin input line
-					(at -12.7 2.54 0)
+				(text "HSOP-6J"
+					(at 0 0.254 0)
+					(effects
+						(font
+							(size 0.889 0.889)
+						)
+					)
+				)
+				(pin output line
+					(at 11.43 1.27 180)
 					(length 2.54)
-					(name "VDD"
+					(name "Vout"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8323,25 +8331,7 @@
 							)
 						)
 					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 11.43 1.27 180)
-					(length 2.54)
-					(name "Vout"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8359,7 +8349,61 @@
 							)
 						)
 					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 3.81 -8.89 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 -8.89 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 2.54 0)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10850,6 +10894,12 @@
 		(uuid "74a89654-1a21-467d-a8bc-a11ccf8558dc")
 	)
 	(junction
+		(at 168.91 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "757a39bf-1804-4f55-b242-ae42f6c6fbf0")
+	)
+	(junction
 		(at 561.34 281.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11323,6 +11373,12 @@
 		(color 0 0 0 0)
 		(uuid "fa354ae1-37d9-4ff7-a815-b63b31ab355f")
 	)
+	(junction
+		(at 165.1 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fcd29198-b0f2-42ec-83d2-29afa8ab2206")
+	)
 	(no_connect
 		(at 492.76 76.2)
 		(uuid "0e0a147a-2f5c-4cd7-beef-ae6aef9b56d5")
@@ -11541,7 +11597,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 44.45) (xy 165.1 55.88)
+			(xy 165.1 44.45) (xy 165.1 46.99)
 		)
 		(stroke
 			(width 0)
@@ -12048,6 +12104,16 @@
 			(type default)
 		)
 		(uuid "164d3759-e6f8-4233-9b82-d2827b65933b")
+	)
+	(wire
+		(pts
+			(xy 165.1 46.99) (xy 165.1 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16abb7e9-53a4-4815-b334-c60c1d043102")
 	)
 	(wire
 		(pts
@@ -14689,6 +14755,16 @@
 		)
 		(uuid "6f2d18f5-9317-424a-8eb8-952199b838d2")
 	)
+	(wire
+		(pts
+			(xy 168.91 44.45) (xy 168.91 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f411b76-1e4b-4004-b825-7dc5ee9a5225")
+	)
 	(polyline
 		(pts
 			(xy 15.24 15.24) (xy 302.26 15.24)
@@ -15971,6 +16047,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 44.45) (xy 172.72 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4000f7a-df40-400f-a0bb-ca2605f6c640")
+	)
+	(wire
+		(pts
 			(xy 375.92 266.7) (xy 388.62 266.7)
 		)
 		(stroke
@@ -16368,6 +16454,16 @@
 			(type default)
 		)
 		(uuid "afbbc02d-d575-4cef-8987-fb0dc54c7913")
+	)
+	(wire
+		(pts
+			(xy 168.91 46.99) (xy 165.1 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afe9a142-9f67-4a53-8242-f2c7a6062128")
 	)
 	(wire
 		(pts
@@ -17278,6 +17374,16 @@
 			(type default)
 		)
 		(uuid "d07588e0-d9f0-4331-8ca3-843a089a7582")
+	)
+	(wire
+		(pts
+			(xy 172.72 46.99) (xy 168.91 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0bbe5c4-112d-450d-91aa-cdb763f9c6e5")
 	)
 	(wire
 		(pts
@@ -24841,7 +24947,7 @@
 		)
 	)
 	(symbol
-		(lib_id "SMB:R1560J501B-T1-YE")
+		(lib_id "SMB:R1560S501B-E2-FE")
 		(at 165.1 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24866,7 +24972,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-252-5_TabPin6"
+		(property "Footprint" "SMB:HSOP-6J"
 			(at 165.1 35.56 0)
 			(effects
 				(font
@@ -24904,6 +25010,12 @@
 		)
 		(pin "5"
 			(uuid "77b59897-47ec-49fb-8724-bb1687021edb")
+		)
+		(pin "6"
+			(uuid "fd170ae3-645a-4ac7-a55c-da575e7ab23b")
+		)
+		(pin "2"
+			(uuid "85560147-d664-421d-a7c0-e5ab4c90997e")
 		)
 		(instances
 			(project "System Management Board"

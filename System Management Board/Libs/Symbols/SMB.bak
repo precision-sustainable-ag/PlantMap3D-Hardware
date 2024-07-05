@@ -2791,7 +2791,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "R1560J501B-T1-YE_0_1"
+		(symbol "R1560J501B-T1-YE_1_1"
 			(rectangle
 				(start -10.16 6.35)
 				(end 8.89 -6.35)
@@ -2800,11 +2800,9 @@
 					(type default)
 				)
 				(fill
-					(type none)
+					(type background)
 				)
 			)
-		)
-		(symbol "R1560J501B-T1-YE_1_1"
 			(pin input line
 				(at -12.7 2.54 0)
 				(length 2.54)
