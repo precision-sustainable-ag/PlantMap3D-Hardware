@@ -24234,7 +24234,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3190ba26-b96a-4799-b08b-9bf10819ce61")
-		(property "Reference" "R41"
+		(property "Reference" "Rup1"
 			(at 304.8 43.1799 0)
 			(effects
 				(font
@@ -24288,7 +24288,7 @@
 		(instances
 			(project "System Management Board"
 				(path "/49025907-9104-48d6-bcc4-645bc95bc4a8"
-					(reference "R41")
+					(reference "Rup1")
 					(unit 1)
 				)
 			)
@@ -27886,7 +27886,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "5V+"
+		(property "Voltage" "63V"
 			(at 314.96 41.91 0)
 			(effects
 				(font
