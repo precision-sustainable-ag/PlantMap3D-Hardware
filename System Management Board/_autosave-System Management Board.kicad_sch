@@ -22939,7 +22939,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "D5V"
 			(at 326.898 16.764 0)
 			(effects
 				(font
@@ -32371,7 +32371,7 @@
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "D5V"
 			(at 328.93 23.622 0)
 			(effects
 				(font
