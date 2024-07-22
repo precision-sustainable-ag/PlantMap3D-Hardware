@@ -11010,6 +11010,12 @@
 		(uuid "1b45ef15-dc0b-47d8-819b-dcc2c7f7a96b")
 	)
 	(junction
+		(at 306.07 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1f859bee-cd79-43d8-8825-21b712bcf277")
+	)
+	(junction
 		(at 519.43 266.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11362,12 +11368,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7360e036-97bd-4def-b5da-f23e320b8bd2")
-	)
-	(junction
-		(at 311.15 26.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "73c4dcec-40c5-4894-be7e-4a50254fdba8")
 	)
 	(junction
 		(at 425.45 171.45)
@@ -11844,6 +11844,12 @@
 		(uuid "f88b05e1-73f8-4ecb-ba90-bcc79ad7c87a")
 	)
 	(junction
+		(at 306.07 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8f55599-b151-40c4-bb02-cf0d11ed4fcc")
+	)
+	(junction
 		(at 227.33 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12176,6 +12182,16 @@
 			(type default)
 		)
 		(uuid "0aa365c6-068b-48d6-9c2b-9bb70e996a7a")
+	)
+	(wire
+		(pts
+			(xy 306.07 26.67) (xy 322.58 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0abd05b6-8478-4cab-92a7-bde17bb7e2d7")
 	)
 	(wire
 		(pts
@@ -13467,6 +13483,16 @@
 		)
 		(uuid "32707892-4ff9-4d84-b257-369ef361a793")
 	)
+	(wire
+		(pts
+			(xy 306.07 33.02) (xy 311.15 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3349baa2-e9a4-490b-bd36-c59741012aa7")
+	)
 	(polyline
 		(pts
 			(xy 133.35 261.62) (xy 133.35 285.75)
@@ -13729,7 +13755,7 @@
 	)
 	(wire
 		(pts
-			(xy 311.15 20.32) (xy 311.15 26.67)
+			(xy 306.07 20.32) (xy 306.07 26.67)
 		)
 		(stroke
 			(width 0)
@@ -15389,7 +15415,7 @@
 	)
 	(wire
 		(pts
-			(xy 302.26 33.02) (xy 311.15 33.02)
+			(xy 302.26 33.02) (xy 306.07 33.02)
 		)
 		(stroke
 			(width 0)
@@ -15909,7 +15935,7 @@
 	)
 	(wire
 		(pts
-			(xy 311.15 26.67) (xy 311.15 33.02)
+			(xy 306.07 26.67) (xy 306.07 33.02)
 		)
 		(stroke
 			(width 0)
@@ -18129,7 +18155,7 @@
 	)
 	(wire
 		(pts
-			(xy 322.58 20.32) (xy 311.15 20.32)
+			(xy 322.58 20.32) (xy 306.07 20.32)
 		)
 		(stroke
 			(width 0)
@@ -18736,16 +18762,6 @@
 			(type default)
 		)
 		(uuid "e98d5777-7d7f-41c1-a83b-c6d567c6cad5")
-	)
-	(wire
-		(pts
-			(xy 322.58 26.67) (xy 311.15 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9c7992a-c01f-43f9-8581-81d7f5844aac")
 	)
 	(wire
 		(pts
@@ -19603,7 +19619,7 @@
 		)
 		(uuid "0ae3cf5c-3b56-46eb-9ac5-ccf81a0779c5")
 	)
-	(text "Rup = [ Vref*F / [ Vout - Vonom]] - G \nRup = [ 0.6*36500 / [ 5 - 2.59]] - 511\n5V   -> 8570 Ohm\n5.3V -> 7570 Ohm\n5.5V -> 7014 Ohm\n"
+	(text "Rup = [ Vref*F / [ Vout - Vonom]] - G \nRup = [ 0.6*36500 / [ 5 - 2.59]] - 511\n 5V   -> 8570 Ohm\n*5.3V -> 7570 Ohm\n 5.5V -> 7014 Ohm\n"
 		(exclude_from_sim no)
 		(at 319.024 72.136 0)
 		(effects
@@ -20153,7 +20169,7 @@
 		(uuid "1300a0ad-ce42-4a39-afb7-5ec4a8ac106e")
 	)
 	(label "5V Intermediate"
-		(at 311.15 20.32 0)
+		(at 306.07 20.32 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -22932,15 +22948,15 @@
 		(dnp no)
 		(uuid "1077246f-c088-45dd-9e44-360b28722b20")
 		(property "Reference" "D19"
-			(at 329.946 16.764 0)
+			(at 333.248 16.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "D"
-			(at 326.898 16.764 0)
+		(property "Value" "D5V"
+			(at 328.93 16.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32364,14 +32380,14 @@
 		(dnp no)
 		(uuid "ccd41310-b0da-458e-aef2-0380ceac8eb5")
 		(property "Reference" "D18"
-			(at 331.724 23.622 0)
+			(at 332.994 23.622 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "D5V"
 			(at 328.93 23.622 0)
 			(effects
 				(font
