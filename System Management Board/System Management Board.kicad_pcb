@@ -45596,7 +45596,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "System Management Board V0.3\n7-3-2024 -- M. Funderburk, C. Nichols\nPrecision Sustainable Agriculture"
+	(gr_text "System Management Board V0.3\n7-30-2024 -- M. Funderburk, C. Nichols\nPrecision Sustainable Agriculture"
 		(at 209.683 75.572 0)
 		(layer "B.SilkS")
 		(uuid "0ffd0ebc-6f36-4466-9e29-9aa0ce344c8c")

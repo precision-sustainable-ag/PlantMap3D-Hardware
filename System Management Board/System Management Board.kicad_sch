@@ -19619,7 +19619,7 @@
 		)
 		(uuid "0ae3cf5c-3b56-46eb-9ac5-ccf81a0779c5")
 	)
-	(text "Rup = [ Vref*F / [ Vout - Vonom]] - G \nRup = [ 0.6*36500 / [ 5 - 2.59]] - 511\n 5V   -> 8570 Ohm\n*5.3V -> 7570 Ohm\n 5.5V -> 7014 Ohm\n"
+	(text "Rup = [ Vref*F / [ Vout - Vonom]] - G \nRup = [ 0.6*36500 / [ 5 - 2.59]] - 511\n 5V   -> 8570 Ohm\n*5.3V -> 7570 Ohm \n 5.5V -> 7014 Ohm \nWe selected a 7500 Ohm resistor to order\n\n"
 		(exclude_from_sim no)
 		(at 319.024 72.136 0)
 		(effects
