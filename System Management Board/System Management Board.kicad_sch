@@ -23880,7 +23880,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22837b14-871b-4a94-ba54-3aaf9d712864")
-		(property "Reference" "TP5"
+		(property "Reference" "TP4"
 			(at 563.88 262.1279 0)
 			(effects
 				(font
@@ -23931,7 +23931,7 @@
 		(instances
 			(project "System Management Board"
 				(path "/49025907-9104-48d6-bcc4-645bc95bc4a8"
-					(reference "TP5")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -26380,7 +26380,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "54b725b8-72d0-4667-a2f1-1898ba520738")
-		(property "Reference" "TP4"
+		(property "Reference" "TP3"
 			(at 302.768 21.59 90)
 			(effects
 				(font
@@ -26429,7 +26429,7 @@
 		(instances
 			(project "System Management Board"
 				(path "/49025907-9104-48d6-bcc4-645bc95bc4a8"
-					(reference "TP4")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -26868,7 +26868,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ed33a12-73ce-4ffa-9e2c-5607a903cc33")
-		(property "Reference" "TP6"
+		(property "Reference" "TP5"
 			(at 563.88 319.2779 0)
 			(effects
 				(font
@@ -26919,7 +26919,7 @@
 		(instances
 			(project "System Management Board"
 				(path "/49025907-9104-48d6-bcc4-645bc95bc4a8"
-					(reference "TP6")
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -29600,7 +29600,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "903e9cbd-98b4-4c11-867c-e78c3e710c93")
-		(property "Reference" "TP3"
+		(property "Reference" "TP2"
 			(at 209.55 38.6079 0)
 			(effects
 				(font
@@ -29651,7 +29651,7 @@
 		(instances
 			(project "System Management Board"
 				(path "/49025907-9104-48d6-bcc4-645bc95bc4a8"
-					(reference "TP3")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -33455,7 +33455,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8e9f774-0d02-4f5f-8f42-36b66032fcf1")
-		(property "Reference" "TP2"
+		(property "Reference" "TP1"
 			(at 66.04 24.6379 0)
 			(effects
 				(font
@@ -33506,7 +33506,7 @@
 		(instances
 			(project "System Management Board"
 				(path "/49025907-9104-48d6-bcc4-645bc95bc4a8"
-					(reference "TP2")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
