@@ -11178,12 +11178,6 @@
 		(uuid "2e919418-70ed-412c-8737-7ea1efa1eb00")
 	)
 	(junction
-		(at 63.5 364.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2f745166-6605-47da-bfed-9b153408eae0")
-	)
-	(junction
 		(at 565.15 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11748,12 +11742,6 @@
 		(uuid "c4163ffa-fde9-4583-9eba-888bd4423db1")
 	)
 	(junction
-		(at 60.96 359.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c445ac11-33fa-4f06-b385-1bda8da5ead5")
-	)
-	(junction
 		(at 83.82 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12287,7 +12275,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 359.41) (xy 67.31 359.41)
+			(xy 35.56 359.41) (xy 67.31 359.41)
 		)
 		(stroke
 			(width 0)
@@ -12764,16 +12752,6 @@
 			(type default)
 		)
 		(uuid "17f32bff-e2d9-4af0-b134-d4ef731fd11b")
-	)
-	(wire
-		(pts
-			(xy 71.12 350.52) (xy 63.5 350.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18098760-f3b7-4af8-af73-d30f4fe178dc")
 	)
 	(wire
 		(pts
@@ -16587,16 +16565,6 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 350.52) (xy 63.5 364.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a03178c3-84de-469e-9b43-741d6670ae43")
-	)
-	(wire
-		(pts
 			(xy 161.29 345.44) (xy 161.29 347.98)
 		)
 		(stroke
@@ -17977,16 +17945,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 347.98) (xy 60.96 347.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d05d73ec-cfb9-4f14-a77f-c192847267ae")
-	)
-	(wire
-		(pts
 			(xy 254 177.8) (xy 260.35 177.8)
 		)
 		(stroke
@@ -17994,16 +17952,6 @@
 			(type default)
 		)
 		(uuid "d0720980-4ef8-4f08-9000-a3ab3b3b5736")
-	)
-	(wire
-		(pts
-			(xy 60.96 347.98) (xy 60.96 359.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d07588e0-d9f0-4331-8ca3-843a089a7582")
 	)
 	(wire
 		(pts
@@ -18874,16 +18822,6 @@
 			(type default)
 		)
 		(uuid "eae91646-73ff-487e-8eb0-2c3f9c84cf32")
-	)
-	(wire
-		(pts
-			(xy 35.56 359.41) (xy 60.96 359.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eaf73307-7e05-42de-aa19-1fb507e085fd")
 	)
 	(wire
 		(pts
@@ -20264,6 +20202,17 @@
 		)
 		(uuid "145d3d13-ad00-449d-9358-6b24a8d99e5e")
 	)
+	(label "TEMP_SENSE_2"
+		(at 339.09 219.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "15f6e2f0-8726-4822-ba05-7f4b132765ad")
+	)
 	(label "LIGHT BANK A PROT SW"
 		(at 158.75 373.38 180)
 		(fields_autoplaced yes)
@@ -20285,6 +20234,17 @@
 			(justify right bottom)
 		)
 		(uuid "15feed10-e1a4-4e9f-99d3-c154889258e8")
+	)
+	(label "KeySwitch IN"
+		(at 339.09 163.83 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "168ebc2c-51ba-4c12-8720-11c8b5027fc9")
 	)
 	(label "15v PWR"
 		(at 401.32 142.24 0)
@@ -20505,6 +20465,17 @@
 			(justify left bottom)
 		)
 		(uuid "34c61ed4-d57e-407e-9440-d4d867c1e186")
+	)
+	(label "TEMP_SENSE_1"
+		(at 339.09 224.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "355c1d20-4024-4756-a87b-f30b57406088")
 	)
 	(label "48V Aux PWR OUT PROT"
 		(at 20.32 392.43 0)
@@ -21045,6 +21016,17 @@
 		)
 		(uuid "62c8a455-4ca1-491b-bc4d-975c0875e864")
 	)
+	(label "KeySW_Vin MES_ADC"
+		(at 339.09 189.23 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "63f0ffd4-e906-40bc-ad3e-20cd9bc5eb55")
+	)
 	(label "Light A Relay EN"
 		(at 179.07 190.5 0)
 		(fields_autoplaced yes)
@@ -21231,6 +21213,17 @@
 			(justify right bottom)
 		)
 		(uuid "7b504cd2-dee9-4977-a10c-82e8b3571321")
+	)
+	(label "15v PWR"
+		(at 339.09 179.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7b654f36-58eb-4f3b-ac6c-0fb2e31f67cb")
 	)
 	(label "JET_P24"
 		(at 90.17 247.65 180)
@@ -21518,6 +21511,17 @@
 		)
 		(uuid "9aa7aabb-72da-47f7-b51d-2f973918b8a2")
 	)
+	(label "48V PWR"
+		(at 339.09 184.15 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a03bf3e9-38da-4432-9280-3440e85dec18")
+	)
 	(label "~{SWITCH PWR EN}"
 		(at 435.61 328.93 0)
 		(fields_autoplaced yes)
@@ -21528,6 +21532,17 @@
 			(justify left bottom)
 		)
 		(uuid "a12725af-69c3-468c-9310-ec1341f1c4b3")
+	)
+	(label "COMP_Vout MES_ADC"
+		(at 339.09 199.39 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a3198de6-cb65-43ad-a262-982d8c749b17")
 	)
 	(label "15v PWR"
 		(at 567.69 266.7 0)
@@ -21595,6 +21610,17 @@
 		)
 		(uuid "a4a52142-dd1e-4d60-96c8-a48df339f832")
 	)
+	(label "Aux_ADC_IN"
+		(at 339.09 194.31 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a8bacf34-ba02-406b-af44-1ea5c0c30219")
+	)
 	(label "JET_P26"
 		(at 90.17 250.19 180)
 		(fields_autoplaced yes)
@@ -21617,6 +21643,17 @@
 		)
 		(uuid "abb722a1-0fce-4a08-88c1-0c1bf357b1bf")
 	)
+	(label "Light_B_Vout MES_ADC"
+		(at 339.09 214.63 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ad0caa91-5497-4fdf-aa40-74e53017570c")
+	)
 	(label "PICO IN BIT 1"
 		(at 179.07 208.28 0)
 		(fields_autoplaced yes)
@@ -21627,6 +21664,17 @@
 			(justify left bottom)
 		)
 		(uuid "b671b667-5f86-4709-8f7f-fcebc5092305")
+	)
+	(label "5V Intermediate"
+		(at 339.09 173.99 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b6a34ef0-09f1-4a26-b2ab-c6742c3c8dea")
 	)
 	(label "MUX_S1"
 		(at 271.78 198.12 180)
@@ -21661,6 +21709,17 @@
 		)
 		(uuid "b7b3e3fa-ff43-446e-8f23-9085221a5b67")
 	)
+	(label "i3_Vin"
+		(at 240.03 33.02 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b9fed99e-c321-4838-ad53-c5c18470d7ed")
+	)
 	(label "Analog Mux OUT"
 		(at 340.36 294.64 180)
 		(fields_autoplaced yes)
@@ -21671,6 +21730,17 @@
 			(justify right bottom)
 		)
 		(uuid "be300bb5-5443-41b4-92b6-5693775f3200")
+	)
+	(label "PICO 3V3"
+		(at 339.09 229.87 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bf76c4aa-ef55-4e6d-a15f-c88a2eebcd74")
 	)
 	(label "JET_P40"
 		(at 90.17 267.97 180)
@@ -21837,6 +21907,17 @@
 		)
 		(uuid "ce5ac0ff-751d-48d6-8ff6-2276da13581e")
 	)
+	(label "Light_A_Vout MES_ADC"
+		(at 339.09 209.55 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ce77b79a-cd13-4bc6-a130-05661731aff2")
+	)
 	(label "JET_P19"
 		(at 59.69 242.57 0)
 		(fields_autoplaced yes)
@@ -21902,6 +21983,17 @@
 			(justify left bottom)
 		)
 		(uuid "d436c02f-a870-4fc4-8875-f2b79fc8b23c")
+	)
+	(label "POE_SW_Vout MES_ADC"
+		(at 339.09 204.47 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d973baf9-c411-4f01-b7e7-b6b8a13de956")
 	)
 	(label "POE SW PWR CM"
 		(at 270.51 210.82 180)
@@ -22101,6 +22193,17 @@
 		)
 		(uuid "ed9954d7-3e13-4ab9-8179-9918e5170321")
 	)
+	(label "5V BOOTSTRAP"
+		(at 339.09 168.91 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "eed964a2-56a0-44dd-a313-bd86cd63b39a")
+	)
 	(label "JET_P23"
 		(at 59.69 247.65 0)
 		(fields_autoplaced yes)
@@ -22200,116 +22303,6 @@
 		)
 		(uuid "fe69c231-16e3-4407-bb1b-dfc6b05b16f7")
 	)
-	(global_label "KeySwitch IN"
-		(shape input)
-		(at 339.09 163.83 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "029dd486-7b7c-41cb-8d21-9dcb6fc65118")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 323.7676 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "5V BOOTSTRAP"
-		(shape input)
-		(at 196.85 43.18 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0b4d9d24-60b9-4b06-8fc9-db4067ff2a14")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 196.85 60.1352 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "TEMP_SENSE_1"
-		(shape input)
-		(at 262.89 309.88 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0d7951be-4fe5-49ae-92de-f39efce4e7bc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 245.8746 309.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "PICO 3V3"
-		(shape input)
-		(at 339.09 229.87 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0ecf3dfe-5ffa-404d-b4dc-2abb9261c2d5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 327.1543 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "TEMP_SENSE_1"
-		(shape input)
-		(at 339.09 224.79 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0f200fee-72f8-4b48-8f8e-97bde371d90f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 322.0746 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "JET_RST"
 		(shape input)
 		(at 66.04 116.84 180)
@@ -22323,336 +22316,6 @@
 		(uuid "19318419-272f-455b-b880-74a2032ebdfb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 56.1279 116.7606 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "COMP_Vout MES_ADC"
-		(shape input)
-		(at 262.89 299.72 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "25873d2a-f96a-4729-897a-6752702004a0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 240.1293 299.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "KeySwitch IN"
-		(shape input)
-		(at 68.58 29.21 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2f61952c-27e1-445e-9196-d2cbc064a019")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.58 13.8876 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Light_A_Vout MES_ADC"
-		(shape input)
-		(at 262.89 304.8 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "388a9f9c-caab-40d3-a095-a3974a00d624")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.7384 304.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Light_A_Vout MES_ADC"
-		(shape input)
-		(at 339.09 209.55 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "39f72c39-6d16-46e9-8cb7-79e291db5317")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 314.9384 209.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "i3_Vin"
-		(shape input)
-		(at 237.49 33.02 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3c54f837-e06c-4b7f-8c1a-a8a744d50a77")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 237.49 24.4105 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "TEMP_SENSE_2"
-		(shape input)
-		(at 339.09 219.71 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3e6d24e3-dc6e-46e6-b63f-5e2397c30b99")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 322.0746 219.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "15v PWR"
-		(shape input)
-		(at 339.09 179.07 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "470e348a-420c-45ce-a4c3-79e1ce18c1f4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 327.7592 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Aux_ADC_IN"
-		(shape input)
-		(at 262.89 297.18 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "56b0343a-f48b-47b8-8a62-fb75af30f3aa")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 249.14 297.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Aux_ADC_IN"
-		(shape input)
-		(at 339.09 194.31 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "59b1f7e7-69e3-4094-8303-65900f7eea9e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 325.34 194.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "KeySW_Vin MES_ADC"
-		(shape input)
-		(at 339.09 189.23 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "67dd00b5-cba1-4c1d-9653-bb2db0d0187b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 316.934 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "5V Intermediate"
-		(shape input)
-		(at 306.07 20.32 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7557ce54-e9d9-41a9-b474-19628d6f7cbe")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 306.07 38.4242 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "COMP_Vout MES_ADC"
-		(shape input)
-		(at 339.09 199.39 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a78734f0-a41e-435f-bb98-884432a1ba40")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 316.3293 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "TEMP_SENSE_2"
-		(shape input)
-		(at 262.89 312.42 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a84396c7-495c-447b-909b-216ddc1c0679")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 245.8746 312.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Light_B_Vout MES_ADC"
-		(shape input)
-		(at 262.89 307.34 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a98a5ac4-16a9-405f-9d6f-0678b52ace8e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.557 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "POE_SW_Vout MES_ADC"
-		(shape input)
-		(at 262.89 302.26 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ab97ba0f-4d4d-42d5-9d43-bb44e1b1027c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.0732 302.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22684,160 +22347,6 @@
 			)
 		)
 	)
-	(global_label "PICO 3V3"
-		(shape input)
-		(at 252.73 167.64 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b37874ad-9a83-4d8a-9ab6-f180448879df")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 264.6657 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "48V PWR"
-		(shape input)
-		(at 339.09 184.15 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b6d066f7-2092-46b7-983f-186c9a2d3f00")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 327.6382 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "5V BOOTSTRAP"
-		(shape input)
-		(at 339.09 168.91 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b8d9c2dc-c9d1-461c-8a56-19c5c9e3ac7c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 322.1348 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "48V PWR"
-		(shape input)
-		(at 556.26 323.85 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b9216364-b30b-4c2e-94e4-1224d12688b0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 556.26 312.3982 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "5V Intermediate"
-		(shape input)
-		(at 339.09 173.99 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c01c526d-de7f-44fc-b82b-890c9cf6c213")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 320.9858 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "POE_SW_Vout MES_ADC"
-		(shape input)
-		(at 339.09 204.47 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c1e8954c-5d16-4bfa-9100-526ffddc0471")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 314.2732 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "15v PWR"
-		(shape input)
-		(at 561.34 266.7 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c43e9776-9545-4913-99fe-f39882f23f9a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 561.34 255.3692 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "JET_RECOV"
 		(shape input)
 		(at 53.34 119.38 180)
@@ -22851,28 +22360,6 @@
 		(uuid "c4807f22-9ffc-4bd7-a47a-4b813f048823")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 40.7669 119.3006 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "KeySW_Vin MES_ADC"
-		(shape input)
-		(at 262.89 294.64 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d18b9f52-0514-4a83-858a-29cc2de5fc61")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 240.734 294.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22900,28 +22387,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Light_B_Vout MES_ADC"
-		(shape input)
-		(at 339.09 214.63 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ebd85971-0b67-46c3-85f4-04eba13e8594")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 314.757 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -26756,75 +26221,6 @@
 			(project "System Management Board"
 				(path "/49025907-9104-48d6-bcc4-645bc95bc4a8"
 					(reference "J12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Male")
-		(at 76.2 350.52 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4bfef37a-1eea-4d2e-9a73-704ff7e55461")
-		(property "Reference" "J5"
-			(at 77.47 347.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Conn_01x02_Male"
-			(at 77.47 350.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "SMB:1843606"
-			(at 76.2 350.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 350.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 76.2 350.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "73f74cc6-d23d-4312-8ae8-ee8ccc079566")
-		)
-		(pin "2"
-			(uuid "ac4a1017-f352-4883-b148-2cdcbed20a02")
-		)
-		(instances
-			(project "System Management Board"
-				(path "/49025907-9104-48d6-bcc4-645bc95bc4a8"
-					(reference "J5")
 					(unit 1)
 				)
 			)
