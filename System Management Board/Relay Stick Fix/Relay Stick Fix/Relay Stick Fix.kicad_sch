@@ -5,6 +5,108 @@
 	(uuid "8d33c889-5d8e-4500-89a6-789bc0f250c8")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector_Generic:Conn_02x06_Odd_Even"
 			(pin_names
 				(offset 1.016) hide)
@@ -554,6 +656,175 @@
 					(at 0 -3.81 90)
 					(length 2.794)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:LED"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1429,16 +1700,22 @@
 		)
 	)
 	(junction
-		(at 224.79 81.28)
+		(at 229.87 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0bd7bef9-3c0b-415e-82ac-0db70976cd60")
 	)
 	(junction
-		(at 149.86 96.52)
+		(at 148.59 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3fb21b6f-6ecb-4ff1-9f1a-0a1c8144c799")
+		(uuid "18701657-ac6c-4821-a4d8-dc9a965d44b5")
+	)
+	(junction
+		(at 207.01 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e5e7659-3053-4940-ae41-dc851603a27b")
 	)
 	(junction
 		(at 204.47 86.36)
@@ -1447,16 +1724,46 @@
 		(uuid "5b1a5876-a745-4566-a7d5-c3a2ccf24fa0")
 	)
 	(junction
+		(at 146.05 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ebf069f-e984-4431-9eba-01ab8e74aec7")
+	)
+	(junction
 		(at 204.47 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "783b37d4-3816-4bb0-813b-c376d262ce2c")
 	)
 	(junction
-		(at 224.79 91.44)
+		(at 172.72 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7879b7cd-fe7d-4dfb-91cf-e24cef9fb6a0")
+	)
+	(junction
+		(at 217.17 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9183b492-6258-4f97-9e73-983a12ea2a84")
+	)
+	(junction
+		(at 160.02 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9258242b-05c2-4c44-ad54-e673e3451942")
+	)
+	(junction
+		(at 229.87 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c56750aa-cbb7-494e-a073-4d3669e1aa8a")
+	)
+	(junction
+		(at 160.02 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fdaa71c6-9855-4dba-bb68-d48f99203288")
 	)
 	(no_connect
 		(at 119.38 88.9)
@@ -1484,6 +1791,26 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 119.38) (xy 160.02 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ab9c415-c0f5-4bf6-a7f6-4c75c701da16")
+	)
+	(wire
+		(pts
+			(xy 146.05 118.11) (xy 146.05 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10121293-cbce-4d67-b370-41b245487685")
+	)
+	(wire
+		(pts
 			(xy 204.47 86.36) (xy 204.47 111.76)
 		)
 		(stroke
@@ -1494,7 +1821,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 96.52) (xy 149.86 96.52)
+			(xy 143.51 96.52) (xy 148.59 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1504,13 +1831,43 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 91.44) (xy 224.79 96.52)
+			(xy 229.87 91.44) (xy 229.87 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3349a3da-6999-49d2-8627-1d76b35729a3")
+	)
+	(wire
+		(pts
+			(xy 172.72 116.84) (xy 172.72 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37caa1c6-c479-461c-b44e-4e571dfea39c")
+	)
+	(wire
+		(pts
+			(xy 148.59 96.52) (xy 160.02 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a176168-a127-4c7e-997e-f14916d404c0")
+	)
+	(wire
+		(pts
+			(xy 146.05 101.6) (xy 173.99 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ad7ea5a-3ffd-4921-9cca-0bae69d609ce")
 	)
 	(wire
 		(pts
@@ -1524,17 +1881,17 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 96.52) (xy 173.99 96.52)
+			(xy 217.17 101.6) (xy 222.25 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54fd8a9f-59a5-4329-903d-6db7712af167")
+		(uuid "57dccd3f-8485-4b75-be8f-568410ebe1b8")
 	)
 	(wire
 		(pts
-			(xy 224.79 76.2) (xy 224.79 81.28)
+			(xy 229.87 76.2) (xy 229.87 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1544,7 +1901,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 101.6) (xy 209.55 101.6)
+			(xy 201.93 101.6) (xy 207.01 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1554,7 +1911,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 106.68) (xy 224.79 116.84)
+			(xy 229.87 106.68) (xy 229.87 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1564,7 +1921,17 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 101.6) (xy 173.99 101.6)
+			(xy 160.02 119.38) (xy 172.72 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66b93534-83a5-4165-a15b-2ba65867f268")
+	)
+	(wire
+		(pts
+			(xy 143.51 101.6) (xy 146.05 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1584,7 +1951,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 91.44) (xy 173.99 91.44)
+			(xy 172.72 91.44) (xy 173.99 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1604,7 +1971,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 81.28) (xy 224.79 81.28)
+			(xy 204.47 81.28) (xy 229.87 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1624,6 +1991,26 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 119.38) (xy 204.47 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acaa9947-1360-468a-a30a-9ce371b3f09d")
+	)
+	(wire
+		(pts
+			(xy 160.02 96.52) (xy 160.02 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae3a6d50-7d5e-448d-b572-92a63b8d1e1b")
+	)
+	(wire
+		(pts
 			(xy 208.28 96.52) (xy 208.28 91.44)
 		)
 		(stroke
@@ -1634,7 +2021,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 91.44) (xy 224.79 91.44)
+			(xy 208.28 91.44) (xy 229.87 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1644,17 +2031,17 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 119.38) (xy 204.47 119.38)
+			(xy 160.02 118.11) (xy 160.02 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c413a7de-ece8-41dd-83fb-9f71d3b859e1")
+		(uuid "d2df7211-b8aa-46e1-8a03-5ea3fa708a9c")
 	)
 	(wire
 		(pts
-			(xy 170.18 91.44) (xy 170.18 111.76)
+			(xy 172.72 91.44) (xy 172.72 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1664,7 +2051,17 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 88.9) (xy 224.79 91.44)
+			(xy 146.05 102.87) (xy 146.05 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4753c87-865e-4087-90dd-f239ec3491a9")
+	)
+	(wire
+		(pts
+			(xy 229.87 88.9) (xy 229.87 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1681,6 +2078,36 @@
 			(type default)
 		)
 		(uuid "e43d03fe-1369-4bed-86ce-e4bfa3d83d0a")
+	)
+	(wire
+		(pts
+			(xy 160.02 96.52) (xy 173.99 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7fb6316-68a7-4c58-8420-03da4c27f529")
+	)
+	(wire
+		(pts
+			(xy 215.9 101.6) (xy 217.17 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef8cb070-031e-4443-9087-e286e7c1ccfe")
+	)
+	(wire
+		(pts
+			(xy 208.28 101.6) (xy 207.01 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6004e6a-e799-4718-a655-b5fe16508c6e")
 	)
 	(label "i3"
 		(at 119.38 91.44 0)
@@ -1705,7 +2132,7 @@
 		(uuid "152794d5-c34a-482e-8865-9b9d65d9e181")
 	)
 	(label "5V Bootstrap"
-		(at 161.29 101.6 180)
+		(at 143.51 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1714,6 +2141,17 @@
 			(justify right bottom)
 		)
 		(uuid "37b3e6be-2d7b-417a-bb51-d4e9cec2f60c")
+	)
+	(label "Driver Out"
+		(at 207.01 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c62397b-3b4a-4c87-96f0-a7cf05cdb9be")
 	)
 	(label "Vbat Prot"
 		(at 119.38 93.98 0)
@@ -1727,7 +2165,7 @@
 		(uuid "72eda7a4-4ef2-495a-90a9-4eea49daa70b")
 	)
 	(label "5V Bootstrap"
-		(at 149.86 88.9 0)
+		(at 148.59 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1738,7 +2176,7 @@
 		(uuid "7bbe527f-bd49-40d4-9caa-348560393744")
 	)
 	(label "Vbat Prot"
-		(at 224.79 76.2 0)
+		(at 229.87 76.2 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1749,7 +2187,7 @@
 		(uuid "87b6c77e-331e-4e6b-a702-54a5f2468ed8")
 	)
 	(label "Sense"
-		(at 224.79 91.44 0)
+		(at 229.87 91.44 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1760,13 +2198,13 @@
 		(uuid "9992ef24-f881-41d1-8ef4-54e21b33e201")
 	)
 	(label "Gate"
-		(at 218.44 101.6 270)
+		(at 218.44 101.6 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "ac8738be-bcb5-4d73-bfaa-173f6ba11e85")
 	)
@@ -1804,7 +2242,7 @@
 		(uuid "e79696ec-c9b7-487a-8f5d-fe7ed1ccfca9")
 	)
 	(label "i3"
-		(at 224.79 116.84 0)
+		(at 229.87 116.84 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1816,7 +2254,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 170.18 115.57 0)
+		(at 172.72 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1825,7 +2263,7 @@
 		(fields_autoplaced yes)
 		(uuid "058fd59e-1869-47d0-9f49-bcb591c97911")
 		(property "Reference" "C1"
-			(at 173.99 114.2999 0)
+			(at 176.53 111.7599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1834,7 +2272,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 173.99 116.8399 0)
+			(at 176.53 114.2999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1843,7 +2281,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 171.1452 119.38 0)
+			(at 173.6852 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1852,7 +2290,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 170.18 115.57 0)
+			(at 172.72 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1861,7 +2299,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 170.18 115.57 0)
+			(at 172.72 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1886,7 +2324,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 149.86 92.71 0)
+		(at 148.59 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1895,7 +2333,7 @@
 		(fields_autoplaced yes)
 		(uuid "28d39b79-5920-464b-82c9-474dae3157d7")
 		(property "Reference" "R1"
-			(at 156.21 92.71 90)
+			(at 154.94 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1903,7 +2341,7 @@
 			)
 		)
 		(property "Value" "5.1k"
-			(at 153.67 92.71 90)
+			(at 152.4 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1911,7 +2349,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 148.082 92.71 90)
+			(at 146.812 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1920,7 +2358,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 149.86 92.71 0)
+			(at 148.59 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1929,7 +2367,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 149.86 92.71 0)
+			(at 148.59 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1947,6 +2385,140 @@
 			(project "Relay Stick Fix"
 				(path "/8d33c889-5d8e-4500-89a6-789bc0f250c8"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 160.02 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3261c9ca-8f30-47e6-8f28-05d55ffb14bd")
+		(property "Reference" "R5"
+			(at 166.37 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 163.83 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 158.242 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 160.02 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "05ac3353-72af-4bbc-9fad-35dac986e1ec")
+		)
+		(pin "2"
+			(uuid "44e70b13-9e1c-446c-8a34-3beb1f5a67c0")
+		)
+		(instances
+			(project "Relay Stick Fix"
+				(path "/8d33c889-5d8e-4500-89a6-789bc0f250c8"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 217.17 101.6 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3684fdfe-4ac0-422b-9161-893507220262")
+		(property "Reference" "TP2"
+			(at 219.456 103.886 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 219.202 106.172 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 212.09 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 217.17 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a687fd7e-55cd-40e0-a075-c2bc99c869bd")
+		)
+		(instances
+			(project "Relay Stick Fix"
+				(path "/8d33c889-5d8e-4500-89a6-789bc0f250c8"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -2018,8 +2590,213 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 160.02 106.68 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4143ce4d-74d3-49b1-88a6-2b0f61ee3f5b")
+		(property "Reference" "D2"
+			(at 156.21 106.9974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED RED"
+			(at 156.21 109.5374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
+			(at 160.02 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 160.02 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f21c5822-ed56-4044-98d4-469668630a56")
+		)
+		(pin "1"
+			(uuid "01e2c186-94e4-433a-8cb4-c71312c4e7f7")
+		)
+		(instances
+			(project "Relay Stick Fix"
+				(path "/8d33c889-5d8e-4500-89a6-789bc0f250c8"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 229.87 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "52cfa361-ee72-4f9a-8165-892c09511bc4")
+		(property "Reference" "TP3"
+			(at 232.41 71.6279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 232.41 74.1679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+			(at 234.95 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 234.95 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 229.87 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98fe3155-b260-473e-9ade-e1c30d7f5269")
+		)
+		(instances
+			(project "Relay Stick Fix"
+				(path "/8d33c889-5d8e-4500-89a6-789bc0f250c8"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 146.05 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f56f05a-ad4e-4e8e-b53b-ca10740943b6")
+		(property "Reference" "R4"
+			(at 152.4 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 149.86 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 144.272 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 146.05 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1eae5a2f-07af-4ad8-b01c-6c7f67fcda6a")
+		)
+		(pin "2"
+			(uuid "a05a4bfb-45cf-4537-962a-c4f0fda597dd")
+		)
+		(instances
+			(project "Relay Stick Fix"
+				(path "/8d33c889-5d8e-4500-89a6-789bc0f250c8"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 138.43 118.11 0)
+		(at 110.49 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2027,7 +2804,7 @@
 		(dnp no)
 		(uuid "8818f6dd-8f24-4e59-be96-a744b3e0d42f")
 		(property "Reference" "#PWR01"
-			(at 138.43 124.46 0)
+			(at 110.49 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2036,7 +2813,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 138.43 123.19 0)
+			(at 110.49 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2044,7 +2821,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 138.43 118.11 0)
+			(at 110.49 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2053,7 +2830,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 138.43 118.11 0)
+			(at 110.49 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2062,7 +2839,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 138.43 118.11 0)
+			(at 110.49 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2218,33 +2995,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 213.36 101.6 90)
+		(lib_id "Device:LED")
+		(at 146.05 106.68 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a7445c5a-ab2b-4d86-95e0-9d423217454e")
-		(property "Reference" "R2"
-			(at 213.36 95.25 90)
+		(uuid "a582c99c-4ecb-4313-8b52-e401b05e5357")
+		(property "Reference" "D1"
+			(at 149.86 106.9974 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "0"
-			(at 213.36 97.79 90)
+		(property "Value" "LED GRN"
+			(at 149.86 109.5374 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 213.36 103.378 90)
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
+			(at 146.05 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2253,7 +3032,75 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 213.36 101.6 0)
+			(at 146.05 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 146.05 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7568362e-2806-4d99-8b9a-89ac44a124a5")
+		)
+		(pin "1"
+			(uuid "99f3d1e5-134a-4d95-97e5-d9b7f022a168")
+		)
+		(instances
+			(project "Relay Stick Fix"
+				(path "/8d33c889-5d8e-4500-89a6-789bc0f250c8"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 212.09 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7445c5a-ab2b-4d86-95e0-9d423217454e")
+		(property "Reference" "R2"
+			(at 212.09 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 212.09 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+			(at 212.09 103.378 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2262,7 +3109,7 @@
 			)
 		)
 		(property "Description" "Gate Speed Limiting Resistor"
-			(at 213.36 101.6 0)
+			(at 212.09 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2286,35 +3133,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 138.43 115.57 0)
+		(lib_id "Connector:TestPoint")
+		(at 207.01 101.6 180)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aa5c6f1b-d94c-49c1-9bb8-8ae7fc60debb")
-		(property "Reference" "H1"
-			(at 140.97 113.0299 0)
+		(uuid "a804ee9e-4959-4a17-9d16-4b2160176df1")
+		(property "Reference" "TP1"
+			(at 208.534 106.172 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "MountingHole_Pad"
-			(at 140.97 115.5699 0)
+		(property "Value" "TestPoint"
+			(at 208.534 108.458 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 138.43 115.57 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 201.93 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2323,7 +3169,74 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 138.43 115.57 0)
+			(at 201.93 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 207.01 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "adf91a35-bd73-4c3f-844d-e00f72cda897")
+		)
+		(instances
+			(project "Relay Stick Fix"
+				(path "/8d33c889-5d8e-4500-89a6-789bc0f250c8"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 110.49 114.3 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa5c6f1b-d94c-49c1-9bb8-8ae7fc60debb")
+		(property "Reference" "H1"
+			(at 113.03 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 113.03 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 110.49 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2332,7 +3245,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 138.43 115.57 0)
+			(at 110.49 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2605,7 +3518,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 224.79 85.09 0)
+		(at 229.87 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2614,7 +3527,7 @@
 		(fields_autoplaced yes)
 		(uuid "d56cd0da-2fb0-4f7f-a6c0-73b1b5fe332f")
 		(property "Reference" "R3"
-			(at 227.33 83.8199 0)
+			(at 232.41 83.8199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2623,7 +3536,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 227.33 86.3599 0)
+			(at 232.41 86.3599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2632,7 +3545,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
-			(at 223.012 85.09 90)
+			(at 228.092 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2641,7 +3554,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 224.79 85.09 0)
+			(at 229.87 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2650,7 +3563,7 @@
 			)
 		)
 		(property "Description" "Current Inrush Fault Resistor"
-			(at 224.79 85.09 0)
+			(at 229.87 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2675,7 +3588,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:CSD18543Q3A")
-		(at 222.25 101.6 0)
+		(at 227.33 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2684,7 +3597,7 @@
 		(fields_autoplaced yes)
 		(uuid "dc45c44c-e66a-4ef2-a0e2-03b15fe2837c")
 		(property "Reference" "Q1"
-			(at 228.6 100.3299 0)
+			(at 233.68 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2693,7 +3606,7 @@
 			)
 		)
 		(property "Value" "NMOS"
-			(at 228.6 102.8699 0)
+			(at 233.68 102.8699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2702,7 +3615,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:PowerPAK_SO-8L_Single"
-			(at 227.33 103.505 0)
+			(at 232.41 103.505 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2713,7 +3626,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/csd18543q3a.pdf"
-			(at 227.33 105.41 0)
+			(at 232.41 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2723,7 +3636,7 @@
 			)
 		)
 		(property "Description" "SQJ182EP-T1_GE3"
-			(at 222.25 101.6 0)
+			(at 227.33 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2732,7 +3645,7 @@
 			)
 		)
 		(property "Sim.Device" "NMOS"
-			(at 222.25 118.745 0)
+			(at 227.33 118.745 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2741,7 +3654,7 @@
 			)
 		)
 		(property "Sim.Type" "VDMOS"
-			(at 222.25 120.65 0)
+			(at 227.33 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2750,7 +3663,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 222.25 116.84 0)
+			(at 227.33 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2777,6 +3690,73 @@
 			(project "Relay Stick Fix"
 				(path "/8d33c889-5d8e-4500-89a6-789bc0f250c8"
 					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 229.87 116.84 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e51192ce-13f5-4a85-b15e-6e113e8fc9ed")
+		(property "Reference" "TP4"
+			(at 232.41 118.8719 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 232.41 121.4119 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+			(at 224.79 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224.79 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 229.87 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "879e38f9-1511-49a9-885c-c1e03528be7a")
+		)
+		(instances
+			(project "Relay Stick Fix"
+				(path "/8d33c889-5d8e-4500-89a6-789bc0f250c8"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
