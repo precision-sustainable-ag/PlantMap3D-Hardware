@@ -1748,12 +1748,6 @@
 		(uuid "c56750aa-cbb7-494e-a073-4d3669e1aa8a")
 	)
 	(junction
-		(at 199.39 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ed54db4e-a02e-4916-a227-d1f372f3757c")
-	)
-	(junction
 		(at 218.44 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1931,7 +1925,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 114.3) (xy 187.96 114.3)
+			(xy 187.96 114.3) (xy 205.74 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1958,16 +1952,6 @@
 			(type default)
 		)
 		(uuid "6ee641c5-7ea9-43be-aa71-b8d3e1ef8ffb")
-	)
-	(wire
-		(pts
-			(xy 199.39 116.84) (xy 199.39 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7560831e-a6c2-4283-ac3c-cbffe887866b")
 	)
 	(wire
 		(pts
@@ -2118,16 +2102,6 @@
 			(type default)
 		)
 		(uuid "ea6dd258-2354-4ae8-b9cf-9ba5ba23e0ac")
-	)
-	(wire
-		(pts
-			(xy 205.74 114.3) (xy 199.39 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6004e6a-e799-4718-a655-b5fe16508c6e")
 	)
 	(rectangle
 		(start 150.368 38.608)
@@ -2305,17 +2279,6 @@
 			(justify right bottom)
 		)
 		(uuid "b7237399-3d23-4160-8724-55683f75e66c")
-	)
-	(label "Driver Out"
-		(at 194.31 114.3 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d5f8a027-853c-4329-afbd-61ec8e4ace6c")
 	)
 	(label "Fault"
 		(at 105.41 104.14 180)
@@ -2506,7 +2469,7 @@
 				)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "280"
 			(at 139.7 121.92 90)
 			(effects
 				(font
@@ -2841,7 +2804,7 @@
 				)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "280"
 			(at 114.3 121.92 90)
 			(effects
 				(font
@@ -3049,7 +3012,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 			(at 185.1152 124.46 0)
 			(effects
 				(font
@@ -3229,72 +3192,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 199.39 116.84 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a804ee9e-4959-4a17-9d16-4b2160176df1")
-		(property "Reference" "TP1"
-			(at 200.914 121.412 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 200.914 123.698 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 194.31 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 194.31 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 199.39 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "adf91a35-bd73-4c3f-844d-e00f72cda897")
-		)
-		(instances
-			(project "Relay Stick Fix"
-				(path "/8d33c889-5d8e-4500-89a6-789bc0f250c8"
-					(reference "TP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 165.1 55.88 0)
 		(unit 1)
@@ -3379,7 +3276,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x04"
+		(property "Value" "Conn_02x06"
 			(at 120.65 48.26 0)
 			(effects
 				(font
