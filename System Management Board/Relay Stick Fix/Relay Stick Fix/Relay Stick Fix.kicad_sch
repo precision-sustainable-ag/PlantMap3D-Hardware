@@ -5,6 +5,160 @@
 	(uuid "8d33c889-5d8e-4500-89a6-789bc0f250c8")
 	(paper "A4")
 	(lib_symbols
+		(symbol "74xGxx:74LVC1G04"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "74LVC1G04"
+				(at 5.08 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single NOT Gate, Low-Voltage CMOS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Single Gate NOT LVC CMOS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23* Texas?R-PDSO-G5?DCK* Texas?R-PDSO-N5?DRL* Texas?X2SON*0.8x0.8mm*P0.48mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "74LVC1G04_0_1"
+				(polyline
+					(pts
+						(xy -7.62 6.35) (xy -7.62 -6.35) (xy 5.08 0) (xy -7.62 6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "74LVC1G04_1_1"
+				(pin input line
+					(at -15.24 0 0)
+					(length 7.62)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 -10.16 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output inverted
+					(at 12.7 0 180)
+					(length 7.62)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 10.16 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers hide)
 			(pin_names
@@ -1068,23 +1222,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0.508 -2.286 0)
+			(property "Reference" "U1"
+				(at 0 26.67 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" ""
-				(at -5.08 1.27 0)
+			(property "Value" "~"
+				(at 0 24.13 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 				(at -5.08 1.27 0)
 				(effects
 					(font
@@ -1102,7 +1256,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "LT1910ES8#TRPBF"
 				(at -5.08 1.27 0)
 				(effects
 					(font
@@ -1198,9 +1352,9 @@
 					)
 				)
 				(pin input line
-					(at 13.97 20.32 180)
+					(at 13.97 5.08 180)
 					(length 2.54)
-					(name "V+"
+					(name "GATE"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1208,24 +1362,6 @@
 						)
 					)
 					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 13.97 15.24 180)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1243,6 +1379,24 @@
 							)
 						)
 					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 13.97 15.24 180)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 					(number "7"
 						(effects
 							(font
@@ -1252,9 +1406,9 @@
 					)
 				)
 				(pin input line
-					(at 13.97 5.08 180)
+					(at 13.97 20.32 180)
 					(length 2.54)
-					(name "GATE"
+					(name "V+"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1700,16 +1854,22 @@
 		)
 	)
 	(junction
+		(at 97.79 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09730b56-a77f-4b78-a5ca-e814e4c3bb6a")
+	)
+	(junction
 		(at 232.41 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0bd7bef9-3c0b-415e-82ac-0db70976cd60")
 	)
 	(junction
-		(at 110.49 104.14)
+		(at 128.27 127)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "18701657-ac6c-4821-a4d8-dc9a965d44b5")
+		(uuid "1b59904c-ed27-4078-9f04-9687a7bda6d9")
 	)
 	(junction
 		(at 184.15 93.98)
@@ -1718,7 +1878,7 @@
 		(uuid "5b1a5876-a745-4566-a7d5-c3a2ccf24fa0")
 	)
 	(junction
-		(at 110.49 109.22)
+		(at 128.27 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6ebf069f-e984-4431-9eba-01ab8e74aec7")
@@ -1736,28 +1896,22 @@
 		(uuid "7879b7cd-fe7d-4dfb-91cf-e24cef9fb6a0")
 	)
 	(junction
-		(at 135.89 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9258242b-05c2-4c44-ad54-e673e3451942")
-	)
-	(junction
 		(at 232.41 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c56750aa-cbb7-494e-a073-4d3669e1aa8a")
 	)
 	(junction
+		(at 128.27 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0587bcb-8164-4e9a-9a5a-4aa993641658")
+	)
+	(junction
 		(at 218.44 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ee27f4ee-c206-4a52-b4a1-59148d55b3c7")
-	)
-	(junction
-		(at 135.89 127)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fdaa71c6-9855-4dba-bb68-d48f99203288")
 	)
 	(no_connect
 		(at 127 57.15)
@@ -1795,23 +1949,23 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 127) (xy 135.89 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ab9c415-c0f5-4bf6-a7f6-4c75c701da16")
-	)
-	(wire
-		(pts
-			(xy 110.49 125.73) (xy 110.49 127)
+			(xy 128.27 125.73) (xy 128.27 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "10121293-cbce-4d67-b370-41b245487685")
+	)
+	(wire
+		(pts
+			(xy 72.39 104.14) (xy 80.01 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21505fbf-15a3-4bf3-8a4c-5f4ccdb1c96d")
 	)
 	(wire
 		(pts
@@ -1835,16 +1989,6 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 104.14) (xy 110.49 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26af0ac5-de88-4b10-bfe0-cf37de661f32")
-	)
-	(wire
-		(pts
 			(xy 232.41 104.14) (xy 232.41 109.22)
 		)
 		(stroke
@@ -1865,17 +2009,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 104.14) (xy 135.89 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a176168-a127-4c7e-997e-f14916d404c0")
-	)
-	(wire
-		(pts
-			(xy 110.49 109.22) (xy 153.67 109.22)
+			(xy 128.27 109.22) (xy 153.67 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1935,7 +2069,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 127) (xy 148.59 127)
+			(xy 72.39 127) (xy 97.79 127)
 		)
 		(stroke
 			(width 0)
@@ -1945,7 +2079,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 109.22) (xy 110.49 109.22)
+			(xy 125.73 109.22) (xy 128.27 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2025,7 +2159,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 104.14) (xy 135.89 110.49)
+			(xy 72.39 104.14) (xy 72.39 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2035,7 +2169,37 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 125.73) (xy 135.89 127)
+			(xy 128.27 127) (xy 148.59 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b20bad85-b608-4a44-a156-7f5f39b5f17c")
+	)
+	(wire
+		(pts
+			(xy 107.95 104.14) (xy 128.27 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b77ff944-bbcc-4c17-9ade-100bd6df12e0")
+	)
+	(wire
+		(pts
+			(xy 128.27 104.14) (xy 153.67 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2bfa4d1-e83f-471d-b692-d335c6a56cfc")
+	)
+	(wire
+		(pts
+			(xy 72.39 125.73) (xy 72.39 127)
 		)
 		(stroke
 			(width 0)
@@ -2055,7 +2219,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 110.49) (xy 110.49 109.22)
+			(xy 128.27 110.49) (xy 128.27 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2085,13 +2249,13 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 104.14) (xy 153.67 104.14)
+			(xy 97.79 127) (xy 128.27 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e7fb6316-68a7-4c58-8420-03da4c27f529")
+		(uuid "e497c66b-6eb1-404d-8ec8-dd51edab9347")
 	)
 	(wire
 		(pts
@@ -2102,6 +2266,16 @@
 			(type default)
 		)
 		(uuid "ea6dd258-2354-4ae8-b9cf-9ba5ba23e0ac")
+	)
+	(wire
+		(pts
+			(xy 97.79 114.3) (xy 97.79 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f438c438-d8d0-4ff5-9a7e-14f5829eedb9")
 	)
 	(rectangle
 		(start 150.368 38.608)
@@ -2117,7 +2291,7 @@
 	)
 	(rectangle
 		(start 193.802 75.946)
-		(end 254 152.4)
+		(end 277.114 152.4)
 		(stroke
 			(width 0)
 			(type default)
@@ -2140,7 +2314,7 @@
 		(uuid b60068bc-d02e-462f-8535-e98b0fc3e77e)
 	)
 	(rectangle
-		(start 92.964 75.946)
+		(start 53.848 75.946)
 		(end 193.802 152.4)
 		(stroke
 			(width 0)
@@ -2170,6 +2344,26 @@
 			)
 		)
 		(uuid "3d829625-bea6-4af4-8c37-907c203f4ba1")
+	)
+	(text "Over current sensing and\nshutdown is triggered by a 65mV\nvoltage drop w.r.t the supply.\nI = 65mV / R3\n65A = 65mV / 0.001 Ohm"
+		(exclude_from_sim no)
+		(at 257.556 99.568 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5d84d713-4d6e-4f69-96fd-428ce271199b")
+	)
+	(text "Fault pin pulls active LOW\nwhen overcurrent protection\nactivates "
+		(exclude_from_sim no)
+		(at 99.568 86.106 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a7dfc392-f212-4ee7-a44c-7cd7ec7b1de2")
 	)
 	(text "MOSFET Driver"
 		(exclude_from_sim no)
@@ -2204,7 +2398,7 @@
 		(uuid "152794d5-c34a-482e-8865-9b9d65d9e181")
 	)
 	(label "5V Bootstrap"
-		(at 107.95 109.22 180)
+		(at 125.73 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2237,7 +2431,7 @@
 		(uuid "72eda7a4-4ef2-495a-90a9-4eea49daa70b")
 	)
 	(label "5V Bootstrap"
-		(at 110.49 96.52 0)
+		(at 128.27 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2257,6 +2451,17 @@
 			(justify left bottom)
 		)
 		(uuid "87b6c77e-331e-4e6b-a702-54a5f2468ed8")
+	)
+	(label "5V Bootstrap"
+		(at 97.79 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8b79528c-6a48-42bb-a07d-2efff9cc5260")
 	)
 	(label "Sense"
 		(at 232.41 104.14 0)
@@ -2281,7 +2486,7 @@
 		(uuid "b7237399-3d23-4160-8724-55683f75e66c")
 	)
 	(label "Fault"
-		(at 105.41 104.14 180)
+		(at 114.3 104.14 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2332,7 +2537,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1uF"
 			(at 152.4 121.9199 0)
 			(effects
 				(font
@@ -2385,7 +2590,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 110.49 100.33 0)
+		(at 128.27 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2394,7 +2599,7 @@
 		(fields_autoplaced yes)
 		(uuid "28d39b79-5920-464b-82c9-474dae3157d7")
 		(property "Reference" "R1"
-			(at 116.84 100.33 90)
+			(at 134.62 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2402,7 +2607,7 @@
 			)
 		)
 		(property "Value" "5.1k"
-			(at 114.3 100.33 90)
+			(at 132.08 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2410,7 +2615,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 108.712 100.33 90)
+			(at 126.492 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2419,7 +2624,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 110.49 100.33 0)
+			(at 128.27 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2428,7 +2633,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 110.49 100.33 0)
+			(at 128.27 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2453,7 +2658,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 135.89 121.92 0)
+		(at 72.39 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2462,15 +2667,15 @@
 		(fields_autoplaced yes)
 		(uuid "3261c9ca-8f30-47e6-8f28-05d55ffb14bd")
 		(property "Reference" "R5"
-			(at 142.24 121.92 90)
+			(at 78.74 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "280"
-			(at 139.7 121.92 90)
+		(property "Value" "1k"
+			(at 76.2 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2478,7 +2683,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 134.112 121.92 90)
+			(at 70.612 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2487,7 +2692,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 135.89 121.92 0)
+			(at 72.39 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2496,7 +2701,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 135.89 121.92 0)
+			(at 72.39 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2652,7 +2857,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 135.89 114.3 270)
+		(at 72.39 114.3 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2661,7 +2866,7 @@
 		(dnp no)
 		(uuid "4143ce4d-74d3-49b1-88a6-2b0f61ee3f5b")
 		(property "Reference" "D2"
-			(at 129.286 114.554 90)
+			(at 65.786 114.554 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2670,7 +2875,7 @@
 			)
 		)
 		(property "Value" "LED RED"
-			(at 132.08 117.1574 90)
+			(at 68.58 117.1574 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2679,7 +2884,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
-			(at 135.89 114.3 0)
+			(at 72.39 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2688,7 +2893,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 135.89 114.3 0)
+			(at 72.39 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2697,7 +2902,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 135.89 114.3 0)
+			(at 72.39 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2788,7 +2993,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 110.49 121.92 0)
+		(at 128.27 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2797,15 +3002,15 @@
 		(fields_autoplaced yes)
 		(uuid "6f56f05a-ad4e-4e8e-b53b-ca10740943b6")
 		(property "Reference" "R4"
-			(at 116.84 121.92 90)
+			(at 134.62 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "280"
-			(at 114.3 121.92 90)
+		(property "Value" "1k"
+			(at 132.08 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2813,7 +3018,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 108.712 121.92 90)
+			(at 126.492 121.92 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2822,7 +3027,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 110.49 121.92 0)
+			(at 128.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2831,7 +3036,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 110.49 121.92 0)
+			(at 128.27 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3056,7 +3261,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 110.49 114.3 90)
+		(at 128.27 114.3 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3064,7 +3269,7 @@
 		(dnp no)
 		(uuid "a582c99c-4ecb-4313-8b52-e401b05e5357")
 		(property "Reference" "D1"
-			(at 114.3 114.6174 90)
+			(at 132.08 114.6174 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3073,7 +3278,7 @@
 			)
 		)
 		(property "Value" "LED GRN"
-			(at 114.3 117.1574 90)
+			(at 132.08 117.1574 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3082,7 +3287,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
-			(at 110.49 114.3 0)
+			(at 128.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3091,7 +3296,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 110.49 114.3 0)
+			(at 128.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3100,7 +3305,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 110.49 114.3 0)
+			(at 128.27 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3357,6 +3562,80 @@
 		)
 	)
 	(symbol
+		(lib_id "74xGxx:74LVC1G04")
+		(at 92.71 104.14 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "be2a7000-e408-4845-9828-37ee04f4ac49")
+		(property "Reference" "U2"
+			(at 81.28 97.8214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74LVC1G04"
+			(at 81.28 100.3614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 92.71 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf"
+			(at 92.71 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single NOT Gate, Low-Voltage CMOS"
+			(at 92.71 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "942da4ee-394c-45ba-a75d-db0f4ee7e6b0")
+		)
+		(pin "2"
+			(uuid "f8167750-b1e7-463b-9732-630509393cec")
+		)
+		(pin "3"
+			(uuid "92f00ba2-65f2-4af0-bd83-7a136250fe03")
+		)
+		(pin "4"
+			(uuid "bf5d4347-b9af-43ed-9e22-c096e62f2b34")
+		)
+		(instances
+			(project "Relay Stick Fix"
+				(path "/8d33c889-5d8e-4500-89a6-789bc0f250c8"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 127 52.07 90)
 		(unit 1)
@@ -3528,7 +3807,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" ".001"
 			(at 234.95 99.0599 0)
 			(effects
 				(font

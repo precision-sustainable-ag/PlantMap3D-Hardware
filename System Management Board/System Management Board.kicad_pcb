@@ -44387,8 +44387,6 @@
 			)
 		)
 		(path "/e6843b92-d9ef-45cf-9a6f-a6d5cc1f2c2c")
-		(sheetname "Root")
-		(sheetfile "System Management Board.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 7.75351 3.83886)
@@ -44596,6 +44594,7 @@
 			(uuid "b2b99187-4f04-45c4-8a74-06e943d016eb")
 		)
 		(model "${KIPRJMOD}/Libs/3D/User Library-EE2-5NU.step"
+			(hide yes)
 			(offset
 				(xyz -7.5 -4 1)
 			)
@@ -44604,6 +44603,17 @@
 			)
 			(rotate
 				(xyz -90 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Relay Stick Fix/Relay Stick Fix/Relay Stick Fix.step"
+			(offset
+				(xyz -24.6 -20.75 10.5)
+			)
+			(scale
+				(xyz 1 1 1.1)
+			)
+			(rotate
+				(xyz 0 0 -90)
 			)
 		)
 	)

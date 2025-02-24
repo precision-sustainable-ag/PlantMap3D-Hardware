@@ -38,7 +38,7 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 2.7,
+          "height": 0.6,
           "width": 1.325
         },
         "silk_line_width": 0.1,
@@ -484,7 +484,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Relay Stick Fix.step",
       "svg": "",
       "vrml": ""
     },
