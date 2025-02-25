@@ -44607,13 +44607,35 @@
 		)
 		(model "${KIPRJMOD}/Relay Stick Fix/Relay Stick Fix/Relay Stick Fix.step"
 			(offset
-				(xyz -24.6 -20.75 10.5)
+				(xyz -24.6 -20.65 11)
 			)
 			(scale
 				(xyz 1 1 1.1)
 			)
 			(rotate
 				(xyz 0 0 -90)
+			)
+		)
+		(model "${KIPRJMOD}/Libs/3D/SSM-106-L-DV.stp"
+			(offset
+				(xyz 0.15 -0.1 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/Libs/3D/CHC M3 L16.step"
+			(offset
+				(xyz 5.6 15 16)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 90 0 0)
 			)
 		)
 	)
