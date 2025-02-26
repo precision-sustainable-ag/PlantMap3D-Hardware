@@ -1,0 +1,23 @@
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,8.0.1*
+G04 #@! TF.CreationDate,2025-02-26T15:35:36-05:00*
+G04 #@! TF.ProjectId,Relay Stick Fix,52656c61-7920-4537-9469-636b20466978,rev?*
+G04 #@! TF.SameCoordinates,Original*
+G04 #@! TF.FileFunction,Profile,NP*
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 8.0.1) date 2025-02-26 15:35:36*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+G04 #@! TA.AperFunction,Profile*
+%ADD10C,0.050000*%
+G04 #@! TD*
+G04 APERTURE END LIST*
+D10*
+X44100000Y-42000000D02*
+X15850000Y-42000000D01*
+X15850000Y-15000000D01*
+X44100000Y-15000000D01*
+X44100000Y-42000000D01*
+M02*
