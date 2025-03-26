@@ -44638,6 +44638,17 @@
 				(xyz 90 0 0)
 			)
 		)
+		(model "${KIPRJMOD}/Libs/3D/relay fix stand off.STEP"
+			(offset
+				(xyz 5.5 15 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Diode_SMD:D_SOD-123F"
 		(layer "F.Cu")
