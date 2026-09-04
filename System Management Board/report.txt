@@ -1,0 +1,767 @@
+Info: Processing symbol 'C1:Capacitor_SMD:CP_Elec_10x12.6'.
+Info: Processing symbol 'H2:MountingHole:MountingHole_3.2mm_M3_DIN965_Pad'.
+Info: Processing symbol 'R5:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'C2:Capacitor_SMD:CP_Elec_10x12.6'.
+Info: Processing symbol 'D14:LED_SMD:LED_1206_3216Metric'.
+Info: Processing symbol 'D1:Diode_SMD:D_SMA'.
+Info: Processing symbol 'C3:Capacitor_SMD:CP_Elec_10x12.6'.
+Info: Processing symbol 'J1:SMB:Molex_Mega-Fit_20024-11112_2x01_P5.70mm_Vertical'.
+Info: Processing symbol 'PS3:SMB:CONV_I3A4W008A033V-001-R'.
+Info: Processing symbol 'C4:Capacitor_SMD:CP_Elec_10x12.6'.
+Info: Processing symbol 'D2:Diode_SMD:D_SMA'.
+Info: Processing symbol 'D15:LED_SMD:LED_1206_3216Metric'.
+Info: Processing symbol 'C5:Capacitor_SMD:C_1210_3225Metric'.
+Info: Processing symbol 'D8:Diode_SMD:D_SOD-123F'.
+Info: Processing symbol 'H3:MountingHole:MountingHole_3.2mm_M3_DIN965_Pad'.
+Info: Processing symbol 'C6:Capacitor_SMD:C_1210_3225Metric'.
+Info: Processing symbol 'C29:Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder'.
+Info: Processing symbol 'D3:LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder'.
+Info: Processing symbol 'C7:Capacitor_SMD:C_1210_3225Metric'.
+Info: Processing symbol 'J7:Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Horizontal'.
+Info: Processing symbol 'D16:LED_SMD:LED_1206_3216Metric'.
+Info: Processing symbol 'C8:Capacitor_SMD:C_1210_3225Metric'.
+Info: Processing symbol 'JP1:Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical'.
+Info: Processing symbol 'K1:SMB:Relay_SPDT_RAYEX-L90S'.
+Info: Processing symbol 'C9:Capacitor_SMD:CP_Elec_10x12.6'.
+Info: Processing symbol 'D17:LED_SMD:LED_1206_3216Metric'.
+Info: Processing symbol 'H4:MountingHole:MountingHole_3.2mm_M3_DIN965_Pad'.
+Info: Processing symbol 'C10:Capacitor_SMD:CP_Elec_10x12.6'.
+Info: Processing symbol 'J10:Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical'.
+Info: Processing symbol 'D18:SMB:POWERDI5_DIO'.
+Info: Processing symbol 'C11:Capacitor_SMD:CP_Elec_10x12.6'.
+Info: Processing symbol 'R3:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'JP2:Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical'.
+Info: Processing symbol 'C12:Capacitor_SMD:CP_Elec_10x12.6'.
+Info: Processing symbol 'D19:SMB:POWERDI5_DIO'.
+Info: Processing symbol 'C30:Capacitor_SMD:CP_Elec_10x12.6'.
+Info: Processing symbol 'C13:Capacitor_SMD:C_1206_3216Metric'.
+Info: Processing symbol 'IC1:SMB:SOT95P237X112-3N'.
+Info: Processing symbol 'J3:Connector_Molex:Molex_Micro-Fit_3.0_43650-0415_1x04_P3.00mm_Vertical'.
+Info: Processing symbol 'C14:Capacitor_SMD:C_1206_3216Metric'.
+Info: Processing symbol 'F1:SMB:3557-10'.
+Info: Processing symbol 'D4:Diode_SMD:D_SOD-123F'.
+Info: Processing symbol 'C15:Capacitor_SMD:CP_Elec_10x12.6'.
+Info: Processing symbol 'R2:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R30:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'C16:Capacitor_SMD:CP_Elec_10x12.6'.
+Info: Processing symbol 'D5:LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder'.
+Info: Processing symbol 'F4:SMB:3557-10'.
+Info: Processing symbol 'C17:Capacitor_SMD:C_1210_3225Metric'.
+Info: Processing symbol 'PS1:SMB:CONV_I7C4W008A120V-0C3-R'.
+Info: Processing symbol 'IC4:SMB:SOT95P237X112-3N'.
+Info: Processing symbol 'C18:Capacitor_SMD:C_1210_3225Metric'.
+Info: Processing symbol 'F5:SMB:3557-10'.
+Info: Processing symbol 'JP3:Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm'.
+Info: Processing symbol 'C19:Capacitor_SMD:C_1206_3216Metric'.
+Info: Processing symbol 'C31:Capacitor_SMD:CP_Elec_10x12.6'.
+Info: Processing symbol 'R4:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'C20:Capacitor_SMD:C_1210_3225Metric'.
+Info: Processing symbol 'F6:SMB:FUSC9830X318N'.
+Info: Processing symbol 'J11:Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical'.
+Info: Processing symbol 'C21:Capacitor_SMD:C_1210_3225Metric'.
+Info: Processing symbol 'Q1:Package_SO:PowerPAK_SO-8L_Single'.
+Info: Processing symbol 'F7:SMB:FUSC9830X318N'.
+Info: Processing symbol 'C22:Capacitor_SMD:CP_Elec_10x12.6'.
+Info: Processing symbol 'IC5:SMB:SOT95P237X112-3N'.
+Info: Processing symbol 'PS2:SMB:CONV_I7C4W008A120V-0C3-R'.
+Info: Processing symbol 'F9:SMB:3557-10'.
+Info: Processing symbol 'D7:Diode_SMD:D_SOD-123F'.
+Info: Processing symbol 'C23:Capacitor_SMD:C_1206_3216Metric'.
+Info: Processing symbol 'J12:Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical'.
+Info: Processing symbol 'JP4:Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm'.
+Info: Processing symbol 'C24:Capacitor_SMD:C_1210_3225Metric'.
+Info: Processing symbol 'F10:Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder'.
+Info: Processing symbol 'C32:Capacitor_SMD:CP_Elec_10x12.6'.
+Info: Processing symbol 'C25:Capacitor_SMD:CP_Elec_10x12.6'.
+Info: Processing symbol 'J4:SMB:CUI_PJ-063BH'.
+Info: Processing symbol 'IC6:SMB:SOT95P237X112-3N'.
+Info: Processing symbol 'C26:Capacitor_SMD:CP_Elec_10x12.6'.
+Info: Processing symbol 'D9:Diode_SMD:D_SOD-123F'.
+Info: Processing symbol 'H1:MountingHole:MountingHole_3.2mm_M3_DIN965_Pad'.
+Info: Processing symbol 'C27:Capacitor_SMD:C_1210_3225Metric'.
+Info: Processing symbol 'R1:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'D10:LED_SMD:LED_1206_3216Metric'.
+Info: Processing symbol 'C28:Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder'.
+Info: Processing symbol 'J13:Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical'.
+Info: Processing symbol 'J6:Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical'.
+Info: Processing symbol 'D13:LED_SMD:LED_1206_3216Metric'.
+Info: Processing symbol 'R6:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R7:Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder'.
+Info: Processing symbol 'R8:Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder'.
+Info: Processing symbol 'R9:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R10:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R11:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R12:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R13:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R14:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R15:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R16:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R17:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R18:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R19:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R20:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R21:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R22:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R23:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R24:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R25:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R26:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R27:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R28:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R29:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R31:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R33:Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder'.
+Info: Processing symbol 'R34:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R35:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R36:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R37:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R38:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R39:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'R40:SMB:RES_3540_TEC'.
+Info: Processing symbol 'R41:Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder'.
+Info: Processing symbol 'R42:Resistor_SMD:R_2512_6332Metric'.
+Info: Processing symbol 'Rup1:Resistor_SMD:R_1206_3216Metric'.
+Info: Processing symbol 'SW1:Button_Switch_SMD:SW_SPST_TL3305B'.
+Info: Processing symbol 'SW2:Button_Switch_SMD:SW_SPST_TL3305B'.
+Info: Processing symbol 'TP1:TestPoint:TestPoint_Pad_D1.0mm'.
+Info: Processing symbol 'TP2:TestPoint:TestPoint_Pad_D1.0mm'.
+Info: Processing symbol 'TP3:TestPoint:TestPoint_Pad_D1.0mm'.
+Info: Processing symbol 'TP4:TestPoint:TestPoint_Pad_D1.0mm'.
+Info: Processing symbol 'TP5:TestPoint:TestPoint_Pad_D1.0mm'.
+Info: Processing symbol 'TP6:TestPoint:TestPoint_Pad_D1.0mm'.
+Info: Processing symbol 'TP7:TestPoint:TestPoint_Pad_D1.0mm'.
+Info: Processing symbol 'TP8:TestPoint:TestPoint_Pad_D1.0mm'.
+Info: Processing symbol 'TP9:TestPoint:TestPoint_Pad_D1.0mm'.
+Info: Processing symbol 'TP10:TestPoint:TestPoint_Pad_D1.0mm'.
+Info: Processing symbol 'TP11:TestPoint:TestPoint_Pad_D1.0mm'.
+Info: Processing symbol 'TP12:TestPoint:TestPoint_Pad_D1.0mm'.
+Info: Processing symbol 'TP13:TestPoint:TestPoint_Pad_D1.0mm'.
+Info: Processing symbol 'TP14:TestPoint:TestPoint_Pad_D1.0mm'.
+Info: Processing symbol 'TP15:TestPoint:TestPoint_Pad_D1.0mm'.
+Info: Processing symbol 'TP16:TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm'.
+Info: Processing symbol 'TP17:TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm'.
+Info: Processing symbol 'U1:SMB:MODULE_SCO915_Custom_HeaderStyle'.
+Info: Processing symbol 'U2:Package_TO_SOT_SMD:SOT-23-5'.
+Info: Processing symbol 'U3:Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm'.
+Info: Processing symbol 'U4:SMB:HSOP-6J'.
+Info: Processing symbol 'U5:Package_SO:TSSOP-16_4.4x5mm_P0.65mm'.
+Info: Processing symbol 'U6:Package_TO_SOT_SMD:SOT-23'.
+Info: Processing symbol 'U7:Package_TO_SOT_SMD:SOT-23'.
+Updated C28 sheetname to '/'.
+Updated C28 sheetfile to 'System Management Board.kicad_sch'.
+Updated C28 footprint filters to 'C_*'.
+Connected C28 pin 2 to GND.
+Add net Net-(U3-TIMER).
+Updated C28 unit metadata.
+Added C29 (footprint 'Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder').
+Changed REF** reference designator to C29.
+Changed C29 value from C_1210_3225Metric_Pad1.33x2.70mm_HandSolder to 10uF.
+Updated C29 symbol association from  to /c14a95f6-feff-4c94-91af-d9c5b5b7f6c3.
+Updated C29 fields.
+Removed C29 footprint fields not in symbol.
+Updated C29 sheetname to '/'.
+Updated C29 sheetfile to 'System Management Board.kicad_sch'.
+Updated C29 footprint filters to 'C_*'.
+Connected C29 pin 1 to /V_batt+ PROT.
+Connected C29 pin 2 to GND.
+Updated C29 unit metadata.
+Added C30 (footprint 'Capacitor_SMD:CP_Elec_10x12.6').
+Changed REF** reference designator to C30.
+Changed C30 value from CP_Elec_10x12.6 to 180uF.
+Updated C30 symbol association from  to /5b1f0d0c-5601-4676-8008-b79f1366fb1f.
+Updated C30 fields.
+Removed C30 footprint fields not in symbol.
+Updated C30 sheetname to '/'.
+Updated C30 sheetfile to 'System Management Board.kicad_sch'.
+Updated C30 footprint filters to 'CP_*'.
+Connected C30 pin 1 to Net-(D9-K).
+Connected C30 pin 2 to GND.
+Updated C30 unit metadata.
+Added C31 (footprint 'Capacitor_SMD:CP_Elec_10x12.6').
+Changed REF** reference designator to C31.
+Changed C31 value from CP_Elec_10x12.6 to 180uF.
+Updated C31 symbol association from  to /4a3b25f2-8a62-491e-84d2-690cabdf0161.
+Updated C31 fields.
+Removed C31 footprint fields not in symbol.
+Updated C31 sheetname to '/'.
+Updated C31 sheetfile to 'System Management Board.kicad_sch'.
+Updated C31 footprint filters to 'CP_*'.
+Connected C31 pin 1 to Net-(D9-K).
+Connected C31 pin 2 to GND.
+Updated C31 unit metadata.
+Added C32 (footprint 'Capacitor_SMD:CP_Elec_10x12.6').
+Changed REF** reference designator to C32.
+Changed C32 value from CP_Elec_10x12.6 to 180uF.
+Updated C32 symbol association from  to /ceab877a-a679-4353-a106-dfa42441fd8b.
+Updated C32 fields.
+Removed C32 footprint fields not in symbol.
+Updated C32 sheetname to '/'.
+Updated C32 sheetfile to 'System Management Board.kicad_sch'.
+Updated C32 footprint filters to 'CP_*'.
+Connected C32 pin 1 to Net-(D9-K).
+Connected C32 pin 2 to GND.
+Updated C32 unit metadata.
+Updated D1 sheetname to '/'.
+Updated D1 unit metadata.
+Updated D2 sheetname to '/'.
+Updated D2 unit metadata.
+Added D3 (footprint 'LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder').
+Changed REF** reference designator to D3.
+Changed D3 value from LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder to LED RED.
+Updated D3 symbol association from  to /4559eb7a-9465-4dff-a026-8df288854db0.
+Updated D3 fields.
+Removed D3 footprint fields not in symbol.
+Updated D3 sheetname to '/'.
+Updated D3 sheetfile to 'System Management Board.kicad_sch'.
+Updated D3 footprint filters to 'LED* LED_SMD:* LED_THT:*'.
+Add net Net-(D3-A).
+Connected D3 pin 2 to Net-(D3-A).
+Add net Net-(D3-K).
+Connected D3 pin 1 to Net-(D3-K).
+Updated D3 unit metadata.
+Updated D4 sheetname to '/'.
+Updated D4 unit metadata.
+Added D5 (footprint 'LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder').
+Changed REF** reference designator to D5.
+Changed D5 value from LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder to LED GRN.
+Updated D5 symbol association from  to /3cb437aa-cbff-4ca7-b5bf-435f23d1c809.
+Updated D5 fields.
+Removed D5 footprint fields not in symbol.
+Updated D5 sheetname to '/'.
+Updated D5 sheetfile to 'System Management Board.kicad_sch'.
+Updated D5 footprint filters to 'LED* LED_SMD:* LED_THT:*'.
+Connected D5 pin 2 to /5V BOOTSTRAP.
+Add net Net-(D5-K).
+Connected D5 pin 1 to Net-(D5-K).
+Updated D5 unit metadata.
+Updated D7 sheetname to '/'.
+Updated D7 unit metadata.
+Connected C28 pin 1 to Net-(U3-TIMER).
+Updated D8 sheetname to '/'.
+Updated D8 unit metadata.
+Updated D9 sheetname to '/'.
+Updated D9 unit metadata.
+Updated D10 sheetname to '/'.
+Updated D10 unit metadata.
+Updated D13 sheetname to '/'.
+Updated D13 unit metadata.
+Updated D14 sheetname to '/'.
+Updated D14 unit metadata.
+Updated D15 sheetname to '/'.
+Updated D15 unit metadata.
+Updated D16 sheetname to '/'.
+Updated D16 unit metadata.
+Updated D17 sheetname to '/'.
+Updated D17 unit metadata.
+Updated D18 sheetname to '/'.
+Updated D18 unit metadata.
+Updated D19 sheetname to '/'.
+Updated D19 unit metadata.
+Updated F1 sheetname to '/'.
+Updated F1 unit metadata.
+Updated F4 sheetname to '/'.
+Updated F4 unit metadata.
+Updated F5 sheetname to '/'.
+Updated F5 unit metadata.
+Updated F6 sheetname to '/'.
+Updated F6 unit metadata.
+Updated F7 sheetname to '/'.
+Updated F7 unit metadata.
+Updated F9 sheetname to '/'.
+Updated F9 unit metadata.
+Updated F10 sheetname to '/'.
+Updated F10 unit metadata.
+Updated H1 sheetname to '/'.
+Removed H1 'exclude from position files' fabrication attribute.
+Updated H1 unit metadata.
+Updated H2 sheetname to '/'.
+Removed H2 'exclude from position files' fabrication attribute.
+Updated H2 unit metadata.
+Updated H3 sheetname to '/'.
+Removed H3 'exclude from position files' fabrication attribute.
+Updated H3 unit metadata.
+Updated H4 sheetname to '/'.
+Removed H4 'exclude from position files' fabrication attribute.
+Updated H4 unit metadata.
+Updated IC1 fields.
+Removed IC1 footprint fields not in symbol.
+Updated IC1 sheetname to '/'.
+Updated IC1 unit metadata.
+Updated IC4 fields.
+Removed IC4 footprint fields not in symbol.
+Updated IC4 sheetname to '/'.
+Updated IC4 unit metadata.
+Updated IC5 fields.
+Removed IC5 footprint fields not in symbol.
+Updated IC5 sheetname to '/'.
+Updated IC5 unit metadata.
+Updated IC6 fields.
+Removed IC6 footprint fields not in symbol.
+Updated IC6 sheetname to '/'.
+Updated IC6 unit metadata.
+Changed J1 footprint from 'SMB:1924321' to 'SMB:Molex_Mega-Fit_20024-11112_2x01_P5.70mm_Vertical'.
+Changed J1 value from Conn_01x04_Male to Mega-Fit 200241-1112.
+Updated J1 fields.
+Removed J1 footprint fields not in symbol.
+Updated J1 sheetname to '/'.
+Reconnected J1 pin 2 from GND to /V_batt+.
+Updated J1 unit metadata.
+Changed J3 footprint from 'SMB:1843606' to 'Connector_Molex:Molex_Micro-Fit_3.0_43650-0415_1x04_P3.00mm_Vertical'.
+Updated J3 fields.
+Removed J3 footprint fields not in symbol.
+Updated J3 sheetname to '/'.
+Reconnected J3 pin 2 from /SWITCH PWR OUT PROT to GND.
+Reconnected J3 pin 1 from GND to /48V Aux PWR OUT PROT.
+Connected J3 pin 3 to GND.
+Connected J3 pin 4 to /SWITCH PWR OUT PROT.
+Updated J3 unit metadata.
+Updated J4 sheetname to '/'.
+Updated J4 unit metadata.
+Updated J6 sheetname to '/'.
+Updated J6 unit metadata.
+Updated J7 sheetname to '/'.
+Updated J7 unit metadata.
+Changed J10 footprint from 'SMB:1843606' to 'Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical'.
+Changed J10 value from Conn_01x02_Male to 43650-0228.
+Updated J10 fields.
+Removed J10 footprint fields not in symbol.
+Updated J10 sheetname to '/'.
+Updated J10 unit metadata.
+Updated J11 sheetname to '/'.
+Updated J11 unit metadata.
+Updated J12 sheetname to '/'.
+Updated J12 unit metadata.
+Updated J13 sheetname to '/'.
+Updated J13 unit metadata.
+Updated JP1 sheetname to '/'.
+Updated JP1 unit metadata.
+Updated JP2 sheetname to '/'.
+Updated JP2 unit metadata.
+Updated JP3 sheetname to '/'.
+Removed JP3 'exclude from position files' fabrication attribute.
+Updated JP3 unit metadata.
+Updated JP4 sheetname to '/'.
+Removed JP4 'exclude from position files' fabrication attribute.
+Updated JP4 unit metadata.
+Updated K1 sheetname to '/'.
+Updated K1 unit metadata.
+Updated PS1 sheetname to '/'.
+Updated PS1 unit metadata.
+Updated PS2 sheetname to '/'.
+Updated PS2 unit metadata.
+Updated PS3 sheetname to '/'.
+Reconnected PS3 pin 1 from /i3_Vin to /i3.
+Updated PS3 unit metadata.
+Added Q1 (footprint 'Package_SO:PowerPAK_SO-8L_Single').
+Changed REF** reference designator to Q1.
+Changed Q1 value from PowerPAK_SO-8L_Single to NMOS.
+Updated Q1 symbol association from  to /2392d256-1d30-43d5-9424-946cfc5635ad.
+Updated Q1 fields.
+Updated Q1 sheetname to '/'.
+Updated Q1 sheetfile to 'System Management Board.kicad_sch'.
+Updated Q1 footprint filters to 'VSON*3.3x3.3mm*P0.65mm*NexFET*'.
+Add net /Sense.
+Connected Q1 pin 5 to /Sense.
+Connected Q1 pin 2 to /i3.
+Connected Q1 pin 5 to /Sense.
+Connected Q1 pin 5 to /Sense.
+Connected Q1 pin 1 to /i3.
+Connected Q1 pin 5 to /Sense.
+Add net /Gate.
+Connected Q1 pin 4 to /Gate.
+Connected Q1 pin 3 to /i3.
+Connected Q1 pin 5 to /Sense.
+Updated Q1 unit metadata.
+Updated R1 sheetname to '/'.
+Updated R1 unit metadata.
+Updated R2 sheetname to '/'.
+Updated R2 unit metadata.
+Updated R3 sheetname to '/'.
+Updated R3 unit metadata.
+Updated R4 sheetname to '/'.
+Updated R4 unit metadata.
+Changed J3 value from Conn_01x02_Male to 43650-0415.
+Updated R5 unit metadata.
+Updated C1 sheetname to '/'.
+Updated R6 sheetname to '/'.
+Updated R6 unit metadata.
+Updated C1 unit metadata.
+Added R7 (footprint 'Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder').
+Changed REF** reference designator to R7.
+Changed R7 value from R_1206_3216Metric_Pad1.30x1.75mm_HandSolder to 1k.
+Updated R7 symbol association from  to /0862c185-7e2e-4f23-9f64-9101fa3daa42.
+Updated R7 fields.
+Removed R7 footprint fields not in symbol.
+Updated R7 sheetname to '/'.
+Updated R7 sheetfile to 'System Management Board.kicad_sch'.
+Updated R7 footprint filters to 'R_*'.
+Connected R7 pin 2 to GND.
+Connected R7 pin 1 to Net-(D3-K).
+Updated R7 unit metadata.
+Updated C2 sheetname to '/'.
+Added R8 (footprint 'Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder').
+Changed REF** reference designator to R8.
+Changed R8 value from R_1206_3216Metric_Pad1.30x1.75mm_HandSolder to 5.1k.
+Updated R8 symbol association from  to /9aef4f62-f2e7-4c4d-ac57-33e5949225fa.
+Updated R8 fields.
+Removed R8 footprint fields not in symbol.
+Updated R8 sheetname to '/'.
+Updated R8 sheetfile to 'System Management Board.kicad_sch'.
+Updated R8 footprint filters to 'R_*'.
+Add net /Fault.
+Connected R8 pin 2 to /Fault.
+Connected R8 pin 1 to /5V BOOTSTRAP.
+Updated R8 unit metadata.
+Updated C2 unit metadata.
+Updated R9 sheetname to '/'.
+Updated R9 unit metadata.
+Updated C3 sheetname to '/'.
+Updated R10 sheetname to '/'.
+Updated R10 unit metadata.
+Updated C3 unit metadata.
+Updated R11 sheetname to '/'.
+Updated R11 unit metadata.
+Updated C4 sheetname to '/'.
+Updated R12 sheetname to '/'.
+Updated R12 unit metadata.
+Updated C4 unit metadata.
+Updated R13 sheetname to '/'.
+Updated R13 unit metadata.
+Updated C5 sheetname to '/'.
+Updated R14 sheetname to '/'.
+Updated R14 unit metadata.
+Updated C5 unit metadata.
+Updated R15 sheetname to '/'.
+Updated R15 unit metadata.
+Updated C6 sheetname to '/'.
+Updated R16 sheetname to '/'.
+Updated R16 unit metadata.
+Updated C6 unit metadata.
+Updated R17 sheetname to '/'.
+Updated R17 unit metadata.
+Updated C7 sheetname to '/'.
+Updated R18 sheetname to '/'.
+Updated R18 unit metadata.
+Updated C7 unit metadata.
+Updated R19 sheetname to '/'.
+Updated R19 unit metadata.
+Updated C8 sheetname to '/'.
+Updated R20 sheetname to '/'.
+Updated R20 unit metadata.
+Updated C8 unit metadata.
+Updated R21 sheetname to '/'.
+Updated R21 unit metadata.
+Updated C9 sheetname to '/'.
+Updated R22 sheetname to '/'.
+Updated R22 unit metadata.
+Updated C9 unit metadata.
+Updated R23 sheetname to '/'.
+Updated R23 unit metadata.
+Updated C10 sheetname to '/'.
+Updated R24 sheetname to '/'.
+Updated R24 unit metadata.
+Updated C10 unit metadata.
+Updated R25 sheetname to '/'.
+Updated R25 unit metadata.
+Updated C11 sheetname to '/'.
+Updated R26 sheetname to '/'.
+Updated R26 unit metadata.
+Updated C11 unit metadata.
+Updated R27 sheetname to '/'.
+Updated R27 unit metadata.
+Updated C12 sheetname to '/'.
+Updated R28 sheetname to '/'.
+Updated R28 unit metadata.
+Updated C12 unit metadata.
+Updated R29 sheetname to '/'.
+Updated R29 unit metadata.
+Updated R5 sheetname to '/'.
+Updated R30 sheetname to '/'.
+Updated R30 unit metadata.
+Updated C13 sheetname to '/'.
+Updated R31 sheetname to '/'.
+Updated R31 unit metadata.
+Updated C13 unit metadata.
+Added R33 (footprint 'Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder').
+Changed REF** reference designator to R33.
+Changed R33 value from R_1206_3216Metric_Pad1.30x1.75mm_HandSolder to 1k.
+Updated R33 symbol association from  to /2c387070-5f0b-42bb-9988-cd1aa23c7e91.
+Updated R33 fields.
+Removed R33 footprint fields not in symbol.
+Updated R33 sheetname to '/'.
+Updated R33 sheetfile to 'System Management Board.kicad_sch'.
+Updated R33 footprint filters to 'R_*'.
+Connected R33 pin 1 to Net-(D5-K).
+Connected R33 pin 2 to GND.
+Updated R33 unit metadata.
+Updated C14 sheetname to '/'.
+Updated R34 sheetname to '/'.
+Updated R34 unit metadata.
+Updated C14 unit metadata.
+Updated R35 sheetname to '/'.
+Updated R35 unit metadata.
+Updated C15 sheetname to '/'.
+Updated R36 sheetname to '/'.
+Updated R36 unit metadata.
+Updated C15 unit metadata.
+Updated R37 sheetname to '/'.
+Updated R37 unit metadata.
+Updated C16 sheetname to '/'.
+Updated R38 sheetname to '/'.
+Updated R38 unit metadata.
+Updated C16 unit metadata.
+Updated R39 sheetname to '/'.
+Updated R39 unit metadata.
+Updated C17 sheetname to '/'.
+Updated R40 sheetname to '/'.
+Updated R40 unit metadata.
+Updated C17 unit metadata.
+Added R41 (footprint 'Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder').
+Changed REF** reference designator to R41.
+Changed R41 value from R_1206_3216Metric_Pad1.30x1.75mm_HandSolder to 0.
+Updated R41 symbol association from  to /1cd226bb-92de-4fae-bd84-38474c3067c5.
+Updated R41 fields.
+Removed R41 footprint fields not in symbol.
+Updated R41 sheetname to '/'.
+Updated R41 sheetfile to 'System Management Board.kicad_sch'.
+Updated R41 footprint filters to 'R_*'.
+Connected R41 pin 2 to /Gate.
+Add net Net-(U3-GATE).
+Connected R41 pin 1 to Net-(U3-GATE).
+Updated R41 unit metadata.
+Updated C18 sheetname to '/'.
+Added R42 (footprint 'Resistor_SMD:R_2512_6332Metric').
+Changed REF** reference designator to R42.
+Changed R42 value from R_2512_6332Metric to .001.
+Updated R42 symbol association from  to /05d64333-696f-4a74-8233-baafbc0d6303.
+Updated R42 fields.
+Removed R42 footprint fields not in symbol.
+Updated R42 sheetname to '/'.
+Updated R42 sheetfile to 'System Management Board.kicad_sch'.
+Updated R42 footprint filters to 'R_*'.
+Connected R42 pin 1 to /V_batt+ PROT.
+Connected R42 pin 2 to /Sense.
+Updated R42 unit metadata.
+Updated C18 unit metadata.
+Updated Rup1 sheetname to '/'.
+Updated Rup1 unit metadata.
+Updated C19 sheetname to '/'.
+Changed SW1 footprint from 'SMB:SW_TL3305BF260QG' to 'Button_Switch_SMD:SW_SPST_TL3305B'.
+Updated SW1 fields.
+Updated SW1 sheetname to '/'.
+Updated SW1 unit metadata.
+Updated C19 unit metadata.
+Changed SW2 footprint from 'SMB:SW_TL3305BF260QG' to 'Button_Switch_SMD:SW_SPST_TL3305B'.
+Updated SW2 fields.
+Updated SW2 sheetname to '/'.
+Updated SW2 unit metadata.
+Updated C20 sheetname to '/'.
+Updated TP1 sheetname to '/'.
+Removed TP1 'exclude from position files' fabrication attribute.
+Updated TP1 unit metadata.
+Updated C20 unit metadata.
+Updated TP2 sheetname to '/'.
+Removed TP2 'exclude from position files' fabrication attribute.
+Updated TP2 unit metadata.
+Updated C21 sheetname to '/'.
+Updated TP3 sheetname to '/'.
+Removed TP3 'exclude from position files' fabrication attribute.
+Updated TP3 unit metadata.
+Updated C21 unit metadata.
+Updated TP4 sheetname to '/'.
+Removed TP4 'exclude from position files' fabrication attribute.
+Updated TP4 unit metadata.
+Updated C22 sheetname to '/'.
+Updated TP5 sheetname to '/'.
+Removed TP5 'exclude from position files' fabrication attribute.
+Updated TP5 unit metadata.
+Add net /i3.
+Changed 6 reference designator to TP6.
+Updated TP6 sheetname to '/'.
+Removed TP6 'exclude from position files' fabrication attribute.
+Updated TP6 unit metadata.
+Reconnected C22 pin 1 from /i3_Vin to /i3.
+Changed 7 reference designator to TP7.
+Updated TP7 sheetname to '/'.
+Removed TP7 'exclude from position files' fabrication attribute.
+Updated TP7 unit metadata.
+Updated C22 unit metadata.
+Changed 8 reference designator to TP8.
+Updated TP8 sheetname to '/'.
+Removed TP8 'exclude from position files' fabrication attribute.
+Updated TP8 unit metadata.
+Updated C23 sheetname to '/'.
+Changed 9 reference designator to TP9.
+Updated TP9 sheetname to '/'.
+Removed TP9 'exclude from position files' fabrication attribute.
+Updated TP9 unit metadata.
+Updated C23 unit metadata.
+Changed 10 reference designator to TP10.
+Updated TP10 sheetname to '/'.
+Removed TP10 'exclude from position files' fabrication attribute.
+Updated TP10 unit metadata.
+Updated C24 sheetname to '/'.
+Changed 11 reference designator to TP11.
+Updated TP11 sheetname to '/'.
+Removed TP11 'exclude from position files' fabrication attribute.
+Updated TP11 unit metadata.
+Updated C24 unit metadata.
+Changed 12 reference designator to TP12.
+Updated TP12 sheetname to '/'.
+Removed TP12 'exclude from position files' fabrication attribute.
+Updated TP12 unit metadata.
+Updated C25 sheetname to '/'.
+Changed 13 reference designator to TP13.
+Updated TP13 sheetname to '/'.
+Removed TP13 'exclude from position files' fabrication attribute.
+Updated TP13 unit metadata.
+Updated C25 unit metadata.
+Changed 14 reference designator to TP14.
+Updated TP14 sheetname to '/'.
+Removed TP14 'exclude from position files' fabrication attribute.
+Updated TP14 unit metadata.
+Updated C26 sheetname to '/'.
+Added TP15 (footprint 'TestPoint:TestPoint_Pad_D1.0mm').
+Changed REF** reference designator to TP15.
+Changed TP15 value from TestPoint_Pad_D1.0mm to TestPoint.
+Updated TP15 symbol association from  to /da2045a4-e1ed-4de1-b061-ceafff7ee0be.
+Updated TP15 fields.
+Updated TP15 sheetname to '/'.
+Updated TP15 sheetfile to 'System Management Board.kicad_sch'.
+Updated TP15 footprint filters to 'Pin* Test*'.
+Removed TP15 'exclude from BOM' fabrication attribute.
+Removed TP15 'exclude from position files' fabrication attribute.
+Connected TP15 pin 1 to /Gate.
+Updated TP15 unit metadata.
+Updated C26 unit metadata.
+Added TP16 (footprint 'TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm').
+Changed REF** reference designator to TP16.
+Changed TP16 value from TestPoint_THTPad_D1.0mm_Drill0.5mm to TestPoint.
+Updated TP16 symbol association from  to /0576bb28-efc7-4361-b8ca-303f6fcc6365.
+Updated TP16 fields.
+Updated TP16 sheetname to '/'.
+Updated TP16 sheetfile to 'System Management Board.kicad_sch'.
+Updated TP16 footprint filters to 'Pin* Test*'.
+Removed TP16 'exclude from BOM' fabrication attribute.
+Removed TP16 'exclude from position files' fabrication attribute.
+Connected TP16 pin 1 to /V_batt+ PROT.
+Updated TP16 unit metadata.
+Updated C27 sheetname to '/'.
+Added TP17 (footprint 'TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm').
+Changed REF** reference designator to TP17.
+Changed TP17 value from TestPoint_THTPad_D1.0mm_Drill0.5mm to TestPoint.
+Updated TP17 symbol association from  to /0625c337-8b21-4eab-9569-5a472783f457.
+Updated TP17 fields.
+Updated TP17 sheetname to '/'.
+Updated TP17 sheetfile to 'System Management Board.kicad_sch'.
+Updated TP17 footprint filters to 'Pin* Test*'.
+Removed TP17 'exclude from BOM' fabrication attribute.
+Removed TP17 'exclude from position files' fabrication attribute.
+Connected TP17 pin 1 to /i3.
+Updated TP17 unit metadata.
+Updated C27 unit metadata.
+Updated U1 sheetname to '/'.
+Updated U1 unit metadata.
+Added C28 (footprint 'Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder').
+Added U2 (footprint 'Package_TO_SOT_SMD:SOT-23-5').
+Changed REF** reference designator to U2.
+Changed U2 value from SOT-23-5 to 74LVC1G04.
+Updated U2 symbol association from  to /fb87afcc-b215-45a4-a0df-4ad516341fb7.
+Updated U2 fields.
+Removed U2 footprint fields not in symbol.
+Updated U2 sheetname to '/'.
+Updated U2 sheetfile to 'System Management Board.kicad_sch'.
+Updated U2 footprint filters to 'SOT?23* Texas?R-PDSO-G5?DCK* Texas?R-PDSO-N5?DRL* Texas?X2SON*0.8x0.8mm*P0.48mm*'.
+Connected U2 pin 5 to /5V BOOTSTRAP.
+Connected U2 pin 3 to GND.
+Connected U2 pin 4 to Net-(D3-A).
+Connected U2 pin 2 to /Fault.
+Updated U2 unit metadata.
+Changed REF** reference designator to C28.
+Added U3 (footprint 'Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm').
+Changed REF** reference designator to U3.
+Changed U3 value from SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm to ~.
+Updated U3 symbol association from  to /dd4587a1-c54b-4856-9154-bcfcff75f6f1.
+Updated U3 fields.
+Removed U3 footprint fields not in symbol.
+Updated U3 sheetname to '/'.
+Updated U3 sheetfile to 'System Management Board.kicad_sch'.
+Connected U3 pin 4 to /5V BOOTSTRAP.
+Connected U3 pin 3 to /Fault.
+Connected U3 pin 2 to Net-(U3-TIMER).
+Connected U3 pin 8 to /V_batt+ PROT.
+Connected U3 pin 6 to /Sense.
+Connected U3 pin 1 to GND.
+Connected U3 pin 5 to Net-(U3-GATE).
+Add net unconnected-(U3-NC-Pad7).
+Connected U3 pin 7 to unconnected-(U3-NC-Pad7).
+Updated U3 unit metadata.
+Changed C28 value from C_1206_3216Metric_Pad1.33x1.80mm_HandSolder to 0.1uF.
+Updated U4 sheetname to '/'.
+Updated U4 unit metadata.
+Updated C28 symbol association from  to /9d0fc673-9f1e-43f1-b012-ca05d7c15a15.
+Updated U5 sheetname to '/'.
+Updated U5 unit metadata.
+Updated C28 fields.
+Updated U6 sheetname to '/'.
+Updated U6 unit metadata.
+Removed C28 footprint fields not in symbol.
+Updated U7 sheetname to '/'.
+Updated U7 unit metadata.
+Removed unused footprint J9.
+Removed unused footprint F3.
+Removed unused footprint F8.
+Removed unused footprint D5.
+Removed unused footprint D12.
+Removed unused footprint R7.
+Removed unused footprint R8.
+Removed unused footprint R32.
+Removed unused footprint K3.
+Removed unused footprint D6.
+Removed unused footprint R33.
+Removed unused footprint D3.
+Removed unused footprint IC3.
+Removed unused footprint K2.
+Removed unused footprint J8.
+Removed unused footprint D11.
+Removed unused footprint IC2.
+Removed unused footprint F2.
+Removed unused footprint RL1.
+Removed unused footprint J2.
+Removed unused net /15V Aux PWR OUT PROT.
+Removed unused net /LIGHT BANK A PROT.
+Removed unused net /LIGHT BANK B PROT.
+Removed unused net /i3_Vin.
+Removed unused net Net-(D11-K).
+Removed unused net Net-(D12-K).
+Removed unused net Net-(D5-A).
+Removed unused net Net-(D6-A).
+Removed unused net unconnected-(K2-Pad12).
+Removed unused net unconnected-(K2-Pad12)_0.
+Removed unused net unconnected-(K3-Pad12).
+Removed unused net unconnected-(K3-Pad12)_0.
+Removed unused net unconnected-(RL1-PadNC1).
+Removed unused net unconnected-(RL1-PadNC2).
+Warning: Copper zone on F.Cu and others at (101.0000 mm, 70.5000 mm) has no pads connected to net "/LIGHT BANK B PROT".
+Warning: No net found for component U2 pad 1 (no pin 1 in symbol).
+Warning: No net found for component U3 pad 9 (no pin 9 in symbol).
+Warning: Via connected to unknown net (Net-(D5-A)).
+Warning: Via connected to unknown net (Net-(D6-A)).
+Warning: Copper zone on F.Cu and others at (170.2500 mm, 117.5000 mm) has no pads connected to net "/15V Aux PWR OUT PROT".
+Warning: Copper zone on F.Cu and others at (101.3460 mm, 84.0740 mm) has no pads connected to net "/LIGHT BANK A PROT".
+Error: U1 pad TP5 not found in SMB:MODULE_SCO915_Custom_HeaderStyle.
+Error: U1 pad TP6 not found in SMB:MODULE_SCO915_Custom_HeaderStyle.
+Error: U1 pad A not found in SMB:MODULE_SCO915_Custom_HeaderStyle.
+Error: U1 pad B not found in SMB:MODULE_SCO915_Custom_HeaderStyle.
+Error: U1 pad C not found in SMB:MODULE_SCO915_Custom_HeaderStyle.
+Error: U1 pad D not found in SMB:MODULE_SCO915_Custom_HeaderStyle.
+Error: U1 pad D2 not found in SMB:MODULE_SCO915_Custom_HeaderStyle.
+Error: U1 pad D1 not found in SMB:MODULE_SCO915_Custom_HeaderStyle.
+Error: U1 pad D3 not found in SMB:MODULE_SCO915_Custom_HeaderStyle.
+Error: U1 pad TP1 not found in SMB:MODULE_SCO915_Custom_HeaderStyle.
+Error: U1 pad TP2 not found in SMB:MODULE_SCO915_Custom_HeaderStyle.
+Error: U1 pad TP3 not found in SMB:MODULE_SCO915_Custom_HeaderStyle.
+Error: U1 pad TP4 not found in SMB:MODULE_SCO915_Custom_HeaderStyle.
+
+
+Info: Total warnings: 7, errors: 13.

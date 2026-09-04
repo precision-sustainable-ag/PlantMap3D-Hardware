@@ -1,0 +1,38 @@
+(version 1)
+(rule "Copper to edge clearance 1"
+	(constraint edge_clearance (min 0.4mm))
+)
+(rule "Minimum drill size 1"
+	(constraint hole_size (min 0.3mm))
+)
+(rule "Via style 1"
+	(constraint via_diameter (min 0.5mm) (max 0.8mm))
+	(constraint hole_size (min 0.2mm) (max 0.4mm))
+	(condition "A.Via_Type == 'Through'")
+)
+(rule "Minimum text height and thickness 1"
+	(constraint text_height (min 1mm))
+	(constraint text_thickness (min 0.15mm))
+)
+(rule "Minimum annular width 1"
+	(constraint annular_width (min 0.2mm))
+)
+(rule "Hole to hole distance 1"
+	(constraint hole_to_hole (min 0.2mm))
+)
+(rule "Minimum connection width 1"
+	(constraint connection_width (min 0.16mm))
+)
+(rule "Minimum clearance 1"
+	(constraint clearance (min 0.16mm))
+)
+(rule "Silk to soldermask clearance 1"
+	(constraint silk_clearance (min 0.15mm))
+	(condition "L == 'F.Mask' || L == 'B.Mask'")
+)
+(rule "Minimum soldermask sliver 1"
+	(constraint solder_mask_sliver (min 0.2mm))
+)
+(rule "Copper to hole clearance 1"
+	(constraint hole_clearance (min 0.35mm))
+)
