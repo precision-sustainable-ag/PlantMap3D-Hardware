@@ -13131,6 +13131,12 @@
 		(uuid "7c8ff84b-3759-467a-8fa5-00b6f017ab59")
 	)
 	(junction
+		(at 535.94 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f10e730-b670-4296-9cd2-577fc33a98ba")
+	)
+	(junction
 		(at 480.06 246.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13237,6 +13243,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "986fd109-3947-4a1c-9aa8-d87325f1bb0c")
+	)
+	(junction
+		(at 537.21 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98725b86-3169-456e-950c-3bf429ca09d6")
 	)
 	(junction
 		(at 88.9 195.58)
@@ -13944,7 +13956,7 @@
 	)
 	(wire
 		(pts
-			(xy 515.62 40.64) (xy 538.48 40.64)
+			(xy 515.62 40.64) (xy 535.94 40.64)
 		)
 		(stroke
 			(width 0)
@@ -16294,6 +16306,16 @@
 	)
 	(wire
 		(pts
+			(xy 554.99 34.29) (xy 537.21 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e2631ea-cb9c-46fc-9074-1d36f1e7b07c")
+	)
+	(wire
+		(pts
 			(xy 429.26 55.88) (xy 443.23 55.88)
 		)
 		(stroke
@@ -17124,6 +17146,16 @@
 	)
 	(wire
 		(pts
+			(xy 537.21 45.72) (xy 534.67 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f7b7ce3-009c-4c5a-a5c0-b51c6091839c")
+	)
+	(wire
+		(pts
 			(xy 41.91 370.84) (xy 50.8 370.84)
 		)
 		(stroke
@@ -17861,6 +17893,16 @@
 			(type default)
 		)
 		(uuid "9e27c1fc-5211-4af4-9159-18a635328a6d")
+	)
+	(wire
+		(pts
+			(xy 535.94 40.64) (xy 538.48 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e609052-031a-4042-a7d2-6f99330467e7")
 	)
 	(wire
 		(pts
@@ -18911,6 +18953,16 @@
 			(type default)
 		)
 		(uuid "c7078c11-5a20-4b1b-bfd7-1295598429f1")
+	)
+	(wire
+		(pts
+			(xy 554.99 31.75) (xy 535.94 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c715042f-9be9-4619-abd7-606a93696ac2")
 	)
 	(wire
 		(pts
@@ -20234,6 +20286,16 @@
 	)
 	(wire
 		(pts
+			(xy 537.21 34.29) (xy 537.21 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6554dee-5bd5-42cb-8536-4cb4f3cdc2eb")
+	)
+	(wire
+		(pts
 			(xy 542.29 88.9) (xy 566.42 88.9)
 		)
 		(stroke
@@ -20424,7 +20486,7 @@
 	)
 	(wire
 		(pts
-			(xy 538.48 45.72) (xy 534.67 45.72)
+			(xy 538.48 45.72) (xy 537.21 45.72)
 		)
 		(stroke
 			(width 0)
@@ -20501,6 +20563,16 @@
 			(type default)
 		)
 		(uuid "ff481f69-a9cb-4af9-895e-4d0048f06388")
+	)
+	(wire
+		(pts
+			(xy 535.94 31.75) (xy 535.94 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff93769f-4418-491c-8cc7-c17e71c634b7")
 	)
 	(wire
 		(pts
@@ -24898,7 +24970,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SMB:SOT95P237X112-3N"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 314.96 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -33427,7 +33499,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SMB:SOT95P237X112-3N"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 312.42 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -34575,7 +34647,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SMB:SOT95P237X112-3N"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 185.42 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -39530,6 +39602,98 @@
 			(project "System Management Board"
 				(path "/49025907-9104-48d6-bcc4-645bc95bc4a8"
 					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Male")
+		(at 560.07 34.29 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ef5d2f4d-3942-4fa2-b14c-4a27aff891f7")
+		(property "Reference" "J14"
+			(at 561.34 30.4799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "43650-0228"
+			(at 561.34 33.0199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical"
+			(at 560.07 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 560.07 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CONN HEADER VERT 2POS 3MM"
+			(at 560.07 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Family" "Micro-Fit"
+			(at 561.34 35.5599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "1"
+			(uuid "ddad435d-96f4-4acd-b5a8-bd02d9d7119b")
+		)
+		(pin "2"
+			(uuid "bf54da3e-6d84-45bb-9894-b0814c10084b")
+		)
+		(instances
+			(project "System Management Board"
+				(path "/49025907-9104-48d6-bcc4-645bc95bc4a8"
+					(reference "J14")
 					(unit 1)
 				)
 			)
