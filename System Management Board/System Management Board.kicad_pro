@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.0,
-          "height": 2.0,
-          "width": 2.0
+          "drill": 1.77,
+          "height": 3.5,
+          "width": 3.5
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -52,7 +52,7 @@
         "zones": {
           "45_degree_only": false,
           "border_display_style": 2,
-          "border_hatch_pitch": 0.5,
+          "border_hatch_pitch": 0.508,
           "corner_radius": 0.5,
           "corner_smoothing": 2,
           "fill_mode": 0,
@@ -63,7 +63,7 @@
           "hatch_thickness": 1.0,
           "min_clearance": 0.254,
           "min_island_area": 10.0,
-          "min_thickness": 0.25,
+          "min_thickness": 0.254,
           "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
@@ -150,8 +150,8 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.2,
-        "min_connection": 0.25,
+        "min_clearance": 0.3,
+        "min_connection": 0.3,
         "min_copper_edge_clearance": 0.4,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
@@ -163,8 +163,8 @@
         "min_text_height": 1.0,
         "min_text_thickness": 0.15,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.25,
-        "min_via_annular_width": 0.254,
+        "min_track_width": 0.3,
+        "min_via_annular_width": 0.3,
         "min_via_diameter": 0.4,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
@@ -539,7 +539,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.3,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -550,11 +550,22 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
+        "track_width": 0.3,
         "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.65,
+        "name": "HV",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "tuning_profile": "",
+        "via_diameter": 0.8,
+        "via_drill": 0.4
       }
     ],
     "meta": {
@@ -562,7 +573,20 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "HV",
+        "pattern": "+48V"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "/48V Aux PWR OUT PROT"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "/SWITCH PWR OUT PROT"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -839,7 +863,7 @@
         "uuid": "49025907-9104-48d6-bcc4-645bc95bc4a8"
       }
     ],
-    "used_designators": "D3,D5-6,D11-12,D20-21,#PWR3,#PWR8-27,#PWR110-111,#PWR121-122,#PWR126-136,C28-46,H5,R7-8,R17-18,R25-26,R32-33,R39,R41-50,J2,J14,Q1-5,TP10,TP12,TP15-17,U2-3,U8-12,L1-2,JP5-6,FID1-3",
+    "used_designators": "D3,D5-6,D11-12,D18,D20-21,#PWR3,#PWR8-27,#PWR110-111,#PWR114,#PWR121-122,#PWR124,#PWR126-136,C28-50,H5,R7-8,R17-18,R25-26,R32-33,R39,R41-50,J2,J14,Q1-5,TP7,TP10,TP12,TP15-17,U2-3,U8-12,L1-2,JP5-7,FID1-3",
     "variants": []
   },
   "sheets": [
