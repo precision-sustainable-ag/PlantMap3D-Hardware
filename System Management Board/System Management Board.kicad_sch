@@ -11378,19 +11378,6 @@
 		)
 		(uuid "b197c1ca-5071-4d58-b794-4d87d6a4be01")
 	)
-	(text "Check if original is same like open drain ect"
-		(exclude_from_sim no)
-		(at 134.62 228.346 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 2.54)
-				(bold yes)
-				(color 255 0 0 1)
-			)
-		)
-		(uuid "b985c81b-1394-42ed-acdb-d0ead422183c")
-	)
 	(text "Aux SW"
 		(exclude_from_sim no)
 		(at 247.015 316.23 0)
