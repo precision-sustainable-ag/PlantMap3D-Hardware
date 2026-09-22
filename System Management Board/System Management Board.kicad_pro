@@ -52,7 +52,7 @@
         "zones": {
           "45_degree_only": false,
           "border_display_style": 2,
-          "border_hatch_pitch": 0.508,
+          "border_hatch_pitch": 0.5,
           "corner_radius": 0.5,
           "corner_smoothing": 2,
           "fill_mode": 0,
@@ -61,9 +61,9 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.3,
+          "min_clearance": 0.254,
           "min_island_area": 10.0,
-          "min_thickness": 0.4,
+          "min_thickness": 0.25,
           "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
@@ -847,6 +847,7 @@
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
+    "space_save_all_events": true,
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -863,7 +864,7 @@
         "uuid": "49025907-9104-48d6-bcc4-645bc95bc4a8"
       }
     ],
-    "used_designators": "D3,D5-6,D11-12,D18,D20-21,#PWR3,#PWR8-27,#PWR110-111,#PWR114,#PWR121-122,#PWR124,#PWR126-136,C28-50,H5,R7-8,R17-18,R25-26,R32-33,R39,R41-50,J2,J14,Q1-5,TP7,TP10,TP12,TP15-17,U2-3,U8-12,L1-2,JP5-7,FID1-3",
+    "used_designators": "FID1-3,Q1-5,D3,D5-6,D11-12,D18,D20-21,#PWR3,#PWR8-27,#PWR110-111,#PWR114,#PWR121-122,#PWR124,#PWR126-136,U2-3,U8-12,C28-50,TP7,TP10,TP12,TP15-17,J2,J14,JP5-7,R7-8,R17-18,R25-26,R32-33,R39,R41-50,H5,L1-2",
     "variants": []
   },
   "sheets": [
