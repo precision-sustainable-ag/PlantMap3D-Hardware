@@ -21159,6 +21159,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 480.06 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1454"
+			(at 480.06 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "651ac3f8-4308-4546-8909-700a50138734")
 		)
@@ -21230,6 +21252,28 @@
 		)
 		(property "Description" "RES 0 OHM 1% 1/10W 0603"
 			(at 261.62 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 261.62 185.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1459"
+			(at 261.62 185.42 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21333,6 +21377,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 289.56 379.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1449"
+			(at 289.56 379.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "bb57c363-94fa-4c24-9549-1b5445ac9eee")
 		)
@@ -21406,6 +21472,28 @@
 		)
 		(property "Description" "DIODE SCHOTTKY 60V 2A SOD123FL"
 			(at 118.11 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 118.11 189.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0445"
+			(at 118.11 189.23 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21519,6 +21607,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 429.26 328.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-3211"
+			(at 429.26 328.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ba3dda04-44ee-400e-b905-ec966aa0fd8b")
 		)
@@ -21613,6 +21723,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 358.14 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1449"
+			(at 358.14 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c608c757-5fd4-47d1-8c72-4d345f1b961f")
 		)
@@ -21637,7 +21769,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "0d9bc073-2dbd-4739-b9ee-eb01c4d0380b")
 		(property "Reference" "TP4"
@@ -21685,6 +21817,28 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 424.18 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 424.18 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
 			(at 424.18 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -21785,6 +21939,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 429.26 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0134"
+			(at 429.26 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7cef0d45-736d-4850-bee7-8e15c0d9aa05")
 		)
@@ -21857,6 +22033,28 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 552.45 293.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 552.45 293.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
 			(at 552.45 293.37 0)
 			(hide yes)
 			(show_name no)
@@ -22016,7 +22214,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 1UF 100V X7R 1210"
 			(at 196.85 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -22036,6 +22234,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 196.85 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-3214"
+			(at 196.85 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -22131,6 +22351,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 354.33 322.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0017"
+			(at 354.33 322.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9ab09363-5e58-4746-89c2-29973f2ccb11")
 		)
@@ -22214,6 +22456,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 566.42 96.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0037"
+			(at 566.42 96.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "85862ca4-8088-4bce-aa29-7c1b21070d1b")
 		)
@@ -22286,6 +22550,28 @@
 			)
 		)
 		(property "Description" "RES 59K OHM 1% 1/10W 0603"
+			(at 386.08 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 386.08 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-3217"
 			(at 386.08 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -22387,6 +22673,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 270.51 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0298"
+			(at 270.51 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -22560,6 +22868,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 294.64 351.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1449"
+			(at 294.64 351.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a61e0fac-4d1f-4138-b6ea-c9a16feeab41")
 		)
@@ -22650,6 +22980,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 506.73 337.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1467"
+			(at 506.73 337.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3a6c5a19-52b3-444c-942c-e2887b5391e0")
 		)
@@ -22728,6 +23080,28 @@
 			)
 		)
 		(property "Description" "RES 100K OHM 1% 1/10W 0603"
+			(at 381 322.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 381 322.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-2743"
 			(at 381 322.58 0)
 			(hide yes)
 			(show_name no)
@@ -22831,6 +23205,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 270.51 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0298"
+			(at 270.51 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d1f1142d-7220-45b9-8929-6c61d08041f0")
 		)
@@ -22903,6 +23299,28 @@
 			)
 		)
 		(property "Description" "RES 1K OHM 1% 1/10W 0603"
+			(at 269.24 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 269.24 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1463"
 			(at 269.24 389.89 0)
 			(hide yes)
 			(show_name no)
@@ -23006,6 +23424,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 283.21 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0298"
+			(at 283.21 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8a8776fe-aea6-4deb-8b8f-3205d68a7c61")
 		)
@@ -23098,6 +23538,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 381 334.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1449"
+			(at 381 334.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -23203,7 +23665,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "27494366-1c82-4d70-b1c7-b0222278ae74")
 		(property "Reference" "JP6"
 			(at 365.506 268.224 0)
@@ -23249,6 +23711,28 @@
 			)
 		)
 		(property "Description" ""
+			(at 365.76 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 365.76 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
 			(at 365.76 270.51 0)
 			(hide yes)
 			(show_name no)
@@ -23328,6 +23812,28 @@
 			)
 		)
 		(property "Description" "FUSE HOLDER BLADE 30A PCB"
+			(at 77.47 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 77.47 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0044"
 			(at 77.47 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -23522,6 +24028,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 444.5 321.31 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-3215"
+			(at 444.5 321.31 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "08c037e6-0599-488c-a27e-2c4967673cb0")
 		)
@@ -23690,6 +24218,28 @@
 				(justify bottom)
 			)
 		)
+		(property "MPN" "SI2318CDS-T1-GE3 "
+			(at 314.96 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0048"
+			(at 314.96 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d37a1357-fafd-4487-8032-4d993826e84b")
 		)
@@ -23764,6 +24314,28 @@
 		)
 		(property "Description" "RES 1K OHM 1% 1/10W 0603"
 			(at 401.32 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 401.32 124.46 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1463"
+			(at 401.32 124.46 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23923,7 +24495,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 1UF 100V X7R 1210"
 			(at 477.52 327.66 0)
 			(hide yes)
 			(show_name no)
@@ -23943,6 +24515,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 477.52 327.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-3214"
+			(at 477.52 327.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -24038,6 +24632,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 416.56 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0134"
+			(at 416.56 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8dd3ec88-25b3-48fc-9408-034e6d0c2ff4")
 		)
@@ -24062,7 +24678,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "31fbff98-a40a-4148-9e31-9912fa3bb769")
 		(property "Reference" "H1"
@@ -24110,6 +24726,28 @@
 			)
 		)
 		(property "Description" ""
+			(at 379.73 384.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 379.73 384.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
 			(at 379.73 384.81 0)
 			(hide yes)
 			(show_name no)
@@ -24210,6 +24848,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 307.34 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0017"
+			(at 307.34 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4ae6b12a-3941-4e5f-a7e5-94780765a3d4")
 		)
@@ -24280,6 +24940,28 @@
 			)
 		)
 		(property "Description" "DIODE SCHOTTKY 60V 2A SOD123FL"
+			(at 229.87 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 229.87 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0445"
 			(at 229.87 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -24383,6 +25065,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 367.03 322.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0017"
+			(at 367.03 322.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1bf51b77-dde9-41c1-96ae-8f4cfc75d1ce")
 		)
@@ -24453,6 +25157,28 @@
 			)
 		)
 		(property "Description" "DIODE SCHOTTKY 60V 2A SOD123FL"
+			(at 160.02 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 160.02 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0445"
 			(at 160.02 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -24566,7 +25292,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "3df9b30d-7128-4372-b4bf-908783760212")
 		(property "Reference" "H4"
@@ -24624,6 +25350,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 448.31 384.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
+			(at 448.31 384.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d9ae8215-020f-4d30-97e8-d96fe324e55c")
 		)
@@ -24645,7 +25393,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "3e8b1daa-b3bb-49d1-a088-8100f901315d")
 		(property "Reference" "TP7"
@@ -24693,6 +25441,28 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 372.11 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 372.11 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
 			(at 372.11 284.48 0)
 			(hide yes)
 			(show_name no)
@@ -24794,6 +25564,28 @@
 				(justify right)
 			)
 		)
+		(property "MPN" ""
+			(at 149.86 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0017"
+			(at 149.86 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "801fbb81-dcd5-4717-b27d-5670520411a6")
 		)
@@ -24869,6 +25661,28 @@
 			)
 		)
 		(property "Description" "MOSFET N-CH 60V 115MA SOT23-3"
+			(at 560.07 316.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 560.07 316.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-2726"
 			(at 560.07 316.23 0)
 			(hide yes)
 			(show_name no)
@@ -25053,6 +25867,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 444.5 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1449"
+			(at 444.5 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9372b8e4-1fca-4d2c-abca-cdc3b3565a91")
 		)
@@ -25135,6 +25971,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 454.66 401.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
+			(at 454.66 401.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "System Management Board"
 				(path "/49025907-9104-48d6-bcc4-645bc95bc4a8"
@@ -25200,7 +26058,29 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 180 OHM 5% 4W 2816"
+			(at 132.08 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "3540180RJT"
+			(at 132.08 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0036"
 			(at 132.08 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -25282,6 +26162,28 @@
 		)
 		(property "Description" "RES 4.64K OHM 1% 1/10W 0603"
 			(at 389.89 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 389.89 50.8 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1473"
+			(at 389.89 50.8 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25462,6 +26364,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 223.52 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-3218"
+			(at 223.52 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "03d8d543-1eeb-41ee-ad32-806456b850f4")
 		)
@@ -25546,6 +26470,28 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
+			(at 441.96 401.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 441.96 401.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
 			(at 441.96 401.32 0)
 			(hide yes)
 			(show_name no)
@@ -25708,6 +26654,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 406.4 274.32 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
+			(at 406.4 274.32 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "18080487-a3c7-40be-9b1e-502f040f95be")
 		)
@@ -25811,7 +26779,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "4d17d65e-1e59-4121-a912-46546914bb06")
 		(property "Reference" "TP1"
@@ -25859,6 +26827,28 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 67.31 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 67.31 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
 			(at 67.31 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -25959,6 +26949,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 300.99 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0017"
+			(at 300.99 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "23c0a670-dce1-48bc-991a-8a9e3bb7f98f")
 		)
@@ -26041,6 +27053,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 480.06 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
+			(at 480.06 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "799db2ea-d945-4e1a-a1e5-572c893ee092")
 		)
@@ -26113,6 +27147,28 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 223.52 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 223.52 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
 			(at 223.52 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -26441,6 +27497,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 548.64 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1454"
+			(at 548.64 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f8e561f4-85fc-4485-a284-5bd3759c8017")
 		)
@@ -26526,6 +27604,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 560.07 287.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-2726"
+			(at 560.07 287.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "7e7af2d4-a095-4782-a894-532122b410f6")
 		)
@@ -26601,6 +27701,28 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 552.45 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 552.45 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
 			(at 552.45 355.6 0)
 			(hide yes)
 			(show_name no)
@@ -26783,6 +27905,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 425.45 314.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1449"
+			(at 425.45 314.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "219fec0b-d44e-4810-b65d-fbed707c1b1b")
 		)
@@ -26856,7 +28000,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CONN POWER JACK 2.5X5.5MM"
 			(at 543.56 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -26903,6 +28047,28 @@
 				(justify bottom)
 			)
 		)
+		(property "MPN" ""
+			(at 543.56 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0055"
+			(at 543.56 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2d17522d-8de2-49d3-ba67-fccdec80d10d")
 		)
@@ -26933,7 +28099,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "5abe8373-9827-416d-92be-d7aa757e8433")
 		(property "Reference" "TP14"
@@ -26982,6 +28148,28 @@
 		)
 		(property "Description" "test point"
 			(at 435.61 247.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 435.61 247.65 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
+			(at 435.61 247.65 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27081,6 +28269,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 238.76 299.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0298"
+			(at 238.76 299.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6ef67d56-3488-46c2-a22e-72131ec675d2")
 		)
@@ -27174,6 +28384,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 266.7 299.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0017"
+			(at 266.7 299.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e418cbc6-fbbe-4f07-b45f-ff5ad954b61a")
 		)
@@ -27256,6 +28488,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 520.7 48.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0037"
+			(at 520.7 48.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "108c649a-73c4-4859-8543-b6ecd3bd042c")
 		)
@@ -27327,7 +28581,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 1UF 100V X7R 1210"
 			(at 464.82 327.66 0)
 			(hide yes)
 			(show_name no)
@@ -27347,6 +28601,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 464.82 327.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-3214"
+			(at 464.82 327.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -27599,6 +28875,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 443.23 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1449"
+			(at 443.23 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f0048be1-3952-448d-a3d7-af90dafe8384")
 		)
@@ -27770,6 +29068,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 295.91 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0017"
+			(at 295.91 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "28f3ec86-6b83-4bf3-a760-5090b88cd44b")
 		)
@@ -27842,6 +29162,28 @@
 			)
 		)
 		(property "Description" "RES 1K OHM 1% 1/10W 0603"
+			(at 191.77 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 191.77 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1463"
 			(at 191.77 233.68 0)
 			(hide yes)
 			(show_name no)
@@ -27943,6 +29285,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 401.32 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0134"
+			(at 401.32 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -28093,6 +29457,28 @@
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
 			(at 406.4 256.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 406.4 256.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
+			(at 406.4 256.54 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28263,6 +29649,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 246.38 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1463"
+			(at 246.38 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1b190a9c-561a-420f-93cd-9f92c6446491")
 		)
@@ -28338,6 +29746,28 @@
 			)
 		)
 		(property "Description" "MOSFET N-CH 60V 115MA SOT23-3"
+			(at 560.07 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 560.07 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-2726"
 			(at 560.07 349.25 0)
 			(hide yes)
 			(show_name no)
@@ -28455,7 +29885,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6a86966f-9b85-48b1-8607-bc2a5ecfbc92")
 		(property "Reference" "JP4"
 			(at 138.43 356.87 0)
@@ -28500,6 +29930,28 @@
 			)
 		)
 		(property "Description" ""
+			(at 139.7 351.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 139.7 351.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
 			(at 139.7 351.79 0)
 			(hide yes)
 			(show_name no)
@@ -28671,6 +30123,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 514.35 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1454"
+			(at 514.35 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a4bc7566-be8f-4736-b0c0-7bb4ed68da17")
 		)
@@ -28744,6 +30218,28 @@
 			)
 		)
 		(property "Description" "IC MUX 8:1 120OHM 16TSSOP"
+			(at 425.45 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 425.45 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0043"
 			(at 425.45 264.16 0)
 			(hide yes)
 			(show_name no)
@@ -28876,6 +30372,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 241.3 322.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0047"
+			(at 241.3 322.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ab4410e6-68e8-4ba0-a4a6-4f7e9ffd5a45")
 		)
@@ -28944,8 +30462,30 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 28 OHM 1% 1/4W 1206"
 			(at 55.88 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 55.88 195.58 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0142"
+			(at 55.88 195.58 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29025,6 +30565,28 @@
 			)
 		)
 		(property "Description" "CONN HEADER R/A 40POS 2.54MM"
+			(at 55.88 292.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 55.88 292.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0057"
 			(at 55.88 292.1 0)
 			(hide yes)
 			(show_name no)
@@ -29468,6 +31030,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 520.7 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
+			(at 520.7 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c148d3b2-8dab-4019-82be-b78845d3a923")
 		)
@@ -29538,6 +31122,28 @@
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
 			(at 406.4 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 406.4 266.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
+			(at 406.4 266.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29649,7 +31255,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "74f35386-53ec-4183-9c8d-9a2a771d4187")
 		(property "Reference" "JP7"
 			(at 365.76 256.286 0)
@@ -29695,6 +31301,28 @@
 			)
 		)
 		(property "Description" ""
+			(at 365.76 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 365.76 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
 			(at 365.76 259.08 0)
 			(hide yes)
 			(show_name no)
@@ -29798,6 +31426,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 257.81 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0298"
+			(at 257.81 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c4bceb7e-3e33-438a-b1a1-6829887e2d10")
 		)
@@ -29891,6 +31541,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 401.32 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0134"
+			(at 401.32 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b52f6c42-8ca9-4863-9234-af15f569f4ce")
 		)
@@ -29961,6 +31633,28 @@
 			)
 		)
 		(property "Description" "DIODE SCHOTTKY 60V 2A SOD123FL"
+			(at 226.06 289.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 226.06 289.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0445"
 			(at 226.06 289.56 0)
 			(hide yes)
 			(show_name no)
@@ -30064,6 +31758,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 295.91 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0017"
+			(at 295.91 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "442b0eca-1298-44bd-8953-f6f239c83555")
 		)
@@ -30157,6 +31873,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 397.51 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0017"
+			(at 397.51 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a0d337a9-cbf8-4ae7-81d4-33cc1e40eedb")
 		)
@@ -30227,6 +31965,28 @@
 			)
 		)
 		(property "Description" "CONN HDR 40POS 0.1 GOLD PCB"
+			(at 55.88 360.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 55.88 360.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0058"
 			(at 55.88 360.68 0)
 			(hide yes)
 			(show_name no)
@@ -30444,6 +32204,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 415.29 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0134"
+			(at 415.29 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0ff0a166-392b-4433-9394-cff6443b3cf4")
 		)
@@ -30535,6 +32317,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 420.37 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1449"
+			(at 420.37 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -30776,6 +32580,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 403.86 321.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-3220"
+			(at 403.86 321.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "c641a8f7-86c7-4735-9ecd-b68603e51584")
 		)
@@ -30870,6 +32696,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 118.11 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
+			(at 118.11 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "05a5a12b-064f-4a8e-a85c-c16e7bbbbc4f")
 		)
@@ -30952,6 +32800,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 552.45 322.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
+			(at 552.45 322.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fad65b44-5ff5-4f6f-bf1b-34a341576521")
 		)
@@ -30976,7 +32846,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "8dcca584-cff5-4741-8b37-d637cc97baa5")
 		(property "Reference" "TP13"
@@ -31024,6 +32894,28 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 527.05 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 527.05 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
 			(at 527.05 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -31103,6 +32995,28 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 133.35 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 133.35 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
 			(at 133.35 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -31195,6 +33109,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 403.86 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-3212"
+			(at 403.86 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "28440386-4202-4a6f-9a17-3bb684081daa")
 		)
@@ -31267,8 +33203,30 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 28 OHM 1% 1/4W 1206"
 			(at 389.89 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 389.89 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0142"
+			(at 389.89 109.22 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31349,6 +33307,28 @@
 			)
 		)
 		(property "Description" "SENSOR ANALOG -40C-125C SOT23-3"
+			(at 312.42 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 312.42 381 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0018"
 			(at 312.42 381 0)
 			(hide yes)
 			(show_name no)
@@ -31441,6 +33421,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 406.4 259.08 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
+			(at 406.4 259.08 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2ce0cb74-5550-426a-a0a0-0d0df639047d")
 		)
@@ -31465,7 +33467,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "934c4b85-cd79-4a3f-b736-b71df0cf514f")
 		(property "Reference" "TP6"
@@ -31513,6 +33515,28 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 494.03 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 494.03 248.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
 			(at 494.03 248.92 0)
 			(hide yes)
 			(show_name no)
@@ -31614,6 +33638,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 209.55 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1449"
+			(at 209.55 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "be03317a-5857-4f80-9e3c-38f5d4803013")
 		)
@@ -31683,6 +33729,28 @@
 			)
 		)
 		(property "Description" "FUSE HOLDER BLADE 30A PCB"
+			(at 474.98 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 474.98 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0044"
 			(at 474.98 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -31779,6 +33847,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 247.65 40.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0045"
+			(at 247.65 40.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5a2bf321-30fe-4d17-bd15-7ec6a1e21996")
 		)
@@ -31849,6 +33939,28 @@
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
 			(at 406.4 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 406.4 264.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
+			(at 406.4 264.16 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31929,6 +34041,28 @@
 		)
 		(property "Description" "FUSE BRD MT 25A 250VAC 72VDC SMD"
 			(at 247.65 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 247.65 99.06 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0045"
+			(at 247.65 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32185,6 +34319,28 @@
 				(justify bottom)
 			)
 		)
+		(property "MPN" "SI2318CDS-T1-GE3 "
+			(at 312.42 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0048"
+			(at 312.42 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "746a38fc-360c-4ff7-adf8-dc6b1ac2717e")
 		)
@@ -32270,6 +34426,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 257.81 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1463"
+			(at 257.81 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9a17639f-4936-4300-abf6-7942c2ec6639")
 		)
@@ -32294,7 +34472,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "985c27ee-fc67-4c32-a67f-6e24dbf21a3d")
 		(property "Reference" "H2"
@@ -32342,6 +34520,28 @@
 			)
 		)
 		(property "Description" ""
+			(at 402.59 384.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 402.59 384.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
 			(at 402.59 384.81 0)
 			(hide yes)
 			(show_name no)
@@ -32420,6 +34620,28 @@
 			)
 		)
 		(property "Description" "IC REG BUCK ADJ 600MA SOT23"
+			(at 336.55 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 336.55 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-3220"
 			(at 336.55 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -32601,6 +34823,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 160.02 314.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0047"
+			(at 160.02 314.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c52b1cf2-4a04-4d0f-b408-d3ff822c38e2")
 		)
@@ -32673,6 +34917,28 @@
 			)
 		)
 		(property "Description" "FUSE BOARD MOUNT 2.5A 65VDC 1206"
+			(at 534.67 330.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 534.67 330.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0443"
 			(at 534.67 330.2 0)
 			(hide yes)
 			(show_name no)
@@ -32856,6 +35122,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 313.69 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1449"
+			(at 313.69 187.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "527666a5-7ae6-464c-82dc-6cad94ba269d")
 		)
@@ -32938,6 +35226,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 313.69 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-2743"
+			(at 313.69 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1b9b2755-4e12-4955-9da6-3cb3bc8fa1ba")
 		)
@@ -32962,7 +35272,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a30dba8e-a7b7-44fc-a700-bd114251ebcf")
 		(property "Reference" "JP5"
 			(at 365.76 262.636 0)
@@ -33008,6 +35318,28 @@
 			)
 		)
 		(property "Description" ""
+			(at 365.76 265.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 365.76 265.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
 			(at 365.76 265.43 0)
 			(hide yes)
 			(show_name no)
@@ -33101,6 +35433,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 191.77 223.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0037"
+			(at 191.77 223.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3e2de439-3931-4752-9b9c-b92a812ba2c9")
 		)
@@ -33173,6 +35527,28 @@
 			)
 		)
 		(property "Description" "DIODE SCHOTTKY 45V 15A TO277B"
+			(at 403.86 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 403.86 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-3212"
 			(at 403.86 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -33432,6 +35808,28 @@
 				(justify bottom)
 			)
 		)
+		(property "MPN" "SI2318CDS-T1-GE3 "
+			(at 185.42 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0048"
+			(at 185.42 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d6b6a843-8c4b-453e-ba9f-673d9d56dda2")
 		)
@@ -33527,6 +35925,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(property "MPN" ""
+			(at 48.26 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-2685"
+			(at 48.26 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -33690,6 +36110,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 548.64 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
+			(at 548.64 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d04a0a6a-f7f3-4468-b4a3-9632902709f7")
 		)
@@ -33770,6 +36212,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 77.47 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0445"
+			(at 77.47 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "150ae5f4-9af1-46c3-8527-340dee908db2")
 		)
@@ -33840,6 +36304,28 @@
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
 			(at 406.4 271.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 406.4 271.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
+			(at 406.4 271.78 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34008,6 +36494,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 401.32 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1463"
+			(at 401.32 66.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "68c50273-36b7-4314-9025-6e414bab757a")
 		)
@@ -34077,6 +36585,28 @@
 			)
 		)
 		(property "Description" "FUSE HOLDER BLADE 30A PCB"
+			(at 474.98 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 474.98 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0044"
 			(at 474.98 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -34266,6 +36796,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 246.38 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1449"
+			(at 246.38 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f8d03ebd-8ec3-457f-a48a-3b6f2a60646e")
 		)
@@ -34345,6 +36897,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 406.4 261.62 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
+			(at 406.4 261.62 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f3937b75-e2c7-4280-9400-3e17bdf1740d")
 		)
@@ -34414,6 +36988,28 @@
 			)
 		)
 		(property "Description" "FUSE HOLDER BLADE 30A PCB"
+			(at 474.98 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 474.98 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0044"
 			(at 474.98 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -34524,6 +37120,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 403.86 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1449"
+			(at 403.86 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e1223c85-8a1e-4044-aaca-c951715f2a01")
 		)
@@ -34616,6 +37234,28 @@
 		)
 		(property "Inductance" "47uH"
 			(at 377.19 172.72 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 377.19 175.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-3215"
+			(at 377.19 175.26 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34804,6 +37444,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 166.37 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-3219"
+			(at 166.37 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "aef22110-a7e6-44dc-acee-d40b70a4a380")
 		)
@@ -34837,7 +37499,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b403c61c-29f8-4281-a486-db5cc50a75f2")
 		(property "Reference" "H3"
@@ -34885,6 +37547,28 @@
 			)
 		)
 		(property "Description" ""
+			(at 425.45 384.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 425.45 384.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
 			(at 425.45 384.81 0)
 			(hide yes)
 			(show_name no)
@@ -34971,6 +37655,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 406.4 269.24 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
+			(at 406.4 269.24 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2f64ba54-a6c8-49fa-bf63-c1a262610d6b")
 		)
@@ -35042,6 +37748,28 @@
 			)
 		)
 		(property "Description" "SENSOR ANALOG -40C-125C SOT23-3"
+			(at 312.42 353.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 312.42 353.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0018"
 			(at 312.42 353.06 0)
 			(hide yes)
 			(show_name no)
@@ -35217,6 +37945,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 312.42 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
+			(at 312.42 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "909430b4-92fa-43c7-a930-cf594a46903f")
 		)
@@ -35241,7 +37991,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "bcee265b-cb83-4f9c-b011-496675daf1b7")
 		(property "Reference" "JP3"
 			(at 139.7 341.63 0)
@@ -35286,6 +38036,28 @@
 			)
 		)
 		(property "Description" ""
+			(at 139.7 346.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 139.7 346.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
 			(at 139.7 346.71 0)
 			(hide yes)
 			(show_name no)
@@ -35370,6 +38142,28 @@
 		)
 		(property "Description" "LED RED CLEAR 1206 SMD"
 			(at 269.24 379.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 269.24 379.73 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0037"
+			(at 269.24 379.73 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35539,6 +38333,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 429.26 401.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
+			(at 429.26 401.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "System Management Board"
 				(path "/49025907-9104-48d6-bcc4-645bc95bc4a8"
@@ -35605,6 +38421,28 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 386.08 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 386.08 203.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
 			(at 386.08 203.2 0)
 			(hide yes)
 			(show_name no)
@@ -35708,6 +38546,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 283.21 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0298"
+			(at 283.21 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e8d1ebbe-50a9-487b-afac-0f0625890be0")
 		)
@@ -35780,6 +38640,28 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 181.61 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 181.61 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
 			(at 181.61 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -36011,6 +38893,28 @@
 				(justify left bottom)
 			)
 		)
+		(property "MPN" ""
+			(at 358.14 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0050"
+			(at 358.14 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3cdd679d-5471-44c6-b0bf-2c76182849f5")
 		)
@@ -36177,6 +39081,28 @@
 				(justify left bottom)
 			)
 		)
+		(property "MPN" ""
+			(at 358.14 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0050"
+			(at 358.14 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "255e1795-7074-424c-b041-74a42c7edfd0")
 		)
@@ -36283,6 +39209,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 69.85 48.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0444"
+			(at 69.85 48.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3c942ae7-bf49-4f42-9821-6c353b93845f")
 		)
@@ -36375,6 +39323,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 88.9 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1449"
+			(at 88.9 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -36481,6 +39451,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 361.95 182.88 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-3211"
+			(at 361.95 182.88 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "15ec7a9a-5592-4504-ba37-5db3a15bb5d5")
 		)
@@ -36584,7 +39576,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "d6ffa59a-f122-42b1-9daa-d821d0bb97d6")
 		(property "Reference" "TP8"
@@ -36632,6 +39624,28 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 563.88 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 563.88 250.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
 			(at 563.88 250.19 0)
 			(hide yes)
 			(show_name no)
@@ -36732,6 +39746,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 252.73 299.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0017"
+			(at 252.73 299.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c699a2c8-d49b-4290-b209-18c1a1ce11db")
 		)
@@ -36825,6 +39861,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 257.81 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0298"
+			(at 257.81 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0aedcc22-d407-4faf-9858-8ea419b3cafe")
 		)
@@ -36908,6 +39966,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 257.81 379.73 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0037"
+			(at 257.81 379.73 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f048c9d6-a5e0-4eef-b49b-0a6d973664aa")
 		)
@@ -36980,6 +40060,28 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 309.88 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 309.88 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
 			(at 309.88 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -37092,7 +40194,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "e0089af4-3182-4270-86dd-4e64528ed2de")
 		(property "Reference" "TP5"
@@ -37140,6 +40242,28 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 424.18 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 424.18 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
 			(at 424.18 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -37219,6 +40343,28 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 566.42 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 566.42 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
 			(at 566.42 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -37399,6 +40545,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(property "MPN" ""
+			(at 38.1 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1470"
+			(at 38.1 198.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -37642,6 +40810,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 453.39 341.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-3216"
+			(at 453.39 341.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6bb30f5e-0353-4205-95fe-c488b66723ae")
 		)
@@ -37744,6 +40934,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 160.02 45.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0051"
+			(at 160.02 45.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "11"
 			(uuid "d8c5b8d9-62e0-4220-8cdc-339aecadb4ee")
 		)
@@ -37826,6 +41038,28 @@
 		)
 		(property "Description" "LED RED CLEAR 1206 SMD"
 			(at 223.52 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 223.52 58.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0037"
+			(at 223.52 58.42 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37926,6 +41160,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 307.34 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0017"
+			(at 307.34 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -38078,6 +41334,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 267.97 172.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1141"
+			(at 267.97 172.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "069d7a80-3acb-41c8-93aa-d3537cf5fc4e")
 		)
@@ -38169,6 +41447,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 453.39 356.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
+			(at 453.39 356.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0332d0cf-b39a-460a-b734-6c23cedfed01")
 		)
@@ -38193,7 +41493,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "e8981a0a-d268-4a86-adbd-a1b52dd840c9")
 		(property "Reference" "TP11"
@@ -38241,6 +41541,28 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 327.66 386.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 327.66 386.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
 			(at 327.66 386.08 0)
 			(hide yes)
 			(show_name no)
@@ -38350,7 +41672,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "ec8007b4-20dc-4fc5-a2f5-ac816d00a001")
 		(property "Reference" "TP9"
@@ -38398,6 +41720,28 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 331.47 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 331.47 355.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" ""
 			(at 331.47 355.6 0)
 			(hide yes)
 			(show_name no)
@@ -38495,6 +41839,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(property "MPN" ""
+			(at 560.07 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1470"
+			(at 560.07 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -38657,6 +42023,28 @@
 				)
 			)
 		)
+		(property "MPN" ""
+			(at 64.77 201.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0444"
+			(at 64.77 201.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f7b3c2de-aaec-4ca1-b22a-3068e5c77842")
 		)
@@ -38808,7 +42196,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RASPBERRY PI PICO RP2040"
 			(at 199.39 347.98 0)
 			(hide yes)
 			(show_name no)
@@ -38865,6 +42253,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left bottom)
+			)
+		)
+		(property "MPN" ""
+			(at 199.39 347.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0041"
+			(at 199.39 347.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -39111,6 +42521,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "MPN" ""
+			(at 417.83 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1449"
+			(at 417.83 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -39362,6 +42794,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 430.53 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0134"
+			(at 430.53 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5fc10b20-ac01-42f9-b275-b50f229c70cf")
 		)
@@ -39434,6 +42888,28 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 514.35 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 514.35 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1445"
 			(at 514.35 252.73 0)
 			(hide yes)
 			(show_name no)
@@ -39537,6 +43013,28 @@
 				(justify left)
 			)
 		)
+		(property "MPN" ""
+			(at 179.07 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0017"
+			(at 179.07 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4b8aaa4f-db70-479a-9cd7-a11cfda200c7")
 		)
@@ -39628,6 +43126,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(property "MPN" ""
+			(at 551.18 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-1467"
+			(at 551.18 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -39945,6 +43465,28 @@
 		)
 		(property "Description" "LED RED CLEAR 1206 SMD"
 			(at 246.38 379.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 246.38 379.73 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PSA_PN" "PSA-0037"
+			(at 246.38 379.73 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
