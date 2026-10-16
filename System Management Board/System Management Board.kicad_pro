@@ -282,7 +282,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "V0.5"
+      "sch_revision": "V0.1"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -906,7 +906,7 @@
         "uuid": "49025907-9104-48d6-bcc4-645bc95bc4a8"
       }
     ],
-    "used_designators": "FID1-3,Q1-5,D3,D5-6,D11-12,D18,D20-21,#PWR3,#PWR8-27,#PWR109-111,#PWR114,#PWR121-122,#PWR124,#PWR126-136,U2-3,U8-12,C28-50,TP7,TP10,TP12,TP15-17,J2,J14,JP5-7,R7-8,R17-18,R25-26,R32-33,R39,R41-52,H5,L1-2",
+    "used_designators": "L1-2,H5,R7-8,R17-18,R25-26,R32-33,R39,R41-50,JP5-7,J2,J14,U2-3,U8-12,C28-50,#PWR3,#PWR8-27,#PWR110-111,#PWR114,#PWR121-122,#PWR124,#PWR126-136,D3,D5-6,D11-12,D18,D20-21,Q1-5,TP7,TP10,TP12,TP15-17,FID1-3",
     "variants": []
   },
   "sheets": [
